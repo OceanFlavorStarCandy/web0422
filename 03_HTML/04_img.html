@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML 기본</title>
 </head>
 <body>
     <h1>이미지</h1>
     <!-- img 요소는 display:inline; -->
+    <!-- 이미지는 가로로 배치됨 -->
 
+    <h2>상대 경로</h2>
     <!-- html 문서와 이미지가 같은 폴더에 있어야 파일 이름만 적어도 열림.-->
     <!-- 둘이 각자 다른 폴더에 있을 경우 앞에 ../를 붙이고 폴더/파일이름 적으면 됨.-->
-    <img src="figma.png" alt="">
-    <img src="../assets/facebook.png" alt="">
-    <img src="evan/instagram.png" alt="">
-    <img src="../../../twitter.png" alt="">
+    <!-- ./ 현재위치, ../ 상위위치, / 루트(root) 또는 폴더/폴더/파일 -->
+
+    <h3>./을 이용한 방법</h3>
+    <!-- <img src="웹링크(절대주소) 또는 파일위치" alt="대체 텍스트"> -->
+    <!-- src와 alt는 필수 속성 >> 꼭 적어야함! -->
+    <img src="figma.png" alt="피그마"><!-- 같은 폴더에 있을 때 -->
+    <img src="../assets/facebook.png" alt="페이스북"><!-- 상위 폴더에 있을 때 -->
+    <img src="evan/instagram.png" alt="인스타그램"><!-- 하위 폴더에 있을 때 -->
+    <img src="./evan/assets/twitter.png" alt="X(구 트위터)">
+
+    <!-- width나 height >> 선택 속성(디자인 관련 선택 속성은 CSS로 하길 바람) -->
+    <!-- 이미지가 찌그러지지 않게 하려면 둘 중 하나만 적으면 됨(둘 다 적으면 이미지가 찌그러질 수 있음) -->
+
+    <h3>root(/)를 이용한 방법 - 실무 활용</h3>
+    <p>이 방법은 html 문서 위치에 상관없이 적용됨.</p>
+    <p>단, 서버에서만 확인 가능하다.(라이브서버에서도 확인 가능)</p>
+    <img src="/03_HTML/figma.png" alt="">
+    <img src="/assets/facebook.png" alt="">
+    <img src="/03_HTML/evan/instagram.png" alt="">
+    <img src="/03_HTML/evan/assets/twitter.png" alt="">
+
+    <h2>절대 경로</h2>
+    <p>http://~, https://~</p>
+    <img src="" alt="">
+
 </body>
 </html>
