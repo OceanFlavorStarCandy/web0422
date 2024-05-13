@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* 
+    선택자의 종류
+    1. 요소(타입, 태그) 선택자
+    2. 그룹 선택자: ,를 사용
+*/
+
+body{
+    margin: 0; /* body의 여백을 0으로 지정 */  /* 0만 단위 생략 가능 */
+}
+
+h1{
+    background: #cff091;
+}
+
+p, div {
+    background: #f091d3;
+}
+
+span, a {
+    background: #99d6fa; /* 배경색 */  /* bg 쓰고 tab키 누르면 자동완성됨 */
+}
