@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* 
+    선택자의 종류
+    1. 요소(태그,타입)
+    2. 그룹: ,
+    3. 클래스 선택자: .이름  << 사용자가 만들어 쓰는 선택자(앞에 .을 찍는걸 잊지말기)
+*/
+
+/* 레이아웃 유형1의 전체 크기 */
+.container1 {
+    width: 1200px;
+    margin: 0 auto; /* 컨텐츠를 가로 가운데 정렬 시키는 방법 */
+    /* margin: 상하 여백 좌우 여백 순으로 적힌거임 */
+    /* 좌우 여백이 된 이유는 width가 설정되어 있기 때문 */
+}
+
+/* .div1~4는 레이아웃 유형 1의 각 박스 크기와 배경색 */
+.div1 {
+    background: #e7b8f3;
+    height: 100px;
+}
+
+.div2 {
+    background: rgb(175, 223, 255);
+    height: 300px;
+}
+
+.div3 {
+    background: #b8f3da;
+    height: 200px;
+}
+
+.div4 {
+    background: #f3f2b8;
+    height: 100px;
+}
+
+/* 레이아웃 유형2 */
+/* 
+    레이아웃 Layout
+    1. floating layout
+    2. flexible layout << 대체로 이 방법을 사용
+    3. grid layout
+    4. positioning
+    5. 블록레벨 요소 속성을 인라인 요소 속성을 바꾸기
+*/
+.container2 {
+    display:inline-block;
+    width: 400px;
+    height: 200px;
+}
+
+/* .div5~7는 레이아웃 유형 2의 각 박스 크기와 배경색 */
+.div5 {
+    background: #e7cd57;
+}
+.div6 {
+    background: #eb813a;
+}
+.div7 {
+    background: #f35539;
+}
+
+/* float:left; 왼쪽을 기준으로 가로배치 / float: right; 오른쪽을 기준으로 가로 배치 */
+.container3 {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+/* 레이아웃 유형2: flexible */
+.container4 {
+    display: flex;
+}
