@@ -54,12 +54,15 @@
 /* .div5~7는 레이아웃 유형 2의 각 박스 크기와 배경색 */
 .div5 {
     background: #e7cd57;
+    width: 400px;
 }
 .div6 {
     background: #eb813a;
+    width: 400px;
 }
 .div7 {
     background: #f35539;
+    width: 400px;
 }
 
 /* float:left; 왼쪽을 기준으로 가로배치 / float: right; 오른쪽을 기준으로 가로 배치 */
@@ -70,6 +73,67 @@
 }
 
 /* 레이아웃 유형2: flexible */
-.container4 {
-    display: flex;
+.contents{
+    width: 1000px;
+    height: 700px;
 }
+
+.header {
+    background: #6af081;
+    width: 200px;
+    height: 700px;
+}
+
+
+.container4 {
+    width: 1200px;
+    margin: 0 auto; /* 쓰려면 항상 좌우 값을 지정해줘야 함! */  /* 페이지가 가운데 오게끔 */
+}
+
+.container4 .df {
+    display: flex; /* 박스들 가로로 배치 / 부모 요소한테만 적용 가능 */
+}
+
+.container4 .header {
+    background: #6af081;
+    width: 200px;
+    height: 850px;
+}
+
+.container4 .contents {
+    width: 1000px;
+}
+
+.container4 .slide {
+    height: 400px;
+    background: #0d6635;
+}
+
+.container4 .banner {
+    height: 200px;
+    background: #1ba527;
+}
+
+.container4 .notice {
+    height: 250px;
+    background: #6ac247;
+}
+
+.container4 .footer {
+    height: 100px;
+    background: #e9e176;
+}
+
+/* 
+현재까지 사용한 클래스 명
+    .container1~4
+    .boxSize
+    .div1~7
+    .df >> display: flex;
+    .header
+    .contents
+    .silde
+    .banner
+    .notice
+    .footer
+ */
