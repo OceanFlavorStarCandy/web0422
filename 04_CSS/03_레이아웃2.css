@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 
+    선택자의 종류
+    1. 요소(태그,타입)
+    2. 그룹: ,
+    3. 클래스 선택자: .이름  << 사용자가 만들어 쓰는 선택자(앞에 .을 찍는걸 잊지말기)
+    4. 하위 선택자: 부모 자손
+*/
+
+/* 
+    레이아웃 Layout
+    1. floating layout
+    2. flexible layout << 대체로 이 방법을 사용
+    3. grid layout
+    4. positioning
+    5. 블록레벨 요소 속성을 인라인 요소 속성을 바꾸기
+*/
+
+/* float:left; 왼쪽을 기준으로 가로배치 / float: right; 오른쪽을 기준으로 가로 배치 */
+
+.contents {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* contetns 안에 있는 div들을 선택한 것임 */
+.contents div {
+    height: 200px;
+    width: 400px;
+}
+
+.tabs {
+    background: #f06868;
+}
+.banner {
+    background: #68a5df;
+}
+.shortcut {
+    background: #76da5d;
+}
