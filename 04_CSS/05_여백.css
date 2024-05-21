@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* 
+    여백
+    margin
+    padding
+ */
+
+ /* 
+    마진 적는법 (padding도 같음)
+
+    1. 속기형
+    margin: 상하좌우;
+    margin: 상하 좌우;
+    margin: 상 좌우 하;
+    margin: 상 우 하 좌;
+    2. 일반형
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+ */
+
+body {
+    margin: 0; /* 0만 단위 생략 가능 */
+}
+
+.wrap{
+    display: flex;
+}
+
+.wrap div {
+    width: 200px;
+    height: 200px;
+    background: #48a3ec;
+    /* 마진 적을 때 8의 배수로 적는게 좋음 */
+}
+
+.box1 {
+    margin-right: 20px;
+}
+.box2 {
+    margin: 0 20px; /* 위 아래 여백은 더 큰 값을 갖는 쪽을 따름 */
+}
+.box3 {
+    margin-left: 20px;
+}
