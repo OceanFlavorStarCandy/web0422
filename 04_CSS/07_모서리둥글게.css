@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: #a1ecc3;
+    border: 1px solid #1bac68
+}
+
+div:nth-of-type(1) {
+    border-radius: 10px;
+}
+
+div:nth-of-type(2) {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 48px;
+}
+
+div:nth-of-type(3) {
+    border-radius: 5px 20px; /* 상단 왼쪽, 하단 오른쪽 / 상단 오른쪽, 하단 왼쪽 */
+}
+
+div:nth-of-type(4) {
+    /* 상단 왼쪽 10 / 상단 오른쪽, 하단 왼쪽 20 / 하단 오른쪽 30 */
+    border-radius: 10px 20px 30px;
+}
+
+div:nth-of-type(5) {
+    /* 상단 왼쪽 / 상단 오른쪽 / 하단 오른쪽 / 하단 왼쪽 */
+    border-radius: 5px 10px 20px 15px;
+}
+
+div:nth-of-type(6) {
+    border-radius: 50px; /* 박스 모서리 길이의 절반 이상으로 적으면 원에 가까워짐 / 50%라고 적어도 가능 */
+}
+
+div:nth-of-type(7) {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 50px;
+}
+
+div:nth-of-type(8) {
+    border-radius: 75px 0 0 0;
+}
