@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+div {
+    background: #e09aa9;
+    margin: 12px;
+}
+
+/* 
+    text-align: 인라인 요소, 텍스트 가로 정렬
+    
+    텍스트 세로 가운데 정렬
+    1. line-height 속성을 이용해 height 속성 크기와 같게 지정(텍스트가 딱 한 줄일 때만 가능함)
+    2. padding을 지정하기(height 지정하면 안됨)
+*/
+
+div:nth-of-type(1) {
+    text-align: left;
+    height: 100px;
+}
+
+div:nth-of-type(2) {
+    text-align: center;
+    line-height: 100px;
+}
+
+div:nth-of-type(3) {
+    text-align: right;
+    padding: 50px 0; /* 위아래만 50, 좌우는 없음 */
+}
+
+span {
+    padding: 4px 12px;
+    border: 1px solid #ddffff;
+}
