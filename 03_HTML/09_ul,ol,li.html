@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../04_CSS/09_ul,ol,li.css">
+</head>
+<body>
+    <!-- emmit 기록 후 tab키 -->
+    <!-- 
+        >는 자식
+        *n은 n번만큼 요소 생성하는 것
+        예) ul>li*3
+        {텍스트$} -> $는 순번(1,2,3, ...)이 자동으로 매겨짐
+     -->
+    <p>ul,ol의 자식은 li만 사용할 수 있음 주의</p>
+    <p>ul,ol이 있어야 li를 사용할 수 있다</p>
+
+    <h2>커피 메뉴</h2>
+    <p>순서가 없는 목록은 ul을 사용할 것</p>
+     <!-- ul>li*3{메뉴$} -->
+    <ul>
+        <li>
+            <h3>아무 커피나 적음</h3>
+            <ul>
+                <li>아메리카노(hot)</li>
+                <li>아메리카노(iced)</li>
+            </ul>
+        </li>
+        <li>카페모카</li>
+        <li>카페라떼</li>
+    </ul>
+
+    <!-- ol>li*3{목록$} -->
+    <!-- 특수문자: &lt;은 "<", &gt;은 ">"을 나타냄-->
+    <h2>야구 순위</h2>
+    <p>순서가 있는 목록은 &lt;ol&gt;을 사용한다.</p>
+    <ol>
+        <li>기아</li>
+        <li>엘지</li>
+        <li>삼성</li>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* 
+    https://www.w3schools.com/cssref/pr_list-style-type.php  << list-style-type에 지정가능한 것 모음
+    ul에 지정할 수 있는 값음 disc(기본값), circle, squaare
+    나머지는 ol에 해당한다.
+
+    속기형
+    list-style
+    
+    개별형
+    list-style-type
+    list-style-position
+    list-style-image
+
+    list-style-image: url(폴더/파일명)
+    폴더와 파일명에 띄어쓰기가 있으면 반드시 "" 또는 ''으로 묶는다
+ */
+
+ul {
+    /* ul은 왼쪽 패딩과 위아래 여백이 있다 */
+    padding-left: 40px;
+    border: 5px solid;
+    margin: 16px 0;
+    list-style: none;
+}
+li {
+    border: 1px solid #629399;
+}
+
+li:nth-of-type(1) {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+li:nth-of-type(2) {
+    list-style-type: square;
+}
+li:nth-of-type(3) {
+    list-style-type: circle;
+    /* list-style-image: url(./../assets/facebook.png) */
+}
