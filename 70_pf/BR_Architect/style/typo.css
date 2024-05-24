@@ -17,7 +17,23 @@
 }
 
 
-
 body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h1,h2,h3 {
   font-family: "NanumSquareNeo-Variable", sans-serif;
+}
+h1 {
+  font-size: 15px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 15px;
+}
+
+a {
+  color: #111111;
 }
