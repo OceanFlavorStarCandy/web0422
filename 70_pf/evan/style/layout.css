@@ -22,6 +22,7 @@ nav {
 
 header {
     height: 200px;
+    background: url(../assets/bg-light.png);
 }
 
 section {
@@ -40,3 +41,56 @@ section {
     width: 790px;
     height: 140px;
 }
+
+/*
+    color 색
+    font
+    font-family 글꼴
+    font-size 크기
+    font-style: italic; 이탤릭
+    font-weight 굵기 (100~900 사이 (100단위로))
+    text-align 맞춤
+    line-height 줄간격(단위 생략 가능>> 150%를 1.5라고 적는 식으로) >> 본문 줄간격 150~200% 사이로 지정하는게 가독성이 좋음 
+*/
+
+/* 
+    Style guide(스타일 가이드)
+    영문 제목: Georgia >> h1~h3, Nav a
+    영문 본문: Ariel >> body, p, Section a
+    한글 제목: Noto Sans KR
+    한글 본문: Noto Sans KR
+
+    단위: rem, em, px, %
+
+    h1: 50px, 700, line-height 60
+    h2: 30px, 700, line-height 36
+    h3: 22.5px, 700, line-height 33.75
+    h3 span: 22.5px, 400(기본 굵기), line-height 33.75
+    Nav a: 20px, line-height 100
+    body(Section a, p 포함): 15px, line-height 1.5
+*/
+/* 글자 속성은 부모 요소에서 자식 요소로 상속된다 */
+
+h1,h2,h3,nav a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif; /* 첫번째 폰트가 사용자 컴퓨터에 없으면 그 다음 글꼴로 표시 */
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+}
+h2 { font-size: 30px; }
+h3 { font-size: 22.5px; }
+nav a {
+    font-size: 20px;
+    color: #444444;
+}
+
+/* 레이아웃 구조 파악을 위한 배경색 처리 */
+nav { background: #79fff4; }
+.home-icon { background: #99c8ee; }
+.home-description { background: #7992ff; }
