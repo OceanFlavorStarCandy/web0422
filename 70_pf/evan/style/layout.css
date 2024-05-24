@@ -1,28 +1,36 @@
 @charset "utf-8";
 
-/* 
-    그룹 선택자: ,
-
-    전체 선택자: *
-    *은 모든 요소를 가리킴
-    부모 * >> 부모 안에 있는 자식 전체에 적용
-*/
-
-body * {
-    outline: 1px solid #659aeb;
-}
-
-body {
+/* reset */
+body,ul,h1,h2 {
     margin: 0;
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none; /* 텍스트 밑줄 제거 */
+}
+
+/* layout */
 nav {
     height: 100px;
+    line-height: 100px;
+}
+nav section {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center;
+    height: 100px; */ /* << 위에 적은 line-height로 대체합니다 */
+}
+nav li {
+    display: inline-block;
 }
 
 header {
     height: 200px;
-    background: url(../assets/bg-light.png);
 }
 
 section {
@@ -32,6 +40,7 @@ section {
 
 .home-card {
     display: flex;
+    justify-content: space-between;
 }
 .home-icon {
     width: 100px;
@@ -41,6 +50,18 @@ section {
     width: 790px;
     height: 140px;
 }
+
+/* header */
+header {
+    background: url(../assets/bg-light.png);
+}
+
+/* section */
+header section {
+    line-height: 200px;
+}
+
+/* footer */
 
 /*
     color 색
