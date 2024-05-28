@@ -25,8 +25,17 @@ nav section {
     /* align-items: center;
     height: 100px; */ /* << 위에 적은 line-height로 대체합니다 */
 }
-nav li {
+nav ul {
     display: inline-block;
+}
+nav li:nth-of-type(1)::after {
+    content:"";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background: #999999;
 }
 
 header {

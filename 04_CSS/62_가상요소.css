@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+ /* 
+    선택자::after >> 이전
+    선택자::before >> 이후
+*/
+
+p::before {
+     content: "";
+    }
+
+p::after {
+    content: "값";
+}

@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* 
+            자식 선택자:nth-of-type(n) >> type(태그, 이름) 구분해야함!! (쓰려는 자식 요소의 종류를 선택자에 적기)
+            자식 선택자:nth-child(n) >> type(태그, 이름) 구분 X
+        */
+
+        /* 첫번째 자식 요소 p */
+        div p:nth-of-type(1) /* 다르게 적어보면 p:nth-child(2) */ {
+            color: #7b97e4;
+        }
+
+        h2:first-child {
+            color: #7fffd4;
+        }
+
+        p:nth-child(2n+1) {
+            font-weight: bold; /* 자식 요소 p들 중 홀수번째 애들만 글자 굵게 */
+        }
+    </style>
 </head>
 <body>
     <h1>가상 클래스</h1>
-    <p>nth-of-type(n), :nth-of-type(n)이 있다.</p>
+    <p>nth-of-type(n), :first-of-type, :nth-last-of-type(n), :nth-child(n), :first-child, :last-child,... 이 있다.</p>
     <p>괄호 안에 n은 숫자(1,2,3,...) 또는 수열(2n,2n+1,3n,...)을 넣을 것</p>
+    <p>부모 자식 관계에서 몇 번째 자식 요소인지를 선택한다.</p>
+
+    <div>
+        <h2>선택자</h2>
+        <p>단락 1</p>
+        <p>단락 2</p>
+        <p>단락 3</p>
+        <p>단락 4</p>
+        <p>단락 5</p>
+        <p>단락 6</p>
+        <p>단락 7</p>
+        <p>단락 8</p>
+    </div>
 </body>
 </html>
