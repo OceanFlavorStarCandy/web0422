@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.6 Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3,nav a {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+a {
+    text-decoration: underline;
+    color: #444444;
+}
+
+nav a {
+    font-size: 2rem;
+    text-decoration: none;
+}
