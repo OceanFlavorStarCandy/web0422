@@ -37,6 +37,10 @@ header {
     background: url(../assets/bg-light.png) no-repeat 50% 50%/cover fixed; /* 패럴렉스 기법 */
 }
 
+main{
+    padding-bottom: 200px;
+}
+
 section {
     width: 940px;
     margin: 0 auto;
@@ -44,10 +48,6 @@ section {
 
 h2 {
     margin: 56px 0;
-}
-
-main{
-    padding-bottom: 200px;
 }
 
 .home-card {
@@ -60,16 +60,10 @@ main{
 }
 .home-description {
     width: 790px;
-    height: 140px;
 }
 
 h3 span {
     font-weight: 400;
-}
-
-/* section */
-header section {
-    line-height: 200px;
 }
 
 /* footer */
