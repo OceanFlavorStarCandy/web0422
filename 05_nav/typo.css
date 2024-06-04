@@ -18,13 +18,13 @@ body {
     color: #999999;
 }
 
-.main>li:hover a {
-    color: #cb93ff;
-}
-
 /* 2depth, submenu */
 .sub>li a {
     font-size: 1.4rem;
     color: #333333;
     display: inline;
+}
+
+.main>li:hover a {
+    color: #cb93ff;
 }

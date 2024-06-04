@@ -4,64 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 아코디언형 네비게이션은 주로 모바일에서 쓰인다고 함 -->
     <style>
         @import url(reset.css);
         @import url(typo.css);
         
         body {outline: 1px solid #40d181;}
-
+        
         header {
-            /* 블록레벨요소의 가로 가운데 배치 */
+            position: relative;
+            width: 200px;
+            height: 650px;
             border: 1px solid;
-            width: 1200px;
-            height: 100px;
-            margin: 0 auto;
-            padding: 30px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
-            /* position: relative; */
-        }
-        .gnb {
-            border: 1px solid;
-            /* position: absolute; */
-            /* top: 30px;
-            right: 30px;
-            z-index: 2; */
         }
 
-        /* 1depth */
-        .main {
-            display: flex;
+        .gnb {
+            margin:16px;
         }
-        .main>li {
-            width: 160px;
-            height: 30px;
-            line-height: 30px;
+
+        .main li {
+            display: block;
             text-align: center;
         }
-        .main>li:hover {
-            background: #333333;
+
+        .main>li {
+            line-height: 40px;
+            border-bottom: 1px solid #111;
+            background: #333;
         }
 
-        /* 2depth */
-        .sub {
-            height: 0;
-            overflow: hidden;
-            visibility: hidden;
-            opacity: 0;
-            padding: 10px 0 20px;
-            background: rgba(0, 0, 0, 0.5);
-            transition: .3s;
-            line-height: 2;
+        .sub li a {
+            display: inline;
+            color: #333;
         }
+
         .main>li:hover .sub {
-            height: 140px;
             visibility: visible;
             opacity: 1;
+            height: 150px;
+        }
+
+        .sub {
+            overflow:hidden;
+            visibility: hidden;
+            opacity: 0;
+            height: 0;
+            background: #777;
+            transition: .7s;
+            line-height: 30px;
+        }
+
+        .sub li:first-child {
+            margin-top: 10px;
         }
         .sub li:hover {
-            background: #111111;
+            background: #333;
         }
     </style>
 </head>
