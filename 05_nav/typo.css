@@ -2,53 +2,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-:root
-
-/* = html */
-    {
+:root {
     font-size: 10px;
 }
 
 body {
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 1.5rem;
     line-height: 1.5;
 }
 
-/* 1depth, main menu */
+/* font의 위계 */
+/* 1depth, mainmenu */
 .main>li>a {
     font-size: 1.6rem;
     color: #999999;
 }
 
-.main>li:hover>a {
-    color: #fff;
+.main>li:hover a {
+    color: #cb93ff;
 }
 
-/* 2depth, sub menu */
-.sub li a {
+/* 2depth, submenu */
+.sub>li a {
     font-size: 1.4rem;
     color: #333333;
-}
-
-.sub li:hover a {
-    color: #fff;
-}
-
-.main {
-    display: flex;
-}
-
-.main>li {
-    width: 160px;
-    height: 30px;
-    line-height: 30px;
-}
-
-.main>li:hover {
-    background: #333;
-}
-
-.sub li:hover {
-    background: #111;
+    display: inline;
 }
