@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+
+/* reset */
+* {box-sizing: border-box;}
+
+:root {font-size: 12px;}
+
+body,ul {margin: 0;}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4A433B;
+    font: 400 16px "Noto Sans KR",sans-serif;
+}
+
+/* //reset */
+
+/* header */
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    background: #F6E9CA;
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+}
+
+/* .Rtop 1depth*/
+.top {
+    display: flex;
+}
+
+.top>li {
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.top>li a {
+    font: 400 14px "Noto Sans KR",sans-serif;
+}
+
+.top>li:hover a {
+    font: 500 14px "Noto Sans KR",sans-serif;
+    color: #101010;
+}
+
+/* .main 1depth */
+.main {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main>li {
+    width: 180px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+}
+
+.main>li:hover {
+    border-bottom: 5px solid #856F56;
+}
+
+.main>li a {
+    font-size: 18px;
+}
+
+.main>li:hover a {
+    font: 700 20px #101010;
+}
+
+/* .language 2depth (적용이 안됨... 필수로 필요한게 아니므로 추후 삭제할 수 있음)
+.language {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    background: #ffffff;
+    transition: .3s;
+    line-height: 1;
+}
+
+.Rtop>.li:last-child:hover .language {
+    z-index: 2;
+    height: 160px;
+    visibility: visible;
+    opacity: 1;
+} */
+
+/* .sub 2depth */
+.sub {
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 0 20px;
+    margin-top: 2px;
+    background: #ffffff;
+    border: 1px solid rbga(0, 0, 0, 0.5);
+    transition: .5s;
+    line-height: 2;
+}
+
+.main>li:hover .sub {
+    height: 200px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub li:hover {
+    background: #F6E9CA;
+}
+
+/* footer */
+footer {
+    background: #2d2d2d;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.familysite {
+    height: 80px;
+    background: #6f6f6f;
+}
+
+.familysite>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.familysite>ul ul {
+    display: flex;
+    line-height: center;
+}
+
+.familysite>ul>li:first-child li {
+    font: 400 20px "Asul",sans-serif;
+    color: #ffffff;
+    width: 220px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.familysite>ul>li:nth-child(2) li {
+    width: 72px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.familysite>ul>li:nth-child(2) a {
+    font: 400 14px "Noto Sans KR",sans-serif;
+    color: #ffffff;
+}
+
+footer .div {
+    display: inline-flex;
+    height: 320px;
+}
+
+.Ltext {
+    width: 720px;
+}
+
+.Rlist {
+    width: 700px;
+    position: absolute;
+    display: flex;
+}
+
+.Rlist>ul {
+    width: 100px;
+    height: 320px;
+    margin-right: 20px;
+}
+
+.Rlist li {
+    font: 200 15px "Noto Sans KR",sans-serif;
+    color: #ffffff;
+    line-height: 2;
+}
+
+.bottom {
+    height: 90px;
+}
+
+.bottom>ul {
+    display: flex;
+    line-height: center;
+}
+
+.bottom li {
+    font: 200 15px "Noto Sans KR",sans-serif;
+    color: #ffffff;
+    width: 200px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: 10px;
+    text-align: center;
+}
