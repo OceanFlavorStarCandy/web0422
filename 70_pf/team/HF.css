@@ -8,7 +8,7 @@
 
 :root {font-size: 12px;}
 
-body,ul {margin: 0;}
+body,ul {margin: 0 auto;}
 
 ul {
     padding-left: 0;
@@ -16,6 +16,7 @@ ul {
 }
 
 a {
+    margin: 0;
     text-decoration: none;
     color: #4A433B;
     font: 400 16px "Noto Sans KR",sans-serif;
@@ -25,6 +26,7 @@ a {
 
 /* header */
 header {
+    z-index: 3;
     border-bottom: 1px solid rgba(0, 0, 0, .3);
     background: #F6E9CA;
     width: 100%;
@@ -46,7 +48,7 @@ header>div {
 header>div>h1 {
     position: absolute;
     left: 56px;
-    top: 20px
+    top: 40px
 }
 
 header>div>h1 a {
@@ -54,6 +56,10 @@ header>div>h1 a {
 }
 
 /* .Rtop 1depth*/
+.Rtop {
+    padding-top: 4px;
+}
+
 .top {
     display: flex;
 }
@@ -79,7 +85,7 @@ header>div>h1 a {
     width: 1200px;
     border-top: 1px solid #4A433B;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .main>li {
@@ -144,6 +150,7 @@ header>div>h1 a {
 
 /* footer */
 footer {
+    z-index: 3;
     background: #2d2d2d;
     width: 100%;
     margin: 0 auto;
@@ -208,13 +215,13 @@ footer>div>div:nth-of-type(2) {
 
 .Ltext {
     margin: 36px 56px;
-    line-height: 1;
+    line-height: 2;
 }
 
 .Ltext p {
     color: #ffffff;
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .Ltext a {
@@ -227,7 +234,7 @@ footer>div>div:nth-of-type(2) {
 .Ltext>p:nth-child(1) {
     font: 400 16px "Asul",sans-serif;
     color: #ffffff;
-    line-height: 2;
+    line-height: 4;
 }
 
 .Ltext p:last-child {

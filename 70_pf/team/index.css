@@ -2,6 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
+/* reset */
+* {box-sizing: border-box;}
+
+:root {font-size: 12px;}
+
+body,ul {margin: 0 auto;}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a, p, h1, h2, h3 {
+    margin: 0;
+    text-decoration: none;
+    color: #4A433B;
+    font: 400 16px "Noto Sans KR",sans-serif;
+}
+
+/* //reset */
 
 body {
     display: flex;
@@ -11,12 +33,115 @@ body {
 }
 
 /* section01 */
-.carousel>div {
+/* banner01 */
+.banner01 {
+    position: relative;
+}
+
+/* banner text */
+.bannerText {
+    position: absolute;
+    bottom: 60px;
+    left: 260px;
+}
+
+.bannerText>div:first-child {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 2px rgba(16, 16, 16, 0.3);
+}
+
+.bannerText p {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.5);
+}
+
+.bannerText>div p:nth-of-type(1) {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    box-shadow: 1px 1px 2px rgba(16, 16, 16, 0.5) inset, 1px 1px 2px rgba(16, 16, 16, 0.5);
+    padding: 8px 20px;
+    font: 400 16px "Noto Sans KR",sans-serif;
+}
+
+.bannerText>div p:nth-of-type(2) {
+    display: inline-block;
+    margin-left: 20px;
+    font: 600 22px "Noto Sans KR",sans-serif;
+}
+
+.bannerText h2 {
+    font: 400 32px "Jomolhari",sans-serif;
+    color: #ffffff;
+    text-shadow: 0 2px 2px rgba(16, 16, 16, 0.5);
+}
+
+/* banner image */
+.banner01>div:last-child {
     width: 1920px;
     height: 800px;
-    background: url(https://oceanflavorstarcandy.github.io/web0422/assets/team/index/section01/image1.png) no-repeat 50% 50%/100% 100%;
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section01/image1.png) no-repeat 50% 50%/100% 100%;
 }
 
 /* section02 */
+.SpecialOffers {
+    width: 1920px;
+    padding: 40px 260px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.SpecialOffers>div:nth-of-type(1) {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
+.SpecialOffers h2 {
+    font: 700 24px "Noto Sans KR",sans-serif;
+    color: #101010;
+    margin-right: 12px;
+}
+
+.SpecialOffers>div:nth-of-type(2) {
+    width: 1440px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.offer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 110px;
+}
+
+.offer:nth-of-type(3) {
+    margin-right: 0;
+}
+
+/* offer image */
+.offerIMG01 {
+    width: 400px;
+    height: 225px;
+    background: #000;
+}
+
+.offerIMG02 {
+    width: 400px;
+    height: 225px;
+    background: #000;
+}
+
+.offerIMG03 {
+    width: 400px;
+    height: 225px;
+    background: #000;
+}
+
 /* section03 */
 /* section04 */
