@@ -31,9 +31,26 @@ header {
     height: 130px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+}
+
+header>div {
+    width: 1920px;
+    position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+header>div>h1 {
+    position: absolute;
+    left: 56px;
+    top: 20px
+}
+
+header>div>h1 a {
+    font: 400 40px "Asul",sans-serif;
 }
 
 /* .Rtop 1depth*/
@@ -60,6 +77,7 @@ header {
 /* .main 1depth */
 .main {
     width: 1200px;
+    border-top: 1px solid #4A433B;
     display: flex;
     justify-content: space-between;
 }
@@ -108,9 +126,8 @@ header {
     visibility: hidden;
     opacity: 0;
     padding: 10px 0 20px;
-    margin-top: 2px;
+    margin-top: 1px;
     background: #ffffff;
-    border: 1px solid rbga(0, 0, 0, 0.5);
     transition: .5s;
     line-height: 2;
 }
@@ -130,6 +147,13 @@ footer {
     background: #2d2d2d;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.centerbox {
+    width: 1920px;
+    position: relative;
 }
 
 .familysite {
@@ -148,12 +172,20 @@ footer {
 }
 
 .familysite>ul>li:first-child li {
-    font: 400 20px "Asul",sans-serif;
-    color: #ffffff;
     width: 220px;
     height: 80px;
     line-height: 80px;
     text-align: center;
+}
+
+.familysite>ul>li:first-child li a {
+    font: 400 20px "Asul",sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.familysite>ul>li:first-child li a:hover {
+    font: 400 20px "Asul",sans-serif;
+    color: #ffffff;
 }
 
 .familysite>ul>li:nth-child(2) li {
@@ -169,25 +201,25 @@ footer {
     color: #ffffff;
 }
 
-footer {
-    overflow: hidden;
-}
-
-footer>.div:nth-of-type(2) {
-    display: flex;
-    flex-wrap: wrap;
+footer>div>div:nth-of-type(2) {
+    /* width: 1920px; */
+    height: 300px;
 }
 
 .Ltext {
-    justify-content: flex-start;
-    position: relative;
-    top: 40px;
-    left: 56px;
-    line-height: 1.5;
+    margin: 36px 56px;
+    line-height: 1;
 }
 
-.Ltext h1 {
+.Ltext a {
     font: 400 20px "Asul",sans-serif;
+    color: #ffffff;
+    line-height: 2;
+    margin-right: 10px;
+}
+
+.Ltext>p:nth-child(1) {
+    font: 400 16px "Asul",sans-serif;
     color: #ffffff;
     line-height: 2;
 }
@@ -198,10 +230,8 @@ footer>.div:nth-of-type(2) {
 }
 
 .Rlist {
-    display: inline-block;
-    justify-content: flex-end;
-    position: relative;
-    top: -270px;
+    position: absolute;
+    top: 112px;
     right: 56px;
     display: flex;
 }
@@ -211,17 +241,25 @@ footer>.div:nth-of-type(2) {
 }
 
 .Linklist03 {
-    margin-left: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding-left: 40px;
+    margin-left: 20px;
 }
 
 .Rlist li {
-    font: 200 15px "Noto Sans KR",sans-serif;
+    font: 200 16px "Noto Sans KR",sans-serif;
     color: #ffffff;
     line-height: 3;
 }
 
+.Rlist a {
+    font: 200 16px "Noto Sans KR",sans-serif;
+    color: #ffffff;
+}
+
 .bottom {
     height: 90px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .bottom>ul {
