@@ -184,9 +184,10 @@ body {
 
 /* section03 */
 .Rewards {
+    margin-top: 40px;
     width: 1920px;
     height: 500px;
-    background: #555555;/* 임시적용 */
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,3 +258,43 @@ body {
 }
 
 /* section04 */
+.Events {
+    width: 1920px;
+    padding: 40px 260px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.Events>div:nth-of-type(1) {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
+.Events h2 {
+    font: 700 32px "Noto Sans KR",sans-serif;
+    color: #101010;
+    margin-right: 12px;
+}
+
+.event>div:nth-of-type(1){
+    width: 280px;
+    height: 360px;
+}
+
+/* event bg images */
+.eventIMG01 {
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
+}
+
+.eventIMG02 {
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
+}
+
+.eventIMG03 {
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
+}
+
+.eventIMG04 {
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
+}
