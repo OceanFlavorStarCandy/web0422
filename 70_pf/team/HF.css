@@ -107,24 +107,6 @@ header>div>h1 a {
     font: 700 20px #101010;
 }
 
-/* .language 2depth (적용이 안됨... 필수로 필요한게 아니므로 추후 삭제할 수 있음)
-.language {
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-    background: #ffffff;
-    transition: .3s;
-    line-height: 1;
-}
-
-.Rtop>.li:last-child:hover .language {
-    z-index: 2;
-    height: 160px;
-    visibility: visible;
-    opacity: 1;
-} */
-
 /* .sub 2depth */
 .sub {
     height: 0px;
