@@ -277,24 +277,37 @@ body {
     margin-right: 12px;
 }
 
+.Events>div:nth-of-type(2) {
+    display: flex;
+}
+
 .event>div:nth-of-type(1){
     width: 280px;
     height: 360px;
+    position: relative;
+}
+
+.event>p {
+    color: #ffffff;
+    position: absolute;
+    bottom: 150px;
+    padding-left: 16px;
+    text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.5);
 }
 
 /* event bg images */
 .eventIMG01 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section04/event01.jpg);
 }
 
 .eventIMG02 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section04/event02.jpg);
 }
 
 .eventIMG03 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section04/event03.jpg);
 }
 
 .eventIMG04 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section04/event04.jpg);
 }
