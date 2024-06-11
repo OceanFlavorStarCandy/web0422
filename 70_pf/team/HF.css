@@ -211,6 +211,12 @@ footer>div>div:nth-of-type(2) {
     line-height: 1;
 }
 
+.Ltext p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+}
+
 .Ltext a {
     font: 400 20px "Asul",sans-serif;
     color: #ffffff;
@@ -224,9 +230,8 @@ footer>div>div:nth-of-type(2) {
     line-height: 2;
 }
 
-.Ltext p {
-    color: #ffffff;
-    font-size: 14px;
+.Ltext p:last-child {
+    line-height: 4;
 }
 
 .Rlist {
