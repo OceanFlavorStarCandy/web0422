@@ -34,8 +34,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    position: sticky;
-    top: 0;
 }
 
 /* .Rtop 1depth*/
@@ -171,31 +169,55 @@ footer {
     color: #ffffff;
 }
 
-footer .div {
-    display: inline-flex;
-    height: 320px;
+footer {
+    overflow: hidden;
+}
+
+footer>.div:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Ltext {
-    width: 720px;
+    justify-content: flex-start;
+    position: relative;
+    top: 40px;
+    left: 56px;
+    line-height: 1.5;
+}
+
+.Ltext h1 {
+    font: 400 20px "Asul",sans-serif;
+    color: #ffffff;
+    line-height: 2;
+}
+
+.Ltext p {
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .Rlist {
-    width: 700px;
-    position: absolute;
+    display: inline-block;
+    justify-content: flex-end;
+    position: relative;
+    top: -270px;
+    right: 56px;
     display: flex;
 }
 
 .Rlist>ul {
-    width: 100px;
-    height: 320px;
     margin-right: 20px;
+}
+
+.Linklist03 {
+    margin-left: 30px;
 }
 
 .Rlist li {
     font: 200 15px "Noto Sans KR",sans-serif;
     color: #ffffff;
-    line-height: 2;
+    line-height: 3;
 }
 
 .bottom {
