@@ -288,14 +288,14 @@ body {
 }
 
 .event>li {
-    width: 280px;
-    height: 360px;
-    background: #000;
+    width: 324px;
+    height: 432px;
 }
 
 .event>li>div{
-    width: 280px;
-    height: 360px;
+    width: 324px;
+    height: 432px;
+    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -311,8 +311,8 @@ body {
     z-index: 2;
     visibility: hidden;
     opacity: 0;
-    width: 280px;
-    height: 360px;
+    width: 324px;
+    height: 432px;
     background: #ffffff;
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
     position: absolute;
