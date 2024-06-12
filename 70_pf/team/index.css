@@ -85,7 +85,7 @@ body {
 /* section02 */
 .SpecialOffers {
     width: 1920px;
-    padding: 40px 260px;
+    padding: 40px 280px;
     margin: 40px 0;
     position: relative;
 }
@@ -97,7 +97,7 @@ body {
 }
 
 .SpecialOffers h2 {
-    font: 700 32px "Noto Sans KR",sans-serif;
+    font: 700 24px "Noto Sans KR",sans-serif;
     color: #101010;
     margin-right: 12px;
 }
@@ -105,8 +105,8 @@ body {
 .SpecialOffers>div:nth-of-type(1) a {
     color:#101010;
     position: absolute;
-    right: 240px;
-    top: 62px;
+    right: 280px;
+    top: 52px;
 }
 
 .SpecialOffers>div:nth-of-type(2) {
@@ -120,7 +120,7 @@ body {
     width: 400px;
     display: flex;
     flex-direction: column;
-    margin-right: 110px;
+    margin-right: 80px;
 }
 
 .offer:nth-of-type(3) {
@@ -191,7 +191,7 @@ body {
 
 .Rewards h2 {
     color: #ffffff;
-    font: 500 32px "Noto Sans KR",sans-serif;
+    font: 500 24px "Noto Sans KR",sans-serif;
     margin: 40px 0;
 }
 
@@ -256,7 +256,7 @@ body {
 /* section04 */
 .Events {
     width: 1920px;
-    padding: 40px 260px;
+    padding: 40px 300px;
     margin: 40px 0;
     position: relative;
 }
@@ -268,7 +268,7 @@ body {
 }
 
 .Events h2 {
-    font: 700 32px "Noto Sans KR",sans-serif;
+    font: 700 24px "Noto Sans KR",sans-serif;
     color: #101010;
     margin-right: 12px;
 }
@@ -277,18 +277,78 @@ body {
     display: flex;
 }
 
-.event>div:nth-of-type(1){
+.event {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event>li {
+    width: 280px;
+    height: 360px;
+    background: #000;
+}
+
+.event>li>div{
     width: 280px;
     height: 360px;
     position: relative;
 }
 
-.event>p {
+.event>li>p {
     color: #ffffff;
     position: absolute;
-    bottom: 150px;
-    padding-left: 16px;
+    bottom: 50px;
+    margin-left: 16px;
     text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.5);
+}
+
+.eventHover {
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    width: 280px;
+    height: 360px;
+    background: #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 115px;
+    padding: 24px;
+    transition: .5s;
+}
+
+.event>li:hover .eventHover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.eventHover h3 {
+    font: 400 24px "Noto Sans KR",sans-serif;
+    color: #856F56;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #6f6f6f;
+}
+
+.eventHover p {
+    font: 400 16px "Noto Sans KR",sans-serif;
+    color: #101010;
+    line-height: 2;
+}
+
+.eventHover p:nth-of-type(1) {
+    padding-top: 12px;
+}
+
+.eventHover a {
+    color: #ffffff;
+    font: 400 18px "Noto Sans KR",sans-serif;
+    display: inline-block;
+    width: 232px;
+    background: #856F56;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
 }
 
 /* event bg images */

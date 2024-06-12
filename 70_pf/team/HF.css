@@ -251,6 +251,10 @@ footer>div>div:nth-of-type(2) {
     color: #ffffff;
 }
 
+.Rlist a:hover {
+    text-decoration: underline;
+}
+
 .bottom {
     height: 90px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
