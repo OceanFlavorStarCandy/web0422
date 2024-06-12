@@ -161,19 +161,19 @@ footer {
 }
 
 .familysite>ul>li:first-child li {
-    width: 220px;
+    width: 260px;
     height: 80px;
     line-height: 80px;
     text-align: center;
 }
 
 .familysite>ul>li:first-child li a {
-    font: 400 20px "Asul",sans-serif;
+    font: 400 24px "Asul",sans-serif;
     color: rgba(255, 255, 255, 0.5);
 }
 
 .familysite>ul>li:first-child li a:hover {
-    font: 400 20px "Asul",sans-serif;
+    font: 400 24px "Asul",sans-serif;
     color: #ffffff;
 }
 
@@ -202,7 +202,7 @@ footer>div>div:nth-of-type(2) {
 
 .Ltext p {
     color: #ffffff;
-    font-size: 14px;
+    font: 300 15px "Noto Sans KR",sans-serif;
     line-height: 1.5;
 }
 
@@ -217,9 +217,11 @@ footer>div>div:nth-of-type(2) {
     font: 400 16px "Asul",sans-serif;
     color: #ffffff;
     line-height: 4;
+    margin-bottom: 12px;
 }
 
 .Ltext p:last-child {
+    margin-top: 12px;
     line-height: 4;
 }
 

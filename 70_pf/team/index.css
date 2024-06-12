@@ -240,6 +240,10 @@ body {
     margin-top: 40px;
 }
 
+.Rewards a:hover {
+    background: #856F56;
+}
+
 /* reward icons */
 .rewardIcon01 {
     background: #000; /* 현재 임시 적용 중 */
@@ -326,8 +330,7 @@ body {
     font: 400 24px "Noto Sans KR",sans-serif;
     color: #856F56;
     padding-top: 20px;
-    padding-bottom: 80px;
-    border-bottom: 1px solid #6f6f6f;
+    padding-bottom: 72px;
 }
 
 .eventHover p {
@@ -337,6 +340,7 @@ body {
 }
 
 .eventHover p:nth-of-type(1) {
+    border-top: 1px solid #6f6f6f;
     padding-top: 12px;
 }
 
