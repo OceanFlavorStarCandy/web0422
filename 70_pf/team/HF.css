@@ -37,7 +37,7 @@ header {
 }
 
 header>div {
-    width: 1920px;
+    width: 1903px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@ footer {
 }
 
 .centerbox {
-    width: 1920px;
+    width: 1903px;
     position: relative;
 }
 

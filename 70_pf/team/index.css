@@ -317,7 +317,7 @@ body {
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
     position: absolute;
     top: 115px;
-    padding: 24px;
+    padding: 36px;
     transition: .5s;
 }
 
@@ -330,7 +330,7 @@ body {
     font: 400 24px "Noto Sans KR",sans-serif;
     color: #856F56;
     padding-top: 20px;
-    padding-bottom: 72px;
+    padding-bottom: 100px;
 }
 
 .eventHover p {
@@ -348,7 +348,7 @@ body {
     color: #ffffff;
     font: 400 18px "Noto Sans KR",sans-serif;
     display: inline-block;
-    width: 232px;
+    width: 248px;
     background: #856F56;
     text-align: center;
     padding: 12px;
