@@ -113,17 +113,21 @@ header>div>h1 a {
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-    padding: 10px 0 20px;
+    padding: 10px 0 10px;
     margin-top: 1px;
     background: #ffffff;
     transition: .5s;
-    line-height: 2;
+    line-height: 4;
 }
 
 .main>li:hover .sub {
-    height: 200px;
+    height: 210px;
     visibility: visible;
     opacity: 1;
+}
+
+.main>li:hover .sub {
+    height: 308px;
 }
 
 .sub li:hover {
