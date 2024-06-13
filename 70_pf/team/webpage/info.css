@@ -36,8 +36,34 @@ section {
 }
 
 /* image files */
-.introIMG01 {
+.infoIMG01 {
     width: 1440px;
     height: 600px;
+    background-repeat: no-repeat;
     background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/info/img01.jpg);
+}
+
+.infoIMG02 {
+    width: 568px;
+    height: 568px;
+    background-repeat: no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/info/img02.jpg);
+}
+
+.infoIMG03, .infoIMG04, .infoIMG05 {
+    width: 580px;
+    height: 520px;
+    background-repeat: no-repeat;
+}
+
+.infoIMG03 {
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/info/img03.jpg);
+}
+
+.infoIMG04 {
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/info/img04.jpg);
+}
+
+.infoIMG05 {
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/info/img05.jpg);
 }
