@@ -77,14 +77,14 @@ body {
 
 /* banner image */
 .banner01>div:last-child {
-    width: 1920px;
+    width: 1903px;
     height: 800px;
     background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section01/image1.png) no-repeat 50% 50%/100% 100%;
 }
 
 /* section02 */
 .SpecialOffers {
-    width: 1920px;
+    width: 1903px;
     padding: 40px 280px;
     margin: 40px 0;
     position: relative;
@@ -181,7 +181,7 @@ body {
 /* section03 */
 .Rewards {
     margin-top: 40px;
-    width: 1920px;
+    width: 1903px;
     height: 500px;
     background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section03/BGimage.jpg);
     display: flex;
@@ -259,7 +259,7 @@ body {
 
 /* section04 */
 .Events {
-    width: 1920px;
+    width: 1903px;
     padding: 40px 300px;
     margin: 40px 0;
     position: relative;
