@@ -29,3 +29,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* 개요 시작 */
+section {
+    width: 1903px;
+}
+
+/* image files */
+.introIMG01 {
+    width: 1440px;
+    height: 600px;
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/info/img01.jpg);
+}

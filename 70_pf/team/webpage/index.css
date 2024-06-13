@@ -79,13 +79,13 @@ body {
 .banner01>div:last-child {
     width: 1903px;
     height: 800px;
-    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section01/image1.png) no-repeat 50% 50%/100% 100%;
+    background: url(https://oceanflavorstarcandy.github.io/web0422//assets/team/index/section01/image01.jpg) no-repeat 50% 50%/100% 100%;
 }
 
 /* section02 */
 .SpecialOffers {
     width: 1903px;
-    padding: 40px 280px;
+    padding: 40px 260px;
     margin: 40px 0;
     position: relative;
 }
@@ -110,7 +110,6 @@ body {
 }
 
 .SpecialOffers>div:nth-of-type(2) {
-    width: 1440px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -120,7 +119,7 @@ body {
     width: 400px;
     display: flex;
     flex-direction: column;
-    margin-right: 80px;
+    margin-right: 92px;
 }
 
 .offer:nth-of-type(3) {
@@ -260,7 +259,7 @@ body {
 /* section04 */
 .Events {
     width: 1903px;
-    padding: 40px 300px;
+    padding: 40px 220px;
     margin: 40px 0;
     position: relative;
 }
@@ -269,6 +268,7 @@ body {
     display: flex;
     align-items: baseline;
     margin-bottom: 40px;
+    padding-left: 40px;
 }
 
 .Events h2 {
@@ -282,9 +282,8 @@ body {
 }
 
 .event {
-    width: 1400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .event>li {
