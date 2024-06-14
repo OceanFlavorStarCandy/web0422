@@ -14,10 +14,10 @@ ul {
     list-style: none;
 }
 
-a, p, h1, h2, h3 {
+section a, p, h1, h2, h3 {
     margin: 0;
     text-decoration: none;
-    color: #4A433B;
+    color: #101010;
     font: 400 16px "Noto Sans KR",sans-serif;
 }
 
@@ -33,10 +33,118 @@ body {
 /* 개요 시작 */
 section {
     width: 1903px;
+    margin-top: 60px;
+    padding: 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+section>h1 {
+    font: 400 14px "Noto Sans KR",sans-serif;
+    position: absolute;
+    left: 232px;
+    top: 20px;
+}
+
+section>div:nth-of-type(1), section>div:nth-last-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 160px;
+}
+
+section>div h2 {
+    font: 600 20px "Noto Sans KR",sans-serif;
+    line-height: 4;
+}
+
+section>div p {
+    font: 400 16px "Noto Sans KR",sans-serif;
+    line-height: 2;
+}
+
+section h3 {
+    font: 500 18px "Noto Sans KR",sans-serif;
+    line-height: 4;
+}
+
+section>div:nth-of-type(2) {
+    width: 1440px;
+    border-top: 1px solid rgba(111, 111, 111, .5);
+    border-bottom: 1px solid rgba(111, 111, 111, .5);
+    margin-bottom: 160px;
+    padding: 160px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section>div:nth-of-type(2)>div:nth-child(2){
+    width: 600px;
+    padding: 26px;
+    margin-left: 20px;
+}
+
+section>div:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mission>div:nth-of-type(1) {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission>div>div {
+    margin-top: 100px;
+    margin-bottom: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missionText {
+    width: 340px;
+    margin: 0 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BGbox1 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    background: #f4f4f4;
+    width: 1903px;
+    height: 760px;
+}
+
+.BGbox2 {
+    z-index: -1;
+    position: absolute;
+    bottom: 60px;
+    background: #f4f4f4;
+    width: 1903px;
+    height: 560px;
 }
 
 /* image files */
 .infoIMG01 {
+    margin-bottom: 20px;
     width: 1440px;
     height: 600px;
     background-repeat: no-repeat;
