@@ -139,11 +139,10 @@ header>div>h1 a {
 .main>li:nth-of-type(2) div {
     width: 20px;
     height: 20px;
-    /* background: #000; */
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/HF/icon_schedule.png) no-repeat 0 0/25% 25%;
+    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/HF/icon_schedule.png) no-repeat;
     position: absolute;
     top: 27px;
-    left: 30px;
+    left: 44px;
 }
 
 /* .sub 2depth */
@@ -265,7 +264,14 @@ footer {
     line-height: 2;
 }
 
-.Ltext>div a {
+.Ltext>div {
+    margin-bottom: 20px;
+    width: 170px;
+    height: 54px;
+    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/HF/Logo.svg) no-repeat;
+}
+
+/* .Ltext>div a {
     font: 400 20px "Asul",sans-serif;
     color: #ffffff;
 }
@@ -274,7 +280,7 @@ footer {
     font: 400 16px "Asul",sans-serif;
     color: #ffffff;
     margin-bottom: 24px;
-}
+} */
 
 .Ltext>p {
     color: #ffffff;
