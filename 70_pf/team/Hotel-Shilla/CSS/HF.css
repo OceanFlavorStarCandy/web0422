@@ -244,8 +244,8 @@ footer {
 .familysite>ul>li:nth-child(2) li {
     width: 72px;
     height: 80px;
-    line-height: 80px;
-    text-align: center;
+    display: flex;
+    align-items: center;
     margin-right: 20px;
 }
 
@@ -267,7 +267,6 @@ footer {
     margin-bottom: 20px;
     width: 170px;
     height: 54px;
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/HF/Logo.svg) no-repeat;
 }
 
 .Ltext>p {
