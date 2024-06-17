@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: #ffaf54;
+            margin: 20px;
+        }
+
+        /* 
+        - 2D
+        translate(x, y 위치)
+        translateX(x 위치)
+        translateY(y 위치)
+        scale(가로, 세로)
+        scaleX(가로)
+        scaleY(세로)
+        rotate(각도) 0~360 단위:deg
+        skew(x각도, y각도)
+        skewX(x각도)
+        skewY(y각도)
+
+        - 3D
+        translateZ
+        rotateX
+        rotateY
+        rotateZ
+        */
+
+        .trf1:hover div {transform: translate(50px, 0);}
+        .trf2:hover div {transform: scale(2, 2);}
+        .trf3:hover div {transform: rotate(60deg);}
+        .trf4:hover div {transform: skew(60deg, 60deg);}
+    </style>
+</head>
+<body>
+    <!-- 만들다 말았다... 나중에라도 채우셈 -->
+    <div class="trf1"></div>
+    <div class="trf2"></div>
+    <div class="trf3"></div>
+    <div class="trf4"></div>
+</body>
+</html>

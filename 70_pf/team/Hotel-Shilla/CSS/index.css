@@ -245,15 +245,15 @@ body {
 
 /* reward icons */
 .rewardIcon01 {
-    background: #000; /* 현재 임시 적용 중 */
+    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section03/icon01.png) no-repeat;
 }
 
 .rewardIcon02 {
-    background: #000;
+    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section03/icon02.png) no-repeat;
 }
 
 .rewardIcon03 {
-    background: #000;
+    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section03/icon03.png) no-repeat;
 }
 
 /* section04 */
