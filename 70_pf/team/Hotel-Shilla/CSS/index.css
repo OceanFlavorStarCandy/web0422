@@ -181,7 +181,7 @@ body {
 .Rewards {
     margin-top: 40px;
     width: 1903px;
-    height: 500px;
+    height: 628px;
     background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section03/BGimage.jpg) no-repeat;
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@ body {
 .Rewards h2 {
     color: #ffffff;
     font: 500 24px "Noto Sans KR",sans-serif;
-    margin: 40px 0;
+    margin: 64px 0 40px;
 }
 
 .Rewards>div {
