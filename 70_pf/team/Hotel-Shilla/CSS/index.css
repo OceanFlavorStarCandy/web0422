@@ -42,6 +42,16 @@ body {
 .banner {
     position: absolute;
     top: -130px;
+    width: 1903px;
+    height: 970px;
+    overflow: hidden;
+}
+
+.banner ul {
+    position: absolute;
+    width: 400%;
+    height: 100%;
+    display: flex;
 }
 
 .banner li {
@@ -51,8 +61,39 @@ body {
 
 /* banner image */
 .banner li:nth-of-type(1) {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section01/image01.jpg) no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section01/image01.jpg) no-repeat;
 }
+
+.banner li:nth-of-type(2) {
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section01/image02.jpg) no-repeat;
+}
+
+.banner li:nth-of-type(3) {
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section01/image03.jpg) no-repeat;
+}
+
+.banner li:nth-of-type(4) {
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section01/image04.jpg) no-repeat;
+}
+
+/* carousel animation */
+.banner ul {
+    animation: banner 12s infinite;
+}
+
+@keyframes banner {
+    0% {left: 0%;} /* 1 */
+    12.5% {left: -100%;} /* 2 */
+    25% {left: -100%;}
+    37.5% {left: -200%;} /* 3 */
+    50% {left: -200%;}
+    62.5% {left: -200%;}
+    75% {left: -200%;}
+    87.5% {left: -400%;} /* 4 */
+    99.99% {left: -400%;}
+    100% {left: 0%;} /* 다시 1로 */
+}
+
 
 /* section02 */
 .SpecialOffers {
@@ -138,15 +179,15 @@ body {
 
 /* offer image */
 .offerIMG01 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section02/offer01.jpg) no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section02/offer01.jpg) no-repeat;
 }
 
 .offerIMG02 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section02/offer02.jpg) no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section02/offer02.jpg) no-repeat;
 }
 
 .offerIMG03 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section02/offer03.jpg) no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section02/offer03.jpg) no-repeat;
 }
 
 /* section03 */
@@ -154,7 +195,7 @@ body {
     margin-top: 40px;
     width: 1903px;
     height: 628px;
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section03/BGimage.jpg) no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section03/BGimage.jpg) no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,15 +258,15 @@ body {
 
 /* reward icons */
 .rewardIcon01 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section03/icon01.png) no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section03/icon01.png) no-repeat;
 }
 
 .rewardIcon02 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section03/icon02.png) no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section03/icon02.png) no-repeat;
 }
 
 .rewardIcon03 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section03/icon03.png) no-repeat;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section03/icon03.png) no-repeat;
 }
 
 /* section04 */
@@ -328,17 +369,17 @@ body {
 
 /* event bg images */
 .eventIMG01 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section04/event01.jpg);
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section04/event01.jpg);
 }
 
 .eventIMG02 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section04/event02.jpg);
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section04/event02.jpg);
 }
 
 .eventIMG03 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section04/event03.jpg);
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section04/event03.jpg);
 }
 
 .eventIMG04 {
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section04/event04.jpg);
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section04/event04.jpg);
 }
