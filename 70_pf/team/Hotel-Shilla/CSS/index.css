@@ -40,8 +40,7 @@ body {
 }
 
 .banner {
-    position: absolute;
-    top: -130px;
+    position: relative;
     width: 1903px;
     height: 970px;
     overflow: hidden;
@@ -49,7 +48,8 @@ body {
 
 .banner ul {
     position: absolute;
-    width: 400%;
+    top: -130px;
+    width: 500%;
     height: 100%;
     display: flex;
 }
@@ -57,6 +57,7 @@ body {
 .banner li {
     width: 1903px;
     height: 970px;
+    flex: 0 0 20%;
 }
 
 /* banner image */
@@ -76,20 +77,24 @@ body {
     background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section01/image04.jpg) no-repeat;
 }
 
+.banner li:nth-of-type(5) {
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/index/section01/image01.jpg) no-repeat;
+}
+
 /* carousel animation */
 .banner ul {
-    animation: banner 12s infinite;
+    animation: banner 20s infinite;
 }
 
 @keyframes banner {
     0% {left: 0%;} /* 1 */
-    12.5% {left: -100%;} /* 2 */
-    25% {left: -100%;}
-    37.5% {left: -200%;} /* 3 */
-    50% {left: -200%;}
-    62.5% {left: -200%;}
-    75% {left: -200%;}
-    87.5% {left: -400%;} /* 4 */
+    12.5% {left: -100%;}
+    25% {left: -100%;} /* 2 */
+    37.5% {left: -200%;}
+    50% {left: -200%;} /* 3 */
+    62.5% {left: -300%;}
+    75% {left: -300%;} /* 4 */
+    87.5% {left: -400%;}
     99.99% {left: -400%;}
     100% {left: 0%;} /* 다시 1로 */
 }
