@@ -33,16 +33,25 @@ body {
 }
 
 /* section01 */
-/* banner01 */
-.banner01 {
+.carousel {
     position: relative;
+    width: 1903px;
+    height: 800px;
+}
+
+.banner {
+    position: absolute;
+    top: -130px;
+}
+
+.banner li {
+    width: 1903px;
+    height: 970px;
 }
 
 /* banner image */
-.banner01>div:last-child {
-    width: 1903px;
-    height: 970px;
-    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section01/image01.jpg) no-repeat 50% 50%/100% 100%;
+.banner li:nth-of-type(1) {
+    background: url(https://oceanflavorstarcandy.github.io/web0422//70_pf/team/Hotel-Shilla/assets/images/index/section01/image01.jpg) no-repeat;
 }
 
 /* section02 */
