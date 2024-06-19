@@ -40,6 +40,38 @@ body {
     margin-bottom: 20px;
 }
 
+/* bannerUI */
+.bannerUI {
+    z-index: 2;
+    width: 1500px;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+
+.bannerUI>div:nth-of-type(1) {
+    width: 27px;
+    height: 71px;
+    margin-right: 710px;
+    background: url(./../assets/images/index/section01/left.png) no-repeat;
+}
+
+.bannerUI>div:nth-of-type(2) {
+    width: 27px;
+    height: 71px;
+    margin-left: 710px;
+    background: url(./../assets/images/index/section01/right.png) no-repeat;
+}
+
+.carousel>div:nth-of-type(3) {
+    position: relative;
+}
+
 .banner {
     position: relative;
     width: 1903px;
@@ -99,7 +131,6 @@ body {
     99.99% {left: -400%;}
     100% {left: 0%;} /* 다시 1로 */
 }
-
 
 /* section02 */
 .SpecialOffers {
