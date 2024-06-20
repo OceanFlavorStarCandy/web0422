@@ -69,7 +69,7 @@ body {
     background: url(./../assets/images/index/section01/right.png) no-repeat;
 }
 
-.page {
+.frame {
     z-index: 2;
     width: 120px;
     height: 14px;
@@ -81,10 +81,53 @@ body {
     bottom: -10px;
     left: 892px;
 }
-.page li {
+
+.page {
+    z-index: 2;
+    width: 120px;
+    height: 14px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -10px;
+    left: 892px;
+}
+
+.frame li {
     width: 14px;
     height: 14px;
     background: url(./../assets/images/index/section01/page-frame.png);
+}
+
+.page li {
+    width: 14px;
+    height: 14px;
+    background: url(./../assets/images/index/section01/page.png);
+}
+
+.page>ul {
+    width: 100%;
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 수정 어떻게 해야할지 고민 중 */
+.page li:nth-of-type(1) {
+    opacity: 1;
+}
+.page li:nth-of-type(2) {
+    opacity: 0;
+}
+.page li:nth-of-type(3) {
+    opacity: 0;
+}
+.page li:nth-of-type(4) {
+    opacity: 0;
 }
 
 /* banner */
