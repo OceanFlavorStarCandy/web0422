@@ -41,7 +41,7 @@ body {
 }
 
 /* bannerUI */
-.bannerUI {
+.side {
     z-index: 2;
     width: 1500px;
     height: 100px;
@@ -54,16 +54,17 @@ body {
     left: 200px;
 }
 
-.bannerUI>div:nth-of-type(1) {
+.side li {
     width: 27px;
     height: 71px;
+}
+
+.side li:nth-of-type(1) {
     margin-right: 710px;
     background: url(./../assets/images/index/section01/left.png) no-repeat;
 }
 
-.bannerUI>div:nth-of-type(2) {
-    width: 27px;
-    height: 71px;
+.side li:nth-of-type(2) {
     margin-left: 710px;
     background: url(./../assets/images/index/section01/right.png) no-repeat;
 }
