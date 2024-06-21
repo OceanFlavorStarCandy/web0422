@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #subject1+label {color: #a54cff;} /* +: 인접 형제 선택자 */
+        /* 
+            확인란 margin: 3px 3px 3px 4px;
+            라디오버튼 margin: 3px 3px 0 5px;
+        */
+        :checked {
+            margin-right: 30px;
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <h1>확인란과 라디오버튼</h1>
+    <p>input 태그의 type, name, value는 필수속성 / checked는 선택속성</p>
+    <!-- id와 for로 연결(한 페이지에 id값은 서로 달라야함) -->
+    <input type="checkbox" id="subject1" name="chkgroup" value="html" checked>
+    <label for="subject1">HTML</label>
+    <input type="checkbox" id="subject2" name="chkgroup" value="css">
+    <label for="subject2">CSS</label>
+    <input type="checkbox" id="subject3" name="chkgroup" value="js">
+    <label for="subject3">JavaScript</label>
+
+    <!-- 라디오 버튼 -->
+    <label><input type="radio" name="radiogroup" value="html" checked>HTML</label>
+    <label><input type="radio" name="radiogroup" value="css">CSS</label>
+    <label><input type="radio" name="radiogroup" value="js">JavaScript</label>
+</body>
+</html>
