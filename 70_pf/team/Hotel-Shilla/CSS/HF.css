@@ -47,7 +47,7 @@ header>div {
 header>div>h1 {
     position: absolute;
     left: 56px;
-    top: 10px
+    top: 12px
 }
 
 header>div>h1 a {
@@ -301,7 +301,7 @@ footer {
 .Rlist li {
     font: 200 16px "Noto Sans KR",sans-serif;
     color: #ffffff;
-    line-height: 3;
+    line-height: 2.5;
 }
 
 .Rlist a {
@@ -314,7 +314,7 @@ footer {
 }
 
 .bottom {
-    height: 90px;
+    height: 80px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -327,8 +327,8 @@ footer {
     font: 200 15px "Noto Sans KR",sans-serif;
     color: #ffffff;
     width: 180px;
-    height: 90px;
-    line-height: 90px;
+    height: 80px;
+    line-height: 80px;
     margin-left: 10px;
     text-align: center;
 }
