@@ -147,7 +147,7 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 .summery>div>div {
     width: 380px;
     height: 460px;
-    border: 1px solid #101010;
+    border: 1px solid #101010; /* 임시 */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,6 +158,11 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 .summery>div>div:last-child {
     margin: 0;
 }
+
+.summery>div>div:nth-child(1) {
+    background: url();
+}
+
 
 .summery h3 {
     font: 400 18px "Noto Sans KR", sans-serif;
