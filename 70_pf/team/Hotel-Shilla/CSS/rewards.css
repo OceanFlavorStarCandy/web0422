@@ -31,7 +31,7 @@ body {
 }
 
 h2 {
-    font: 400 20px "Noto Sans KR",sans-serif;
+    font: 400 24px "Noto Sans KR",sans-serif;
 }
 
 /* section */
@@ -41,20 +41,21 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 1903px;
 }
 
 section>h1 {
     font: 400 14px "Noto Sans KR",sans-serif;
     position: absolute;
-    left: 60px;
-    top: 40px;
+    left: 232px;
+    top: 80px;
 }
 
 section>div:nth-of-type(1) {
-    width: 1400px;
+    width: 1440px;
     height: 240px;
-    border: 1px solid #444; /* 임시 적용 */
-    margin-top: 80px;
+    background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/rewards/crown.jpg);
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     padding: 36px 60px;
@@ -73,7 +74,7 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 /* membership */
 .membership {
     width: 1400px;
-    margin: 60px 0;
+    margin: 80px 0 100px;
 }
 
 .membership h2 {
@@ -90,7 +91,7 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 .box {
     width: 280px;
     height: 600px;
-    border: 1px solid #101010; /* 임시적용 */
+    border: 1px solid rgba(0, 0, 0, .1); /* 임시적용 */
     padding: 40px 30px;
     position: relative;
 }
@@ -121,7 +122,7 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 }
 
 .box>div:nth-of-type(2) {
-    background: #e6dede;
+    background: rgba(246, 233, 202, .5);
     width: 280px;
     height: 240px;
     position: absolute;
@@ -132,12 +133,18 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 
 /* summery */
 .summery {
-    width: 1400px;
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    background: #f4f4f4;
+    padding: 100px 0 40px;
 }
 
 .summery>div {
+    display: flex;
+    justify-content: center;
+}
+
+.summery>div>div {
     width: 380px;
     height: 460px;
     border: 1px solid #101010;
@@ -145,4 +152,30 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 60px;
+}
+
+.summery>div>div:last-child {
+    margin: 0;
+}
+
+.summery h3 {
+    font: 400 18px "Noto Sans KR", sans-serif;
+    line-height: 2.5;
+}
+
+.summery a {
+    display: inline-block;
+    padding: 16px 32px;
+    margin: 40px 0;
+    border: 1px solid #4a433b;
+    color: #4a433b;
+    font: 500 16px "Noto Sans KR", sans-serif;
+}
+
+.summery a:hover {
+    border: 1px solid #856f56;
+    background: #856f56;
+    color: #fff;
+    font: 400 16px "Noto Sans KR", sans-serif;
 }
