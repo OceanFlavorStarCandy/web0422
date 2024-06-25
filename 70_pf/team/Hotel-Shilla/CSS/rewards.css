@@ -137,6 +137,11 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
     margin-top: 10px;
 }
 
+.box ul {
+    list-style: circle;
+    margin-left: 12px;
+}
+
 .box:nth-of-type(1) ul {
     margin-top: 28px;
 }
