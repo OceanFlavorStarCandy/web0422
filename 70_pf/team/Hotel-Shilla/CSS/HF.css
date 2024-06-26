@@ -255,6 +255,11 @@ footer {
     width: 36px;
     height: 36px;
     margin-right: 30px;
+    opacity: .5;
+}
+
+.familysite>ul>li:nth-child(2) li:hover {
+    opacity: 1;
 }
 
 .centerbox>div:nth-of-type(2) {
