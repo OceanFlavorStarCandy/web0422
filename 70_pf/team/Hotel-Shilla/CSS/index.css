@@ -116,7 +116,6 @@ body {
     overflow: hidden;
 }
 
-/* 수정 어떻게 해야할지 고민 중 */
 .page li:nth-of-type(1) {
     animation: page1 20s infinite;
 }
