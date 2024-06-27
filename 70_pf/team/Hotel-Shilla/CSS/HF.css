@@ -371,8 +371,8 @@ html {
 .top-button a {
     z-index: 4;
     display: inline-block;
-    position: absolute;
-    top: -80px;
+    position: fixed;
+    bottom: 90px;
     right: 160px;
     width: 60px;
     height: 60px;
