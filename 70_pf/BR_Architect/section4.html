@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나투어</title>
+    <style>
+        /* reset(초기화)는 상위에 있어야 한다. */
+        @import url(style/reset.css);
+        @import url(style/typo.css);
+
+        /* 섹션4 영역 */
+        section {
+            width: 1480px;
+            margin: 0 auto;
+            padding: 96px 0;
+        }
+
+        h2 {
+            border-bottom: 1px solid #111;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+
+        p {
+            padding-bottom: 24px;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            font-size: 15px;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 섹션4 영역 -->
+    <section>
+        <h2>여행지</h2>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form action="customer.jsp">
+            <input type="text" name="user_name" placeholder="이름">
+            <input type="email" name="U_email" placeholder="이메일">
+            <input type="text" name="subject" placeholder="제목">
+            <input type="text" name="comment" placeholder="내용">
+            <button type="submit">메세지 전송하기</button>
+        </form>
+        <div class="map">
+            <!-- 지도 -->
+        </div>
+    </section>
+</body>
+
+</html>
