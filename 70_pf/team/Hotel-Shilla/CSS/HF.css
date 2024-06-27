@@ -147,7 +147,7 @@ header>div>h1 a {
 
 /* .sub 2depth */
 .sub {
-    z-index: 3;
+    z-index: 10;
     height: 0px;
     overflow: hidden;
     visibility: hidden;
