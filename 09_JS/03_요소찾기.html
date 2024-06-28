@@ -51,6 +51,14 @@
         // 문서의 id가 orange인 요소를 가져와서 글자색을 "orange"로 지정한다
         document.getElementById("A").style.color="orange";
 
+        document.getElementsByClassName("red").style.color="orange";
+        document.getElementsByTagName("li").style.color="orange";
+
+        // 단일지정
+        document.querySelector(".A").style.color="orange";
+        // 복수지정(같은 요소 여러개)
+        document.querySelectorAll("A").style.color="orange"; // 밑에 2가지를 추천
+
         // 객체: document
         // 메소드 method: getElementByID("") >> 동사, 서술어
         // 속성: style(객체로 취급하기도 함), color >> 형용사

@@ -16,24 +16,31 @@
     font-style: normal;
 }
 
-
 body {
-  font-family: "Noto Sans KR", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 h1,h2,h3 {
-  font-family: "NanumSquareNeo-Variable", sans-serif;
+    font-family: "NanumSquareNeo-Variable", sans-serif;
 }
-h1 {
-  font-size: 15px;
+
+h1,h3 {
+    font-size: 15px;
 }
+
 h2 {
-  font-size: 24px;
-}
-h3 {
-  font-size: 15px;
+    font-size: 24px;
 }
 
 a {
-  color: #111111;
+    color: #111111;
+}
+
+::placeholder {
+    font-size: 15px;
+    color: #8d8d8d; /* placeholder는 after, before처럼 가상 요소 선택자라 저렇게 적어야함 */
+}
+
+input, button {
+    font: 15px "Noto Sans KR", sans-serif;
 }
