@@ -38,14 +38,14 @@ header {
 
 header>div {
     width: 1903px;
-    position: relative;
+    position: relative; /* 헤더 로고 위치를 잡을때 기준이 되어줘야하므로 */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* 네비게이션 2가지를 세로로 */
     justify-content: space-between;
 }
 
 header>div>h1 {
-    position: absolute;
+    position: absolute; /* 헤더 로고 */
     left: 56px;
     top: 12px;
 }
@@ -223,7 +223,6 @@ footer {
 
 .familysite>ul ul {
     display: flex;
-    line-height: center;
 }
 
 .familysite>ul>li:first-child li {
@@ -341,9 +340,7 @@ footer {
 .bottom li {
     width: 160px;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 80px;
 }
 
 .bottom li a {
@@ -373,7 +370,6 @@ html {
 
 .top-button a {
     z-index: 4;
-    display: inline-block;
     position: fixed;
     bottom: 90px;
     right: 160px;
