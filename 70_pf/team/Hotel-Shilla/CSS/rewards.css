@@ -4,18 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
 
 /* reset */
-* {box-sizing: border-box;}
-
-:root {font-size: 12px;}
-
-body,ul {margin: 0 auto;}
-
-ul {
-    padding-left: 0;
-    list-style: none;
-}
-
-section a, p, h1, h2, h3 {
+section a, p, h1, h2, h3, li {
     margin: 0;
     text-decoration: none;
     color: #101010;
@@ -32,7 +21,7 @@ body {
 }
 
 h2 {
-    font: 400 24px "Noto Sans KR",sans-serif;
+    font-size: 24px;
 }
 
 /* section */
@@ -46,7 +35,7 @@ section {
 }
 
 section>h1 {
-    font: 400 14px "Noto Sans KR",sans-serif;
+    font-size: 14px;
     position: absolute;
     left: 232px;
     top: 80px;
@@ -113,7 +102,6 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 .box>div:nth-of-type(1)>div {
     width: 60px;
     height: 60px;
-    /* border: 1px solid #101010; */
 }
 
 .grade1 {
@@ -147,7 +135,7 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 }
 
 .box li {
-    font: 400 14px "Noto Sans KR",sans-serif;
+    font-size: 14px;
     line-height: 2;
 }
 
@@ -177,7 +165,6 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 .summery>div>div {
     width: 380px;
     height: 460px;
-    /* box-shadow: 0 0 2px rgba(0, 0, 0, .3); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,7 +193,7 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
 }
 
 .summery h3 {
-    font: 400 18px "Noto Sans KR", sans-serif;
+    font-size: 18px;
     line-height: 2.5;
     color: #fff;
 }
@@ -217,12 +204,11 @@ section>div:nth-of-type(1)>p:nth-of-type(1) {
     margin: 40px 0;
     border: 1px solid #4a433b;
     color: #4a433b;
-    font: 500 16px "Noto Sans KR", sans-serif;
+    font-weight: 500;
 }
 
 .summery a:hover {
     border: 1px solid #856f56;
     background: #856f56;
     color: #fff;
-    font: 400 16px "Noto Sans KR", sans-serif;
 }

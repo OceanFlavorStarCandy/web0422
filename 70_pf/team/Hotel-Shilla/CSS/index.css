@@ -5,18 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
 
 /* reset */
-* {box-sizing: border-box;}
-
-:root {font-size: 12px;}
-
-body,ul {margin: 0 auto;}
-
-ul {
-    padding-left: 0;
-    list-style: none;
-}
-
-a, p, h1, h2, h3 {
+p, h1, h2, h3 {
     margin: 0;
     text-decoration: none;
     color: #4A433B;
@@ -227,7 +216,7 @@ body {
 .SpecialOffers {
     width: 1903px;
     padding: 40px 260px;
-    margin: 40px 0;
+    margin: 60px 0;
     position: relative;
 }
 
@@ -238,7 +227,8 @@ body {
 }
 
 .SpecialOffers h2 {
-    font: 700 24px "Noto Sans KR",sans-serif;
+    font-weight: 700;
+    font-size: 24px;
     color: #101010;
     margin-right: 12px;
 }
@@ -275,13 +265,13 @@ body {
 
 .offer p {
     color: #101010;
-    font: 400 16px "Noto Sans KR",sans-serif;
     line-height: 3;
 }
 
 .offer h3 {
     color: #856F56;
-    font: 500 22px "Noto Sans KR",sans-serif;
+    font-weight: 500;
+    font-size: 22px;
     display: inline-block;
     padding-bottom: 16px;
     border-bottom: 1px solid #6f6f6f;
@@ -289,7 +279,7 @@ body {
 
 .offer a {
     color: #6f6f6f;
-    font: 400 20px "Noto Sans KR",sans-serif;
+    font-size: 20px;
     display: inline-block;
     width: 400px;
     border: 1px solid #6f6f6f;
@@ -300,7 +290,8 @@ body {
 
 .offer a:hover {
     color: #ffffff;
-    font: 600 20px "Noto Sans KR",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     border: 1px solid #856F56;
     background: #856F56;
 }
@@ -332,7 +323,8 @@ body {
 
 .Rewards h2 {
     color: #ffffff;
-    font: 500 24px "Noto Sans KR",sans-serif;
+    font-weight: 500;
+    font-size: 24px;
     margin: 64px 0 40px;
 }
 
@@ -360,19 +352,20 @@ body {
 
 .reward h3 {
     color: #ffffff;
-    font: 400 20px "Noto Sans KR",sans-serif;
+    font-weight: 400;
+    font-size: 20px;
     line-height: 2;
 }
 
 .reward p {
     color: #ffffff;
-    font: 300 16px "Noto Sans KR",sans-serif;
+    font-weight: 300;
     line-height: 2;
 }
 
 .Rewards a {
     color: #ffffff;
-    font: 400 20px "Noto Sans KR",sans-serif;
+    font-size: 20px;
     display: inline-block;
     width: 300px;
     border: 1px solid #ffffff;
@@ -414,7 +407,8 @@ body {
 }
 
 .Events h2 {
-    font: 700 24px "Noto Sans KR",sans-serif;
+    font-weight: 700;
+    font-size: 24px;
     color: #101010;
     margin-right: 12px;
 }
@@ -468,14 +462,13 @@ body {
 }
 
 .eventHover h3 {
-    font: 400 24px "Noto Sans KR",sans-serif;
+    font-size: 24px;
     color: #856F56;
     padding-top: 20px;
     padding-bottom: 100px;
 }
 
 .eventHover p {
-    font: 400 16px "Noto Sans KR",sans-serif;
     color: #101010;
     line-height: 2;
 }
@@ -487,7 +480,7 @@ body {
 
 .eventHover a {
     color: #ffffff;
-    font: 400 18px "Noto Sans KR",sans-serif;
+    font-size: 18px;
     display: inline-block;
     width: 248px;
     background: #856F56;

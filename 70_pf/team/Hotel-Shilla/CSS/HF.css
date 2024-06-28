@@ -77,11 +77,12 @@ header>div>h1 a {
 }
 
 .top>li a {
-    font: 400 14px "Noto Sans KR",sans-serif;
+    font-size: 14px;
 }
 
 .top>li:hover a {
-    font: 500 14px "Noto Sans KR",sans-serif;
+    font-weight: 500;
+    font-size: 14px;
     color: #101010;
 }
 
@@ -188,7 +189,7 @@ header>div>div:last-child {
 
 header>div>div:last-child a {
     color: #ffffff;
-    font: 300 16px "Noto Sans KR",sans-serif;
+    font-weight: 300;
 }
 
 /* footer */
@@ -318,7 +319,8 @@ footer {
 }
 
 .Rlist a {
-    font: 200 15px "Noto Sans KR",sans-serif;
+    font-weight: 200;
+    font-size: 15px;
     color: #ffffff;
 }
 
@@ -345,12 +347,13 @@ footer {
 }
 
 .bottom li a {
-    font: 200 15px "Noto Sans KR",sans-serif;
+    font-weight: 200;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .bottom li a:hover {
-    font: 400 15px "Noto Sans KR",sans-serif;
+    font-size: 15px;
     color: #fff;
 }
 

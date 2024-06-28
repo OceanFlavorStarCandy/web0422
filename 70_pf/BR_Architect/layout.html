@@ -5,10 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습</title>
     <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/layout.css">
     <link rel="stylesheet" href="./style/typo.css">
     <link rel="stylesheet" href="./style/temp.css">
     <style>
+        header {
+            width: 100%;
+            height: 56px;
+            line-height: 56px;
+            padding: 0 36px;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            z-index: 2;
+            background: #ffffff;
+            
+        }
+
+        nav ul {
+            margin-right: 40px;
+        }
+
+        nav li {
+            display: inline-block;
+            padding-left: 36px;
+        }
+
+        section {
+            width: 1480px;
+            margin: 0 auto;
+        }
+
+        section li {
+            width: 355px;
+            margin-right: 20px;
+        }
+
         /* section1 */
         #section1 h2 {
             letter-spacing: 4px;
@@ -17,9 +48,6 @@
             top: 50%;
             margin-left: -110px;
             margin-top: -16px;
-            /* 
-            transform: translate(-50%,-50%); 
-            */
         }
 
         #section1 b {
@@ -31,12 +59,10 @@
 
         #section1 {
             position: relative;
-            /* display: flex;
-            justify-content: center;  */
         }
 
         #section1 div {
-            width: 1496px;
+            width: 1480px;
             margin: 0 auto;
             height: 745px;
             background: #ccc;
@@ -44,8 +70,6 @@
 
         /* section2 */
         #section2 {
-            width: 1496px;
-            margin: 0 auto;
             padding-bottom: 80px;
         }
 
@@ -62,9 +86,8 @@
         }
 
         #section2 li {
-            width: 362px;
             height: 240px;
-            margin: 0 16px 16px 0;
+            margin-bottom: 20px;
         }
 
         #section2 li:nth-of-type(4n) {
@@ -85,8 +108,6 @@
 
         /* section3 */
         #section3 {
-            width: 1480px;
-            margin: 0 auto;
             padding: 96px 0;
         }
 
@@ -102,11 +123,6 @@
 
         #section3 ul {
             display: flex;
-        }
-
-        #section3 li {
-            width: 355px;
-            margin-right: 20px;
         }
 
         #section3 li:nth-child(4n) {
@@ -136,8 +152,6 @@
 
         /* section4 */
         #section4 {
-            width: 1480px;
-            margin: 0 auto;
             padding: 96px 0;
         }
 
@@ -190,9 +204,9 @@
         <h1 class="Logo"><a href="#"><b>BR</b>Architects</a></h1>
         <nav>
             <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contect</a></li>
+                <li><a href="#section2">Projects</a></li>
+                <li><a href="#section3">About</a></li>
+                <li><a href="#section4">Contect</a></li>
             </ul>
         </nav>
     </header>
