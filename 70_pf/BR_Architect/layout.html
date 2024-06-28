@@ -8,6 +8,178 @@
     <link rel="stylesheet" href="./style/layout.css">
     <link rel="stylesheet" href="./style/typo.css">
     <link rel="stylesheet" href="./style/temp.css">
+    <style>
+        /* section1 */
+        #section1 h2 {
+            letter-spacing: 4px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -110px;
+            margin-top: -16px;
+            /* 
+            transform: translate(-50%,-50%); 
+            */
+        }
+
+        #section1 b {
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            margin-right: 16px;
+        }
+
+        #section1 {
+            position: relative;
+            /* display: flex;
+            justify-content: center;  */
+        }
+
+        #section1 div {
+            width: 1496px;
+            margin: 0 auto;
+            height: 745px;
+            background: #ccc;
+        }
+
+        /* section2 */
+        #section2 {
+            width: 1496px;
+            margin: 0 auto;
+            padding-bottom: 80px;
+        }
+
+        #section2 h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 24px;
+            margin-top: 72px;
+            margin-bottom: 48px;
+        }
+
+        #section2 ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #section2 li {
+            width: 362px;
+            height: 240px;
+            margin: 0 16px 16px 0;
+        }
+
+        #section2 li:nth-of-type(4n) {
+            margin-right: 0;
+        }
+
+        #section2 h3 {
+            position: absolute;
+            background: #000;
+            color: #fff;
+            padding: 8px 24px;
+        }
+
+        #section2 div {
+            height: 100%;
+            background: #ccc;
+        }
+
+        /* section3 */
+        #section3 {
+            width: 1480px;
+            margin: 0 auto;
+            padding: 96px 0;
+        }
+
+        #section3 h2 {
+            border-bottom: 1px solid #111;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+
+        #section3>p {
+            margin-bottom: 48px;
+        }
+
+        #section3 ul {
+            display: flex;
+        }
+
+        #section3 li {
+            width: 355px;
+            margin-right: 20px;
+        }
+
+        #section3 li:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        #section3 div {
+            height: 240px;
+            background: #ccc;
+        }
+
+        #section3 h3 {
+            font-size: 2.4rem;
+            margin: 24px 0;
+        }
+
+        #section3 li p {
+            margin: 24px 0;
+        }
+
+        #section3 a {
+            display: block;
+            background: #ccc;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        /* section4 */
+        #section4 {
+            width: 1480px;
+            margin: 0 auto;
+            padding: 96px 0;
+        }
+
+        #section4 h2 {
+            border-bottom: 1px solid #111;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+
+        #section4 p {
+            padding-bottom: 24px;
+        }
+
+        #section4 button {
+            margin: 24px 0 48px;
+            padding: 12px 24px;
+            background: #000;
+            color: #fff;
+        }
+
+        #section4 input {
+            width: 100%;
+            height: 40px;
+            margin: 12px 0;
+            padding-left: 8px;
+            border: 1px solid #ccc;
+        }
+
+        #section4 .map {
+            width: 1480px;
+            height: 500px;
+            background: #b1b1b1;
+        }
+
+        footer {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background: #000;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <!-- https://www.w3schools.com/w3css/tryw3css_templates_architect.htm -->
@@ -25,27 +197,106 @@
         </nav>
     </header>
     <main>
-        <section class="section s1">
-            <h2><span>BR</span>Architects</h2>
+        <!-- section 태그는 그 안에 h2~h6 제목이 반드시 존재해야 한다.  -->
+        <section id="section1">
+            <h2><b>HT</b>Hanatour</h2>
+            <div>
+                <!-- 배너 이미지 삽입 -->
+            </div>
         </section>
-        <section class="section s2">
-            <h2>Projects</h2>
+        <section id="section2">
+            <h2>여행지</h2>
             <ul>
-                <li><h3>house01</h3></li>
-                <li><h3>house02</h3></li>
-                <li><h3>house03</h3></li>
-                <li><h3>house04</h3></li>
-                <li><h3>house05</h3></li>
-                <li><h3>house06</h3></li>
-                <li><h3>house07</h3></li>
-                <li><h3>house08</h3></li>
+                <li>
+                    <h3>여행지1</h3>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                </li>
+                <li>
+                    <h3>여행지2</h3>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                </li>
+                <li>
+                    <h3>여행지3</h3>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                </li>
+                <li>
+                    <h3>여행지4</h3>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                </li>
+                <li>
+                    <h3>여행지5</h3>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                </li>
+                <li>
+                    <h3>여행지6</h3>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                </li>
+                <li>
+                    <h3>여행지7</h3>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                </li>
+                <li>
+                    <h3>여행지8</h3>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                </li>
             </ul>
         </section>
-        <section class="section s3">
-            <h2>About</h2>
+        <section id="section3">
+            <h2>이벤트</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            <ul>
+                <li>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                    <h3>이벤트 제목</h3>
+                    <p>이벤트 날짜 D-남은일수</p>
+                    <p>이벤트에 대한 자세한 설명을 기록합니다. Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                        pellentesque elementum.</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                    <h3>이벤트 제목</h3>
+                    <p>이벤트 날짜 D-남은일수</p>
+                    <p>이벤트에 대한 자세한 설명을 기록합니다. Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                        pellentesque elementum.</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                    <h3>이벤트 제목</h3>
+                    <p>이벤트 날짜 D-남은일수</p>
+                    <p>이벤트에 대한 자세한 설명을 기록합니다. Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                        pellentesque elementum.</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <div><!-- 이미지 삽입 예정 --></div>
+                    <h3>이벤트 제목</h3>
+                    <p>이벤트 날짜 D-남은일수</p>
+                    <p>이벤트에 대한 자세한 설명을 기록합니다. Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                        pellentesque elementum.</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+            </ul>
         </section>
-        <section class="section s4">
-            <h2>Contect</h2>
+        <section id="section4">
+            <h2>여행지</h2>
+            <p>Lets get in touch and talk about your next project.</p>
+            <form action="customer.jsp">
+                <input type="text" name="user_name" placeholder="이름">
+                <input type="email" name="U_email" placeholder="이메일">
+                <input type="text" name="subject" placeholder="제목">
+                <input type="text" name="comment" placeholder="내용">
+                <button type="submit">메세지 전송하기</button>
+            </form>
+            <div class="map">
+                <!-- 지도 -->
+            </div>
         </section>
     </main>
     <footer>Copyright 2024 BR Architects. All rights reserved.</footer> <!-- 저작권 표기 -->
