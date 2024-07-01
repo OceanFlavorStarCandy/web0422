@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+</head>
+<body>
+    <div class="bxslider">
+        <div><img src="../assets/01/메인이미지1.jpg"></div>
+        <div><img src="../assets/01/메인이미지2.jpg"></div>
+        <div><img src="../assets/01/메인이미지3.jpg"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script>
+        $('.bxslider').bxSlider({
+            mode: 'fade', // 전환 효과
+            auto: true,
+            autoControls: false, // 일시정지, 재생 버튼 숨김
+            stopAutoOnClick: true,
+            pager: false, // 페이지 표시하는 원 아이콘 숨김
+            sideWidth: 1920
+        });
+    </script>
+
+</body>
+</html>
