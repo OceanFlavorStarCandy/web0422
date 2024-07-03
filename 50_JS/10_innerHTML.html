@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>요소의 컨텐츠를 수정하거나 가져오기</h1>
+    <p class="p1">단락1</p>
+    <p class="p1">단락2</p>
+    <p class="p3">단락3</p>
+    <p class="p4">단락4</p>
+
+    <script>
+        /* 
+            // 컨텐츠 가져오기
+            객체.innerHTML
+            객체.textContent
+
+            // 컨텐츠 변경
+            객체.innerHTML = "값";
+            객체.textContent = "값";
+
+            innerHTML >> html 태그를 인식할 수 있음
+            textContent >> html 태그를 인식하지 못함(오로지 문자열로 취급)
+        */
+        const p1 = document.querySelector(".p1");
+        const p2 = document.querySelector(".p2");
+        const p3 = document.querySelector(".p3");
+        const p4 = document.querySelector(".p4");
+
+        // 컨텐츠 가져오기
+        let getP1 = p1.innerHTML;
+        let getP2 = p2.textContent;
+        console.log("getP1 =", getP1);
+        console.log("getP2 =", getP2);
+
+        // 컨텐츠 변경하기
+        p1.innerHTML = '<a href="#">여기 있는 문자열로 교체</a>'; // 태그로도 교체 가능
+        p2.textContent = '<a href="#">여기 있는 문자열로 교체</a>';
+        p3.innerHTML = getP1;
+        p3.textContent = getP2;
+    </script>
+</body>
+</html>
