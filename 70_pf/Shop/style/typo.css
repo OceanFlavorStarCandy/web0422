@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* 디자인 시 웹폰트를 활용하라 >> 구글 / 눈누 등에서 폰트 가져와서 사용해보기(설치X) */
+
+/* 
+    본문: noto sans KR(한글) / noto sans(영문)
+    제목: 나눔스퀘어 네오
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+
+span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+a {
+    color: #111111;
+}
+
+#tabs>ul a {
+    color: #777;
+}

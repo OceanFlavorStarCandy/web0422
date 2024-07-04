@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
         .gallery {
-            width: 300px;
+            width: 1400px;
             height: 300px;
             position: relative;
         }
@@ -34,8 +39,6 @@
 
         .btn {
             position: absolute;
-            /* bottom: 20px; */
-            /* left: 125px; */
             left: 50%;
             bottom: 5%;
             transform: translate(-50%, 0);
@@ -65,15 +68,15 @@
         btn2.onclick = function(){
             // div.cont의 콘텐츠 변경하기
             cont.innerHTML = '<img src="image_02.jpg" alt="이미지2">';
-        }
+        };
 
         btn3.onclick = function(){
             cont.innerHTML = '<img src="image_03.jpg" alt="이미지3">';
-        }
+        };
 
         btn1.onclick = function(){
             cont.innerHTML = '<img src="image_01.jpg" alt="이미지1">';
-        }
+        };
     </script>
 </body>
 </html>

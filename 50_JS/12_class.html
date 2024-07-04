@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 50px;
+        }
+
+        .on {
+            color: #6769df;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML 요소에 class를 추가/제거하기</h1>
+    <p>단락</p>
+
+    <a href="#">1</a>
+    <a href="#">2</a>
+
+    <script>
+        // 버튼 1: p를 선택하여 글자 색상을 변경
+        // 버튼 2: p를 선택하여 글자 색상 초기화
+
+        // 요소 찾기
+        const p = document.querySelector('p');
+        const button1 = document.querySelectorAll('a')[0];
+        const button2 = document.querySelectorAll('a')[1];
+
+        button1.onclick = function(){
+            p.classList.add('on');
+        };
+
+        button2.onclick = function(){
+            p.classList.remove('on');
+        };
+    </script>
+</body>
+</html>

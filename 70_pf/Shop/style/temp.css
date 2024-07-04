@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* body * {
+    outline: 1px solid #ac7eda
+} */
+
+/* bg-color */
+header {
+    background: #cccccc;
+}
+
+.s2 li {
+    background: #ac7eda;
+}
+
+h3 {
+    background: #888;
+}
+
+.s1 {
+    background: #ca8e8e;
+}
