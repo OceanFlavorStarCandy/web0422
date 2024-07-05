@@ -42,14 +42,34 @@ body {
     text-align: center;
 }
 
-.section2 div {
+.section2 li>div{
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: #D2E4D6;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.section2 div>div {
+    background: #D2E4D6;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.section2 a {
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 0;
+    left: 0;
+}
+
+.section2 a:hover+div {
+    background: #00C787;
 }
 
 /* section3 */
