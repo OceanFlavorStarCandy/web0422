@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/* typo */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+h1,
+a,
+p,
+label {
+    font-family: "Noto Sans KR", sans-serif;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h1 span {
+    font-weight: 400;
+}
+
+.title a {
+    color: #747774;
+    font-size: 14px;
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #bbb;
+}
+
+.pName {
+    font-weight: 500;
+}
+
+.cost {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.cost span {
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+.keyword {
+    color: #747774;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border: 1px solid #bbb;
+}
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+/* main */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* tabMenu */
+#tabMenu {
+    width: 1200px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 40px;
+}
+
+.top li {
+    position: relative;
+}
+
+.top input[type="radio"] {
+    display: none;
+}
+
+.top label {
+    width: 116px;
+    height: 116px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.top div {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%, 0);
+}
+
+.top input:checked+label {
+    background: #ffffff;
+    border: 2px solid #0D5611;
+    color: #0D5611;
+}
+
+/* tab icon */
+#tab_icon1 {
+    background: url(../images/icon1.png);
+}
+
+#tab_icon2 {
+    background: url(../images/icon2.png);
+}
+
+#tab_icon3 {
+    background: url(../images/icon3.png);
+}
+
+#tab_icon4 {
+    background: url(../images/icon4.png);
+}
+
+#tab_icon5 {
+    background: url(../images/icon5.png);
+}
+
+#tab_icon6 {
+    background: url(../images/icon6.png);
+}
+
+#tab_icon7 {
+    background: url(../images/icon7.png);
+}
+
+#tab_icon8 {
+    background: url(../images/icon8.png);
+}
+
+#tab_icon9 {
+    background: url(../images/icon9.png);
+}
+
+/* tab 기능 */
+#tabMenu>div {
+    display: none;
+}
+
+#tabMenu>div.on {
+    display: block;
+}
+
+/* tab content layout */
+#tabMenu>div ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tabMenu>div li {
+    width: 288px;
+    height: 400px;
+    position: relative;
+}
+
+#tabMenu>div a {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 288px;
+    height: 400px;
+}
+
+.productIMG {
+    width: 288px;
+    height: 288px;
+}
+
+/* product images */
+#img1-1 {
+    background: url(../images/tab1-1.jpg) no-repeat;
+}
+
+#img1-2 {
+    background: url(../images/tab1-2.jpg) no-repeat;
+}
+
+#img1-3 {
+    background: url(../images/tab1-3.jpg) no-repeat;
+}
+
+#img1-4 {
+    background: url(../images/tab1-4.jpg) no-repeat;
+}
+
+#img2-1 {
+    background: url(../images/tab2-1.jpg) no-repeat;
+}
+
+#img2-2 {
+    background: url(../images/tab2-2.jpg) no-repeat;
+}
+
+#img2-3 {
+    background: url(../images/tab2-3.jpg) no-repeat;
+}
+
+#img2-4 {
+    background: url(../images/tab2-4.jpg) no-repeat;
+}
+
+#img3-1 {
+    background: url(../images/tab3-1.jpg) no-repeat;
+}
+
+#img3-2 {
+    background: url(../images/tab3-2.jpg) no-repeat;
+}
+
+#img3-3 {
+    background: url(../images/tab3-3.jpg) no-repeat;
+}
+
+#img3-4 {
+    background: url(../images/tab3-4.jpg) no-repeat;
+}
+
+#img4-1 {
+    background: url(../images/tab4-1.jpg) no-repeat;
+}
+
+#img4-2 {
+    background: url(../images/tab4-2.jpg) no-repeat;
+}
+
+#img4-3 {
+    background: url(../images/tab4-3.jpg) no-repeat;
+}
+
+#img4-4 {
+    background: url(../images/tab4-4.jpg) no-repeat;
+}
