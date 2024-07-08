@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #modal {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .7);
+            display: none;
+        }
+
+        .popup {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 400px;
+            padding: 20px;
+            background: #9ad8e7;
+        }
+
+        #modal button {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li><a href="#">목록1</a></li>
+        <li><a href="#">목록2</a></li>
+        <li><a href="#">목록3</a></li>
+        <li><a href="#">목록4</a></li>
+    </ul>
+    <div id="modal">
+        <div class="popup">
+            <h2>모달팝업</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem sed minima architecto et ratione cupiditate ea ut recusandae voluptas ipsa quia expedita, esse veritatis fugiat maxime accusamus commodi deserunt quas.</p>
+            <button class="close">닫기</button>
+        </div>
+    </div>
+
+    <script>
+        // 요소 찾기
+        const open1 = document.querySelectorAll("#list a").item(0);
+        const modal = document.querySelector("#modal");
+        const closeBtn = modal.querySelector(".close"); // 위에서 정의한 적 있는 요소가 있으면 아래에서 검색범위를 한정지을 때 사용할 수 있음
+
+        // 이벤트 처리
+        open1.onclick = function(){
+            modal.style.display = "block";
+        };
+
+        closeBtn.onclick =function(){
+            modal.style.display = "none";
+        };
+    </script>
+</body>
+</html>

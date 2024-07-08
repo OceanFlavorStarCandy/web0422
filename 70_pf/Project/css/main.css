@@ -11,14 +11,21 @@ ul {
 }
 
 body {
+    align-self: center;
     margin: 0;
     padding: 0;
+    width: 1903px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1903px;
     background: #fff;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
 }
 
 /* //reset */
@@ -28,6 +35,30 @@ body {
     width: 1903px;
     height: 460px;
     border: 1px solid; /* 임시적용 */
+    position: relative;
+}
+
+.move_page {
+    width: 1380px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+#L {
+    width: 50px;
+    height: 50px;
+    background: url(../images/main/slide_left.png) no-repeat;
+}
+
+#R {
+    width: 50px;
+    height: 50px;
+    background: url(../images/main/slide_right.png) no-repeat;
 }
 
 /* section2 */
@@ -79,6 +110,10 @@ body {
     border-radius: 50%;
 }
 
+label:hover {
+    cursor: pointer;
+}
+
 label:hover>div>div:nth-of-type(2) {
     background: #00C787;
 }
@@ -114,24 +149,30 @@ label:hover>div>div:nth-of-type(2) {
 
 /* section3 */
 .section3 {
-    display: flex;
-    flex-direction: column;
     border: 1px solid; /* 임시적용 */
 }
 
-#item1 {
+.section3 ul {
     width: 1380px;
     display: flex;
     justify-content: space-between;
 }
 
-#item1 div {
+.section3 ul div {
     width: 310px;
     height: 310px;
-    background: #F6ECE2;
+    background: url(../images/main/itemBG.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section3>div {
+    display: none;
+}
+
+.section3>div.on {
+    display: block;
 }
 
 /* section4 */

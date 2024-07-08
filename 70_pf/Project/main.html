@@ -39,18 +39,22 @@
                 <li><a href="#">로그인</a></li>
                 <li>
                     <a href="#">
-                        <img src="" alt="검색">
+                        <img src="./images/main/search.png" alt="검색">
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <section class="section1">
+        <div class="move_page">
+            <button type="button" id="L"></button>
+            <button type="button" id="R"></button>
+        </div>
         <ul class="slider">
-            <li><!-- img01 --></li>
-            <li><!-- img02 --></li>
-            <li><!-- img03 --></li>
-            <li><!-- img01 --></li>
+            <li id="slide01"><!-- img01 --></li>
+            <li id="slide02"><!-- img02 --></li>
+            <li id="slide03"><!-- img03 --></li>
+            <li id="slide04"><!-- img01 --></li>
         </ul>
     </section>
     <section class="section2">
@@ -122,48 +126,270 @@
         </ul>
     </section>
     <section class="section3">
-        <ul id="item1">
-            <li>
-                <div>
-                    <a href="#">
-                        <img src="./images/main/item1-1.png" alt="제품이미지">
-                    </a>
-                </div>
-                <p>#달콤 #폭신폭신</p>
-                <a href="#">딸기 치즈 케이크 2호</a>
-                <p>상품 설명 2줄 이내</p>
-            </li>
-            <li>
-                <div>
-                    <a href="#">
-                        <img src="./images/main/item1-2.png" alt="제품이미지">
-                    </a>
-                </div>
-                <p>#제품 #키워드</p>
-                <a href="#">아이스크림 빙수</a>
-                <p>상품 설명 2줄 이내</p>
-            </li>
-            <li>
-                <div>
-                    <a href="#">
-                        <img src="./images/main/item1-3.png" alt="제품이미지">
-                    </a>
-                </div>
-                <p>#제품 #키워드</p>
-                <a href="#">와플 샌드위치</a>
-                <p>상품 설명 2줄 이내</p>
-            </li>
-            <li>
-                <div>
-                    <a href="#">
-                        <img src="./images/main/item1-4.png" alt="제품이미지">
-                    </a>
-                </div>
-                <p>#제품 #키워드</p>
-                <a href="#">스트로베리 초코 케이크</a>
-                <p>상품 설명 2줄 이내</p>
-            </li>
-        </ul>
+        <div id="item1" class="on">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item1-1.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item1-2.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item1-3.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item1-4.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+            </ul>
+        </div>
+        <div id="item2">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item2-1.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item2-2.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item2-3.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item2-4.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+            </ul>
+        </div>
+        <div id="item3">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item3-1.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item3-2.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item3-3.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item3-4.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+            </ul>
+        </div>
+        <div id="item4">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item4-1.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item4-2.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item4-3.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item4-4.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+            </ul>
+        </div>
+        <div id="item5">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item5-1.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item5-2.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item5-3.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item5-4.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+            </ul>
+        </div>
+        <div id="item6">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item6-1.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item6-2.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item6-3.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            <img src="./images/main/item6-4.png" alt="제품이미지">
+                        </a>
+                    </div>
+                    <p>#제품 #키워드</p>
+                    <a href="#">상품명</a>
+                    <p>상품 설명 2줄 이내</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <section class="section4">
         <div class="credit"><a href="#"><!-- 카드할인 --></a></div>
@@ -285,6 +511,8 @@
         </ul>
         <p>Copyright 2024 ⓒ CJ Foodville All Rights Reserved.</p>
     </footer>
+
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>
