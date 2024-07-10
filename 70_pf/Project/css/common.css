@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    width: 1903px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+/* typo */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+h1, h2, h3, p, a {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.section4 h2 {
+    font-size: 60px;
+    line-height: 0.3;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
