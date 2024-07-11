@@ -32,15 +32,116 @@ button {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 h1, h2, h3, p, a {
+    font-size: 16px;
+    font-weight: 400;
     font-family: "Noto Sans KR", sans-serif;
-}
-
-.section4 h2 {
-    font-size: 60px;
-    line-height: 0.3;
 }
 
 a {
     text-decoration: none;
     color: #000;
+}
+
+.left a, .right a {
+    color: #fff;
+}
+
+/* header */
+header {
+    width: 100%;
+    background: #0D4633;
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    width: 1380px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.right {
+    width: 377px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right>li>a:hover {
+    display: inline-block;
+    height: 90px;
+    line-height: 92px;
+    text-align: center;
+    border-bottom: 4px solid #fff;
+}
+
+.left {
+    width: 377px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.left>li>a:hover {
+    display: inline-block;
+    height: 90px;
+    line-height: 92px;
+    text-align: center;
+    border-bottom: 4px solid #fff;
+}
+
+.menu {
+    z-index: 4;
+    position: absolute;
+    right: -426px;
+    bottom: -220px;
+    width: 500px;
+    height: 220px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.left>li:nth-of-type(4)>a:hover+.menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu div {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    line-height: 3;
+    color: #000;
+}
+
+.menu a:hover {
+    color: #00C787;
+}
+
+.menu img {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #000; /* 임시 */
 }
