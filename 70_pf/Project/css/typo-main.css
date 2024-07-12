@@ -1,14 +1,19 @@
 @charset "utf-8";
 
+.section2 h2 {
+    font-size: 40px;
+}
+
 .section4 h2 {
     font-size: 60px;
-    line-height: 0.3;
+    line-height: 1;
     font-weight: 600;
 }
 
 .news>div:nth-of-type(1)>p {
     font-size: 20px;
-    line-height: 5;
+    line-height: 2;
+    margin-bottom: 60px;
 }
 
 .news li p:nth-of-type(1) {

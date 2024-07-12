@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML 속성 변경하기/가져오기</h1>
+    <div>
+        <a href="#" id="prev">이전</a>
+        <a href="#" id="next">다음</a>
+    </div>
+    <img src="./image_01.jpg" alt="산" title="사진1">
+
+    <script>
+        // 요소 찾기
+        const btn1 = document.querySelector("#prev");
+        const btn2 = document.querySelector("#next");
+        const img = document.querySelector("img");
+        
+        // HTML 속성 가져오기
+        const tit = img.alt;
+        // HTML 속성 변경하기
+        img.title = tit;
+
+        // 이벤트 처리
+        btn1.onclick = function(){
+            img.setAttribute("src","./image_01.jpg");
+            img.setAttribute("alt","자연1");
+        };
+
+        btn2.onclick = function(){
+            img.setAttribute("src","./image_02.jpg");
+            img.setAttribute("alt","자연2");
+            /*  
+            img.setAttribute({
+                src:"./image_02.jpg",
+                alt: "자연2"
+            }); << 이건 jQ식 
+            */
+        };
+    </script>
+</body>
+</html>

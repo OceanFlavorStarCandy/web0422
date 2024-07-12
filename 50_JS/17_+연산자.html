@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>연산자</h1>
+    <h2>산술 연산자</h2>
+    <script>
+        // + 더하기 연산자
+        // 숫자 + 숫자 = 덧셈
+        // 문자 + 숫자 = 그냥 이어서 적어줌
+        // 문자 + 문자 = 위와 마찬가지
+        // 연산 우선순위를 지정하려면 괄호를 활용할 것
+        document.write(5 + 2);
+        document.write("<br>");
+        document.write(5 + "더하기" + "<br>");
+        document.write(5 - 2 + "<br>");
+        document.write(5 * 2 + "<br>");
+        document.write(5 / 2 + "<br>");
+        document.write(5 % 2 + "<br>"); // 나머지
+        // 탬플릿 리터럴(backticks `) >> 안에 있는 내용은 모두 문자열로 취급
+        // 계산하게 하고 싶으면 {중괄호}로 계산식을 묶고 앞에 $를 붙일것
+        document.write(`5 - 2 = ${5 - 2} + <br>`)
+    </script>
+</body>
+</html>

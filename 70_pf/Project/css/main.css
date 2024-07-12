@@ -36,14 +36,13 @@
     width: 1380px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .section2 ul {
     width: 1380px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid; /* 임시적용 */
 }
 
 .section2 input[type="radio"] {
@@ -119,7 +118,7 @@ label:hover>div>div:nth-of-type(2) {
 
 /* section3 */
 .section3 {
-    border: 1px solid; /* 임시적용 */
+    margin-bottom: 50px;
 }
 
 .section3 ul {
@@ -154,12 +153,11 @@ label:hover>div>div:nth-of-type(2) {
 }
 
 .news {
-    margin: 40px 0;
+    margin: 50px 0;
     width: 1380px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid; /* 임시적용 */
 }
 
 .news>div:nth-of-type(1) div {
