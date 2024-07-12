@@ -1,7 +1,24 @@
 @charset "utf-8";
 
 .section2 h2 {
-    font-size: 40px;
+    font-size: 36px;
+}
+
+.section2 p {
+    font-size: 20px;
+}
+
+.section3 {
+    line-height: 1;
+}
+
+.section3 li>a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section3 li p:nth-of-type(2) {
+    font-size: 18px;
 }
 
 .section4 h2 {
