@@ -57,9 +57,14 @@ h2 {
 .home-icon {
     width: 100px;
     height: 100px;
+    overflow: hidden;
 }
 .home-description {
     width: 790px;
+}
+
+.home-icon img {
+    width: 100%;
 }
 
 h3 span {

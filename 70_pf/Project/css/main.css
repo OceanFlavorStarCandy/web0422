@@ -31,6 +31,12 @@
     background: url(../images/main/slide_right.png) no-repeat;
 }
 
+.section1 ul {
+    margin: 0;
+    width: 1903px;
+    height: 460px;
+}
+
 /* section2 */
 .section2>div {
     margin-top: 60px;
