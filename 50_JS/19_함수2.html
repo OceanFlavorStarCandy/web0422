@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            지역변수 : {블록 내부}에서만 사용 가능한 변수
+            전역변수 : 전 지역에서 사용 가능한 변수
+            매개변수 : 함수 내에서 인수로 사용하는 변수 / 지역변수의 일종 / 앞에 변수 키워드 적으면 안됨(const, var, let)
+        */
+        // b는 전역변수
+        const b = "hello";
+
+        // 선언적 함수
+        function fn1(x, y){
+            // a는 지역변수
+            const a = "hi";
+            document.write("2." + a + "<br>");
+            document.write("3." + b + "<br>");
+            document.write("4." + x + "<br>");
+            document.write("5." + y + "<br>");
+        };
+        document.write("1." + b + "<br>");
+
+        // 익명함수
+        const fn2 = function(){
+            document.write("hello");
+        };
+
+        // 화살표 함수
+        const fn3 = () => {
+            document.write("bye");
+        };
+
+        // 함수 호출
+        // 괄호 안에 필요한 개수 만큼 전달값(argument)을 적음(그 수가 같아야함)
+        // 형식 >> 함수명(전달값1, 전달값2, ...)
+        fn1("엑스", "와이");
+        fn2();
+        fn3();
+    </script>
+</body>
+</html>

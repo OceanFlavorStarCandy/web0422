@@ -13,8 +13,14 @@
         const d = new Date();
         document.write(d + "<br>"); // + 연산자는 숫자는 더하고, 문자는 연결한다
 
-        const y = d.getFullYear;
-        document.write(y);
+        const yy = d.getFullYear();
+        const mm = d.getMonth(); + 1 // getMonth()는 0~11 사이의 값으로 나옴 >> +1 붙여줘야함!
+        const dd = d.getDay();
+        const hh = d.getHours();
+        const mh = d.getMinutes();
+        const sh = d.getSeconds();
+        document.write("<hr>" + yy + "년" + mm + "월" + dd + "일" + "<br>" + hh + ":" + mh + ":" + sh);
+        document.write(`<hr>${yy}년${mm}월${dd}일<br>${hh}:${mh}:${sh}`); // 위랑 출력값은 똑같은데 다른 식으로 적은 것임
     </script>
 </body>
 </html>
