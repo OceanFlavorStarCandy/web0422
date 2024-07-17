@@ -59,9 +59,7 @@
                     <div class="slideText">
                         <h1>루나브루에는 다 있다!</h1>
                         <p>진짜 효모가 살아있는 진짜 수제맥주</p>
-                        <p>루나브루는 대한민국의 모든 브루어리의</p>
-                        <p>진짜 맥주를 고객에게 전해드리는</p>
-                        <p>국내 유일의 수제맥주 전문 기업입니다.</p>
+                        <p>루나브루는 대한민국의 모든 브루어리의<br>진짜 맥주를 고객에게 전해드리는<br>국내 유일의 수제맥주 전문 기업입니다.</p>
                     </div>
                     <div><!-- 이미지1 --></div>
                 </li>
@@ -83,9 +81,30 @@
     </section>
     <section id="s3">
         <div class="tab">
-            <!-- 기억이 안남... 복습좀 -->
             <button id="btn1" type="radio" name="tab">Brand Collabo</button>
+            <button id="btn2" type="radio" name="tab">Brand Collabo</button>
+            <button id="btn3" type="radio" name="tab">Brand Collabo</button>
+            <div>
+                <div>
+                    <h3>LUNA BREW SERVICES</h3>
+                    <h2>루나브루와 함께해보세요.</h2>
+                </div>
+                <label for="btn1">
+                    <div>
+                        <a href="#"><!-- hover action용 --></a>
+                        <p>기업 브랜드와 좋은 수제 맥주가 만나 비즈니스 가치 증가</p>
+                        <div><!-- 아이콘 자리 --></div>
+                    </div>
+                    <div>
+                        <a href="#"><!-- hover action용 --></a>
+                        <p>대한민국 150개 양조장의 장인정신이 깃든 맥주</p>
+                        <div><!-- 아이콘 자리 --></div>
+                    </div>
+                </label>
+            </div>
         </div>
+        <div id="tabImage1"><!-- 배경 이미지1 --></div>
+        <div id="tabImage2"><!-- 배경 이미지2 --></div>
     </section>
     <section id="s4">
         <h2>Gallery</h2>
@@ -100,14 +119,14 @@
                     <p>2024-07-16</p>
                 </li>
                 <li>
-                    <p>서울랜드 맥주 출시</p>
+                    <p>수제 맥주 브랜드 브루밍 설립</p>
                     <a href="#">
                         <img src="" alt="갤러리2">
                     </a>
                     <p>2024-07-16</p>
                 </li>
                 <li>
-                    <p>서울랜드 맥주 출시</p>
+                    <p>HappyBox 출시</p>
                     <a href="#">
                         <img src="" alt="갤러리3">
                     </a>
@@ -118,6 +137,29 @@
     </section>
     <section id="s5">
         <h3>QUESTION</h3>
+        <h2>문의사항을 남겨주시면 답변해드리겠습니다.</h2>
+        <form action="contact.php">
+            <div class="inputBox1">
+                <div>
+                    <span>성함</span>
+                    <input type="text" placeholder="성함을 입력해주세요" required>
+                </div>
+                <div>
+                    <span>전화번호</span>
+                    <input type="tel" placeholder="전화번호를 입력해주세요" required>
+                </div>
+                <div>
+                    <span>이메일</span>
+                    <input type="text" placeholder="메일 주소를 입력해주세요" required>
+                </div>
+                <label><input id="personal" type="checkbox">개인정보처리방침에 동의합니다.</label>
+            </div>
+            <div class="inputBox2">
+                <span>내용</span>
+                <textarea name="content" id="content" placeholder="내용을 입력해주세요" required></textarea>
+            </div>
+            <input type="submit" value="SEND">
+        </form>
     </section>
 </body>
 </html>
