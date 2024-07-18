@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>증감연산자</h1>
+    <!-- 
+        연산자
+        1. 단항: ++, -- >>> 항이 하나만 있는 연산자(예: i++)
+        2. 이항: +, - , *, /, >, <, >=, <=, ... >>> 항이 2개가 필요한 연산자 (예: i = 1)
+        3. 삼항
+    -->
+    <script>
+        let a = 1;
+        a += 1;
+        document.write(a++ + "<br>"); // a++: 출력 후 1증가(후위연산)
+        document.write(++a + "<br>"); // ++a: 1을 증가시킨 후 a 출력(전위연산)
+        document.write(a-- + "<br>");
+        document.write(--a + "<br>");
+    </script>
+</body>
+</html>
