@@ -20,12 +20,24 @@
 
 .slideText {
     position: absolute;
+    z-index: 2;
+}
+
+.carousel li span {
+    position: absolute;
+    top: 410px;
+    left: 50%;
+    transform: translate(-320px,0);
+    display: inline-block;
+    background: #FFD600;
+    width: 640px;
+    height: 10px;
 }
 
 .carousel li div:nth-of-type(2) {
     width: 1903px;
     height: 920px;
-    background: #888;
+    background: url(./../assets/carousal01.png);
 }
 
 /* section02 */
@@ -42,11 +54,239 @@
 }
 
 #s2 div:nth-of-type(1) {
-    background: #978282;
+    background: url(../assets/section2.png);
 }
 
 #s2 div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 300px;
+}
+
+#s2 span {
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background: #363636;
+    margin: 40px 0;
+}
+
+#s2 a {
+    display: inline-block;
+    border: 1px solid #363636;
+    margin-top: 40px;
+    width: 200px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+}
+
+/* section03 */
+#s3 {
+    width: 1903px;
+    height: 920px;
+    position: relative;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab>div:nth-of-type(2) {
+    width: 960px;
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.tab label {
+    display: flex;
+}
+
+.tab label>div {
+    width: 312px;
+    height: 312px;
+    border-radius: 8px;
+    border: 1px solid rgba(114, 78, 10, .5);
+    background: rgba(255, 255, 255, .5);
+    margin-right: 20px;
+    padding: 25px 0 0 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.icon1 {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 64px;
+    height: 64px;
+    background: url(../assets/icon_best-price.png);
+}
+
+.icon2 {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 64px;
+    height: 64px;
+    background: url(../assets/icon_beer.png);
+}
+
+#tabImage1 {
+    position: absolute;
+    left: -120px;
+    bottom: -80px;
+    width: 786px;
+    height: 548px;
+    background: url(../assets/corn.png);
+}
+
+#tabImage2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 542px;
+    height: 700px;
+    background: url(../assets/beer.png);
+}
+
+/* section4 */
+#s4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F2E1;
+}
+
+#s4 span {
+    width: 1px;
+    height: 920px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+#s4>div>ul {
+    width: 1903px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#s4 li div {
+    width: 32px;
+    height: 32px;
+    background: url(../assets/deco.png);
+}
+
+#s4 li {
+    width: 510px;
+    height: 920px;
+    position: relative;
+}
+
+#s4 li p:nth-of-type(1) {
+    text-align: left;
+}
+
+#s4 li p:nth-of-type(2) {
+    text-align: right;
+    rotate: 90deg;
+    position: absolute;
+    right: -60px;
+    bottom: 100px;
+}
+
+/* section5 */
+#s5 {
+    position: relative;
+    width: 1903px;
+    height: 920px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+form {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+form>div>div>input {
+    width: 270px;
+}
+
+form textarea {
+    width: 270px;
+}
+
+form>div{
+    display: flex;
+}
+
+.inputBox1 span {
+    width: 80px;
+}
+
+.inputBox1 div {
+    width: 400px;
+    height: 70px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.25);
+    line-height: 70px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 10px 10px 0;
+}
+
+.inputBox2 span {
+    width: 80px;
+}
+
+.inputBox2 {
+    display: flex;
+    justify-content: baseline;
+    width: 400px;
+    height: 230px;
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-top: 24px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+#send {
+    width: 400px;
+    height: 70px;
+    border-radius: 6px;
+    background: #fff;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+
+#s5>div {
+    width: 1903px;
+    height: 1116px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(../assets/bottomBG.png);
 }
