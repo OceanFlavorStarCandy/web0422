@@ -1,0 +1,35 @@
+@charset "uft-8";
+
+/* typo */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+h1, h2, h3, a, p, span, input, textarea {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #363636;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 68px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 10%;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Header */

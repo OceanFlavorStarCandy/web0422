@@ -1,5 +1,25 @@
 @charset "utf-8";
 
+/* index typo */
+#s1 h1, #s1 h2, #s1 p, #s5 h2, #s5 h3, #s5 span, #s5 input, #s5 textarea {
+    color: #fff;
+}
+
+#s1 p {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+#s5 ::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#s5 #send {
+    font-size: 20px;
+    font-weight: 600;
+    color: #363636;
+}
+
 /* section01 */
 #s1 {
     width: 1903px;
@@ -25,7 +45,7 @@
 
 .carousel li span {
     position: absolute;
-    top: 410px;
+    top: 355px;
     left: 50%;
     transform: translate(-320px,0);
     display: inline-block;

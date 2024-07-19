@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            position: fixed;
+            z-index: 10;
+        }
+        .section {
+            height: 100vh;
+        }
+        #s1 {background: #ffa1d0;}
+        #s2 {background: #fff1a1;}
+        #s3 {
+            background: #a1ffd0;
+            position: relative;
+        }
+        #s3 div {
+            position: absolute;
+            left: 50%;
+            top: 90%;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            transition: 1s;
+        }
+        #s3 div.active {
+            top: 50%;
+            opacity: 1;
+        }
+        #s4 {background: #a1e9ff;}
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", function(){
+            const p = document.querySelector("p");
+            const mbx = document.querySelector("#s3 div")
+            window.addEventListener("scroll", function(){
+                p.innerHTML = Math.floor(pageYOffset);
+                if(p.innerHTML >= 1750) {
+                    mbx.classList.add("active");
+                } else {
+                    mbx.classList.remove("active");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>스크롤에 따른 요소의 움직임</h1>
+        <p>여기에 스크롤 상태 기록</p>
+    </header>
+    <div id="s1" class="section">
+        <h2>섹션1</h2>
+    </div>
+    <div id="s2" class="section">
+        <h2>섹션2</h2>
+    </div>
+    <div id="s3" class="section">
+        <h2>섹션3</h2>
+        <div>스크롤하면 움직일 요소</div>
+    </div>
+    <div id="s4" class="section">
+        <h2>섹션4</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        p {
+            position: fixed;
+        }
+    </style>
+    <script>
+        // DOMContentLoaded >> HTML 내용을 모두 읽었을 때
+        window.addEventListener("DOMContentLoaded", function(){
+
+            // 요소 찾기
+            const p = document.querySelector("p");
+            // 스크롤 이벤트
+            window.addEventListener("scroll", function(){
+                p.innerHTML = Math.floor(pageYOffset);
+                if (p.innerHTML >= 300) {
+                    document.body.style.background = "#ffcc45"; // HTML과 body는 이미 정의되어 있어 querySelector를 사용할 필요가 없다
+                } else {
+                    document.body.style.background = "transparent";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>스크롤 이벤트</h1>
+    <p>스크롤하면 배경색이 바뀜</p>
+</body>
+</html>

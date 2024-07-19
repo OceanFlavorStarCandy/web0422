@@ -22,7 +22,7 @@
 // 제이쿼리
 
 $(function(){
-    $('.bxslider').bxSlider({
+    $('.slider').bxSlider({
         ////////////////////////////////////////////////////////
 
         // mode: "horizontal"(기본값), "fade", "vertical"

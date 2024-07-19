@@ -6,6 +6,7 @@
 .inner {width:1120px; margin: 0 auto;}
 
 /* 섹션2 */
+#s2 #tabs>ul>li:not(:first-child)::before {content:'|'; margin-right: 24px;}
 #s2 {padding:72px 0;}
 #s2>.inner>h2 {text-align: center;}
 #s2>.inner>h2+p {text-align: center; margin: 24px 0 48px;}
