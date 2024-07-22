@@ -19,8 +19,12 @@ a {
     text-decoration: none;
 }
 
-button, input, textarea {
+input, textarea {
     outline: none;
     border: none;
     background: transparent;
+}
+
+input[type="radio"] {
+    display: none;
 }

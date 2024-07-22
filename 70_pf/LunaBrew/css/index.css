@@ -10,6 +10,10 @@
     font-weight: 300;
 }
 
+#s4 p:nth-of-type(2) {
+    color: #b49f80;
+}
+
 #s5 ::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -100,6 +104,12 @@
     height: 64px;
     line-height: 64px;
     text-align: center;
+    transition: .3s;
+}
+
+#s2 a:hover {
+    background: #363636;
+    color: #fff;
 }
 
 /* section03 */
@@ -116,8 +126,23 @@
 }
 
 .buttons {
+    margin-left: 40px;
+    width: 600px;
+    height: 700px;
     display: flex;
     flex-direction: column;
+    z-index: 2;
+}
+
+.buttons label {
+    text-align: left;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.buttons [type="radio"]:checked+label {
+    font-size: 80px;
+    color: #E1A200;
 }
 
 .tab>div:nth-of-type(2) {
@@ -129,11 +154,12 @@
     align-items: flex-start;
 }
 
-.tab label {
+.tabContent>div {
     display: flex;
 }
 
-.tab label>div {
+.tabContent>div>div {
+    display: none;
     width: 312px;
     height: 312px;
     border-radius: 8px;
@@ -143,6 +169,26 @@
     padding: 25px 0 0 50px;
     position: relative;
     z-index: 2;
+}
+
+.tabContent>div.on>div {
+    display: block;
+}
+
+.tabContent a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 312px;
+    height: 312px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.tabContent p {
+    position: absolute;
+    top: 25px;
+    left: 50px;
 }
 
 .icon1 {
@@ -184,6 +230,7 @@
 /* section4 */
 #s4 {
     width: 100%;
+    height: 1280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,7 +239,7 @@
 
 #s4 span {
     width: 1px;
-    height: 920px;
+    height: 1000px;
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -214,6 +261,14 @@
     position: relative;
 }
 
+#s4 li:nth-of-type(2) {
+    top: 120px;
+}
+
+#s4 li:nth-of-type(3) {
+    top: 60px;
+}
+
 #s4 li p:nth-of-type(1) {
     text-align: left;
 }
@@ -222,7 +277,7 @@
     text-align: right;
     rotate: 90deg;
     position: absolute;
-    right: -60px;
+    right: -64px;
     bottom: 100px;
 }
 
@@ -234,6 +289,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 60px 120px 0 0;
 }
 
 form {
@@ -299,6 +355,10 @@ form>div{
     position: absolute;
     bottom: -50px;
     right: 0;
+}
+
+#send:hover {
+    cursor: pointer;
 }
 
 #s5>div {

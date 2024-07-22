@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하나투어</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fullpage.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <!-- bxSlider.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
-    <script src="js/fullpage.js"></script>
+    <!-- user.js -->
+    <script src="js/hana_fullpage.js"></script>
     <script src="js/slide.js"></script>
-    <script src="js/tabs.js"></script>
+
 </head>
 
 <body>
@@ -22,12 +27,12 @@
     </header>
 
     <!-- nav -->
-    <ul id="myMenu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-    </ul>
+    <!-- <ul id="hana_nav">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">홈</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">베스트 여행지</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">가장 좋아하는 곳</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">하나투어 이야기</a></li>
+    </ul> -->
 
     <!-- section -->
     <div id="wrap">
@@ -150,7 +155,9 @@
 
         <!-- footer -->
         <footer class="section fp-auto-height">
-            <p>Copyright All rights reserved.</p>
+            <div>
+                <p>Copyright All rights reserved.</p>
+            </div>
         </footer>
     </div>
 </body>

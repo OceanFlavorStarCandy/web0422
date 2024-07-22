@@ -10,50 +10,55 @@
 </head>
 <body>
     <header>
-        <div class="Logo">
-            <a href="#">
-                <img src="./assets/Logo.png" alt="로고 이미지">
-            </a>
-        </div>
-        <div>
-            <ul class="main">
-                <li>
-                    <a href="#">회사소개</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">상품찾기</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">루나브루 소식</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">오시는 길</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">고객센터</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <a href="#">
-                <img src="./assets/icon_menu.png" alt="메뉴아이콘">
-            </a>
-        </div>
+        <nav>
+            <div class="Logo">
+                <a href="#">
+                    <img src="./assets/Logo.png" alt="로고 이미지">
+                </a>
+            </div>
+            <div>
+                <ul class="main">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="sub">
+                            <li><a href="#">브랜드 이야기</a></li>
+                        </ul>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="#">상품찾기</a>
+                        <ul class="sub">
+                            <li><a href="#">판매 중인 상품</a></li>
+                        </ul>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="#">루나브루 소식</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <span></span>
+                    <li>
+                        <a href="#">오시는 길</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="sub">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">유통/구매 문의</a></li>
+                        </ul>
+                    </li>
+                    <span></span>
+                </ul>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="./assets/icon_menu.png" alt="메뉴아이콘">
+                </a>
+            </div>
+        </nav>
     </header>
     <section id="s1">
         <div class="carousel">
@@ -86,27 +91,56 @@
     <section id="s3">
         <div class="tab">
             <div class="buttons">
-                <button id="btn1" type="radio" name="tab" checked>Brand Collabo</button>
-                <button id="btn2" type="radio" name="tab">Corporate Gift</button>
-                <button id="btn3" type="radio" name="tab">Present</button>
+                <div>
+                    <input id="radio1" type="radio" name="tab" checked>
+                    <label for="radio1" id="btn1">Brand Collabo</label>
+                </div>
+                <div>
+                    <input id="radio2" type="radio" name="tab">
+                    <label for="radio2" id="btn2">Corporate Gift</label>
+                </div>
+                <div>
+                    <input id="radio3" type="radio" name="tab">
+                    <label for="radio3" id="btn3">Present</label>
+                </div>
             </div>
             <div>
                 <div>
                     <h3>LUNA BREW SERVICES</h3>
                     <h2>루나브루와 함께해보세요.</h2>
                 </div>
-                <label for="btn1">
-                    <div>
-                        <a href="#"><!-- hover action용 --></a>
-                        <p>기업 브랜드와 <br>좋은 수제 맥주가 만나 <br>비즈니스 가치 증가</p>
-                        <div class="icon1"><!-- 아이콘 자리 --></div>
+                <div class="tabContent">
+                    <div id="T1" class="on">
+                        <div>
+                            <p>기업 브랜드와 <br>좋은 수제 맥주가 만나 <br>비즈니스 가치 증가</p>
+                            <div class="icon1"><!-- 아이콘 자리 --></div>
+                        </div>
+                        <div>
+                            <p>대한민국 150개 양조장의<br>장인정신이 깃든 맥주</p>
+                            <div class="icon2"><!-- 아이콘 자리 --></div>
+                        </div>
                     </div>
-                    <div>
-                        <a href="#"><!-- hover action용 --></a>
-                        <p>대한민국 150개 양조장의<br>장인정신이 깃든 맥주</p>
-                        <div class="icon2"><!-- 아이콘 자리 --></div>
+                    <div id="T2">
+                        <div>
+                            <p>수제맥주를 활용한 <br>기업 사은품 마케팅의 <br>새로운 트렌드 제시</p>
+                            <div class="icon1"><!-- 아이콘 자리 --></div>
+                        </div>
+                        <div>
+                            <p>150여개 브루어리 제품 <br>중에서 직접 선택한 <br>수제맥주 전달</p>
+                            <div class="icon2"><!-- 아이콘 자리 --></div>
+                        </div>
                     </div>
-                </label>
+                    <div id="T3">
+                        <div>
+                            <p>엄선한 수제맥주 <br>'HoppyBox'로 감사의 <br>마음을</p>
+                            <div class="icon1"><!-- 아이콘 자리 --></div>
+                        </div>
+                        <div>
+                            <p>다양한 컨셉의 수제맥주로<br>소소하지만 확실한 행복을</p>
+                            <div class="icon2"><!-- 아이콘 자리 --></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="bgIMG1">
@@ -194,5 +228,7 @@
             <p>COPYRIGHT 2024 LUNA BREW COMPANY. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
