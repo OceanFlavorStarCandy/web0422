@@ -5,6 +5,10 @@
     color: #fff;
 }
 
+#s1 h1, #s1 h2, #s1 p {
+    text-shadow: 0 0 5px #000;
+}
+
 #s1 p {
     font-size: 32px;
     font-weight: 300;
@@ -42,12 +46,26 @@
     text-align: center;
 }
 
-.slideText {
+.carousel>div>div:nth-of-type(2) {
+    width: 24px;
+    height: 48px;
     position: absolute;
-    z-index: 2;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: url(./../assets/mouse.png) no-repeat;
 }
 
-.carousel li span {
+.slideText {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    text-align: center;
+}
+
+.carousel>div span {
     position: absolute;
     top: 355px;
     left: 50%;
@@ -58,10 +76,9 @@
     height: 10px;
 }
 
-.carousel li div:nth-of-type(2) {
+.carousel iframe {
     width: 1903px;
     height: 920px;
-    background: url(./../assets/carousal01.png);
 }
 
 /* section02 */
@@ -70,6 +87,7 @@
     height: 920px;
     display: flex;
     justify-content: space-between;
+    background: #fff;
 }
 
 #s2 div {
@@ -117,6 +135,7 @@
     width: 1903px;
     height: 920px;
     position: relative;
+    background: #fff;
 }
 
 .tab {
@@ -207,6 +226,42 @@
     width: 64px;
     height: 64px;
     background: url(../assets/icon_beer.png);
+}
+
+.icon3 {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 64px;
+    height: 64px;
+    background: url(../assets/icon_trend.png);
+}
+
+.icon4 {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 64px;
+    height: 64px;
+    background: url(../assets/icon_gift.png);
+}
+
+.icon5 {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 64px;
+    height: 64px;
+    background: url(../assets/icon_thank.png);
+}
+
+.icon6 {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 64px;
+    height: 64px;
+    background: url(../assets/icon_happy.png);
 }
 
 #tabImage1 {
@@ -364,7 +419,7 @@ form>div{
 #s5>div {
     width: 1903px;
     height: 1116px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;

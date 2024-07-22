@@ -99,7 +99,6 @@ header nav {
     width: 280px;
     display: flex;
     justify-content: space-around;
-    background: #fff;
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
@@ -112,7 +111,11 @@ header nav {
     transform: translate(-50%, 0);
 }
 
-.main>li:hover a{
+.main>li:hover {
+    border-bottom: 2px solid #ffd600;
+}
+
+.main>li:hover a {
     color: #363636;
 }
 
@@ -122,10 +125,14 @@ header nav {
     height: 100px;
 }
 
+.sub li:hover a {
+    font-weight: 600;
+}
+
 .main>li:hover+span {
     width: 1903px;
     height: 200px;
-    background: #fff;
+    background: #ffffff80;
     position: absolute;
     top: 0;
     left: 50%;
@@ -141,8 +148,25 @@ footer {
     align-items: center;
     justify-content: flex-start;
     padding-left: 40px;
+    position: relative;
 }
 
 .footerText div {
     display: flex;
+}
+
+.footerRight ul {
+    display: flex;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.footerRight li {
+    margin-left: 12px;
+    opacity: .5;
+}
+
+.footerRight li:hover {
+    opacity: 1;
 }
