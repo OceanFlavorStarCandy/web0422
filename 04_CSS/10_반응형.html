@@ -26,6 +26,12 @@
             margin: 0;
         }
 
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
         body {
             font-family: 'Lucida Sans', sans-serif;
             background: var(--white);
@@ -51,6 +57,14 @@
             3. .class , :class, [속성]
             4. 요소, ::가상요소
         */
+
+        .main img:first-of-type {
+            display: inline-block;
+        }
+
+        .main img:last-of-type {
+            display: none;
+        }
 
         /* 왼쪽 메뉴 */
         .menu {
@@ -152,6 +166,7 @@
         <main>
             <h1>The City</h1>
             <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+            <img src="https://www.w3schools.com/css/img_chania.jpg" alt="이미지">
         </main>
     </div>
       
