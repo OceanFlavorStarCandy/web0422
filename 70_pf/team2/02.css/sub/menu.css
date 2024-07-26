@@ -57,7 +57,12 @@ input[type="radio"] {
 
 #menuCategory label {
     color: #2D2D2D;
-    margin: 0 40px;
+    padding: 0 40px;
+    border-right: 1px solid rgba(0, 0, 0, .25);
+}
+
+#menuCategory label:last-of-type {
+    border: none;
 }
 
 #menuCategory input:checked+span{

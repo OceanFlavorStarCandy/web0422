@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            함수
+            1. 선언적 함수
+            2. 익명 함수 => 화살표 함수
+
+            const 변수 = function(매개변수){return 실행문;} << 익명함수
+            const 변수 = 매개변수 => 실행문; << 화살표 함수
+        */
+        window.addEventListener("DOMContentLoaded", ()=>{
+            const hour = document.querySelectorAll("span")[0];
+            const time = document.querySelectorAll("span").item(2);
+            const se = document.querySelectorAll("span")[4];
+
+            // setInterval(함수, 밀리초);
+            setInterval(clock, 1000);
+
+            function clock() {
+                const d = new Date();
+
+                /* 
+                if (sec<10) {
+                    sec = "0" + sec;
+                } else {
+                    sec = sec;
+                } 
+                */
+               
+               let h = d.getHours();
+               (h<10) ? h = "0" + h : h = h;
+               hour.innerText = h;
+
+               let t = d.getSeconds();
+               (t<10) ? t = "0" + t : t = t;
+               time.innerText = t;
+               
+               let sec = d.getSeconds();
+               (sec<10) ? sec = "0" + sec : sec = sec;
+               se.innerText = sec;
+
+               function ze(num) {
+                return (num < 10) ? num = "0" + num : num = num;
+               }
+
+            } // clock_fn()
+
+            // console.log(hour, time. sec);
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <span>시</span>
+        <span>:</span>
+        <span>분</span>
+        <span>:</span>
+        <span>초</span>
+    </div>
+</body>
+</html>

@@ -15,12 +15,40 @@
 
         const yy = d.getFullYear();
         const mm = d.getMonth(); + 1 // getMonth()는 0~11 사이의 값으로 나옴 >> +1 붙여줘야함!
-        const dd = d.getDay();
+        const dd = d.getDate();
+        let ww = d.getDay();
         const hh = d.getHours();
         const mh = d.getMinutes();
         const sh = d.getSeconds();
-        document.write("<hr>" + yy + "년" + mm + "월" + dd + "일" + "<br>" + hh + ":" + mh + ":" + sh);
-        document.write(`<hr>${yy}년${mm}월${dd}일<br>${hh}:${mh}:${sh}`); // 위랑 출력값은 똑같은데 다른 식으로 적은 것임
+
+        /* if (ww === 0) {
+            ww = " 일요일";
+        } else if (ww === 1) {
+            ww = " 월요일";
+        } else if (ww === 2) {
+            ww = " 화요일";
+        } else if (ww === 3) {
+            ww = " 수요일";
+        } else if (ww === 4) {
+            ww = " 목요일";
+        } else if (ww === 5) {
+            ww = " 금요일";
+        } else {
+            ww = " 토요일";
+        } */
+
+        switch (ww) {
+            case 0: ww=" 일요일"; break;
+            case 1: ww=" 월요일"; break;
+            case 2: ww=" 화요일"; break;
+            case 3: ww=" 수요일"; break;
+            case 4: ww=" 목요일"; break;
+            case 5: ww=" 금요일"; break;
+            default: ww=" 토요일";
+        }
+
+        document.write("<hr>" + yy + "년" + mm + "월" + dd + "일" + ww + "<br>" + hh + ":" + mh + ":" + sh);
+        document.write(`<hr>${yy}년${mm}월${dd}일${ww}<br>${hh}:${mh}:${sh}`); // 위랑 출력값은 똑같은데 다른 식으로 적은 것임
     </script>
 </body>
 </html>
