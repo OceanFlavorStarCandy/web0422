@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+    <style>
+        body * {
+            outline: 1px dotted red;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,23 +33,40 @@
                 *은 sm md lg xl
                 숫자는 1~12 / 숫자 안 적으면 균등분배됨 / 총 합이 12가 되어야함
             -->
-            <div class="col">
-                1 of 2
+            <div class="col-sm-2">
+                One of three columns
             </div>
-            <div class="col">
-                2 of 2
+            <div class="col-sm-8">
+                One of three columns
+            </div>
+            <div class="col-sm-2">
+                One of three columns
             </div>
         </div>
+    </div>
+
+    <div class="container">
         <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col">
-                2 of 3
-            </div>
-            <div class="col">
-                3 of 3
-            </div>
+                <div class="col">
+                    1 of 2
+                </div>
+                <div class="col">
+                    2 of 2
+                </div>
+        </div>
+        <div class="row">
+                <div class="col">
+                    1 of 3
+                </div>
+                <div class="col">
+                    2 of 3
+                </div>
+                <div class="col">
+                    3 of 3
+                </div>
+                <div class="col">
+                    3 of 3
+                </div>
         </div>
 
         <div class="row">
