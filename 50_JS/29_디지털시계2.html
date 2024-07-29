@@ -19,9 +19,9 @@
             const se = document.querySelectorAll("span")[4];
 
             // setInterval(함수, 밀리초);
-            setInterval(clock, 1000);
+            setInterval(()=>{return clock(1)}, 1000);
 
-            function clock() {
+            function clock(para) {
                 const d = new Date();
 
                 /* 
@@ -41,7 +41,7 @@
                time.innerText = t;
                
                let sec = d.getSeconds();
-               (sec<10) ? sec = "0" + sec : sec = sec;
+               (sec<10) ? sec = "0" + sec : sec = sec; // 값이 참이면 : 기준으로 앞에껄 실행/거짓이면 뒤에꺼 실행
                se.innerText = sec;
 
                function ze(num) {

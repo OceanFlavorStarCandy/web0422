@@ -16,14 +16,19 @@
         */
 
         // 함수 선언
-        function fn(para){
-            return document.write(para + " 호출했니?"); // return이 있어야 여러번 출력할 수 있음(값을 변수에 다시 되돌려준다고함)
+        function fn(para1, para2){  // parameter
+            return para1 + para2; // return이 있어야 여러번 출력할 수 있음(값을 변수에 다시 되돌려준다고함)
+            document.write("이 문장은 실행되지 않음");
         }
 
-        // 함수 호출
-        fn("나");
-        fn("너");
-        fn("홍길동");
+        // 변수
+        const na = add(2, 5);
+        const you = add(20, 50);
+
+        // 출력
+        document.write("2+5=", na);
+        document.write("<br>");
+        document.write("20+50=", you);
     </script>
 </head>
 <body>
