@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메뉴 페이지 시안</title>
+    <title>faq 페이지 시안</title>
     <style>
-        body {margin: 0;}
-        img {margin: 0;}
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 992px) {
+            img[alt^="데스크탑"] {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            img[alt^="992"] {
+                display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            img[alt^="768"] {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
-    <img src="faq 페이지 전체 시안.png" alt="고객지원 페이지 시안">
+    <div>
+        <img src="./faq.png" alt="데스크탑 시안">
+        <img src="./faq_992.png" alt="992 시안">
+        <img src="./faq_768.png" alt="768 시안">
+        <img src="./faq_576.png" alt="모바일 시안">
+    </div>
 </body>
 </html>
