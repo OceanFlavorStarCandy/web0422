@@ -16,28 +16,31 @@
             <div><!-- BGimage --></div>
         </div>
         <div id="faqCategory">
-            <label><input id="faq_C1" type="radio" name="faq" checked>FAQ</label>
-            <label><input id="faq_C2" type="radio" name="faq">온라인 상담</label>
-            <label><input id="faq_C3" type="radio" name="faq">상담 내역</label>
+            <label><input id="faq_C1" type="radio" name="faq" checked><span>FAQ</span></label>
+            <label><input id="faq_C2" type="radio" name="faq"><span>온라인 상담</span></label>
+            <label><input id="faq_C3" type="radio" name="faq"><span>상담 내역</span></label>
         </div>
         <div class="FAQlist">
             <input type="checkbox" name="faq" id="faq_list01">
             <label for="faq_list01">
                 <div>
-                    <span>Q</span>
-                    <p>질문은 여기에 작성</p>
+                    <div>
+                        <span>Q</span>
+                        <p>질문은 여기에 작성</p>
+                    </div>
+                    <img src="./../../03.assets/sub/faq/box_lock.png" alt="openClose">
                 </div>
-                <img src="./../../03.assets/sub/faq/box_lock.png" alt="openClose">
+                <div class="answer" id="answer01">
+                    <span>A</span>
+                    <div>답변은 여기에 작성</div>
+                </div>
             </label>
-            <div class="answer" id="answer01">
-                <span>A</span>
-                <div>답변은 여기에 작성</div>
-            </div>
         </div>
-        <div class="pageButton">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
+        <div class="faq_pageButton">
+            <input id="faq_pageButton1" name="menuPage" type="radio" checked>
+            <label for="faq_pageButton1"><span>1</span></label>
+            <input id="faq_pageButton2" name="menuPage" type="radio">
+            <label for="faq_pageButton2"><span>2</span></label>
         </div>
     </section>
 

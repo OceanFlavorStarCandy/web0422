@@ -19,6 +19,8 @@
                 배열: []
         */
 
+        // 리터럴(literal)은 자바스크립트에서 값을 나타냄
+
         // 리터럴로 객체 선언하면서 동시에 할당까지 << 주로 이렇게 씀
         const car = {
             type:"Fiat",
@@ -32,6 +34,27 @@
             age:50,
             eyeColor:"blue"
         };
+        
+        // 객체 접근 방법(위 아래 둘다 같은거임)
+        person1.lastName;
+        person1["lastName"];
+
+        const human = {
+            firstName: "John",
+            lastName : "Doe",
+            id       : 5566,
+            // 함수 값을 갖는 속성은 메소드이다.
+            fullName : function() {
+                // return human.firstName + " " + huan.lastName;
+                // this는 human을 참조 >> this는 human이다
+                // 객체 내부의 this는 객체 자신을 가리킨다
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        human.fullName();
+        document.getElementById("5566");
+
         
         // 객체 선언을 하고나서 값을 할당
         // 리터럴로 객체 생성

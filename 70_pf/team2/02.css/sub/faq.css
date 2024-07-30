@@ -9,10 +9,177 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 input[type="radio"], input[type="checkbox"] {
     display: none;
+}
+
+/* section */
+#sectionFAQ {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #faf9f5;
+    position: relative;
+}
+
+#FAQ_top {
+    background: url(./../../03.assets/sub/faq/FAQtopBG.jpg) 0 50%/100% no-repeat;
+    width: 100%;
+    height: 438px;
+    text-align: center;
+    line-height: 400px;
+    color: #fff;
+}
+
+#faqCategory {
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    width: 1340px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    top: 398px;
+}
+
+#faqCategory label {
+    color: #2D2D2D;
+    padding: 0 40px;
+    border-right: 1px solid rgba(0, 0, 0, .25);
+}
+
+#faqCategory label:last-of-type {
+    border: none;
+}
+
+#faqCategory input:checked+span{
+    color: #ec2931;
+}
+
+/* pageButton */
+.faq_pageButton label span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: 20px;
+    background: #e5d9b7;
+    line-height: 36px;
+    text-align: center;
+    color: #2D2D2D;
+}
+
+.faq_pageButton input:checked+label span {
+    background: #796150;
+    color: #fff;
+}
+
+/* FAQlist box */
+.FAQlist {
+    margin-top: 120px;
+}
+
+.FAQlist label>div:nth-of-type(1) {
+    width: 1340px;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.FAQlist label>div:nth-of-type(1) div {
+    display: flex;
+    align-items: center;
+}
+
+.FAQlist label span {
+    margin-right: 20px;
+}
+
+.FAQlist label div div span {
+    color: #796150;
+}
+
+.answer span {
+    color: #79b52b;
+}
+
+.answer {
+    width: 1340px;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+
+input[type="checkbox"]:checked+label>div.answer {
+    opacity: 1;
+    padding: 30px 20px;
+    height: auto;
+}
+
+input[type="checkbox"]:checked+label img {
+    transform: rotateX('180'); /* 수정바람 */
+}
+
+/* 미디어쿼리 */
+@media (max-width: 992px) {
+    #sectionFAQ {
+        width: 100%;
+    }
+
+    .FAQlist {
+        width: 670px;
+    }
+}
+
+@media (max-width: 768px) {
+    #faqCategory {
+        width: 100%;
+    }
+
+    #faqCategory label {
+        padding: 0 30px;
+    }
+
+    #FAQ_top {
+        width: 768px;
+    }
+
+    .FAQList {
+        width: 670px;
+    }
+}
+
+@media (max-width: 576px) {
+    #faqCategory {
+        width: 100%;
+    }
+
+    #faqCategory label {
+        padding: 0 20px;
+    }
+
+    .FAQList {
+        width: 385px;
+    }
 }
