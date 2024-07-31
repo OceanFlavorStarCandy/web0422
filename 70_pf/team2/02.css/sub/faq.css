@@ -97,7 +97,7 @@ input[type="radio"], input[type="checkbox"] {
 .FAQlist label>div:nth-of-type(1) {
     width: 1340px;
     height: 80px;
-    padding: 0 20px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +111,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .FAQlist label span {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .FAQlist label div div span {
@@ -132,6 +132,10 @@ input[type="radio"], input[type="checkbox"] {
     background: #fff;
     border: 1px solid rgba(0, 0, 0, .25);
     transition: .3s;
+}
+
+input[type="checkbox"]:checked+label>div:nth-of-type(1) {
+    background: #e5d9b7;
 }
 
 input[type="checkbox"]:checked+label>div.answer {
