@@ -11,34 +11,91 @@
 
         img {
             width: 100%;
-            max-width: 100%;
-            height: auto;
+            vertical-align: top
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        .menu992 {
+            display: none;
+        }
+
+        .menu768 {
+            display: none;
+        }
+
+        .menu576 {
+            display: none;
         }
 
         @media (max-width: 992px) {
-            img[alt^="데스크탑"] {
+            .desktop {
+                display: none;
+            }
+
+            .menu992 {
+                display: block;
+            }
+
+            .menu768 {
+                display: none;
+            }
+
+            .menu576 {
                 display: none;
             }
         }
 
         @media (max-width: 768px) {
-            img[alt^="992"] {
+            .desktop {
+                display: none;
+            }
+
+            .menu992 {
+                display: none;
+            }
+
+            .menu768 {
+                display: block;
+            }
+
+            .menu576 {
                 display: none;
             }
         }
 
         @media (max-width: 576px) {
-            img[alt^="768"] {
+            .desktop {
                 display: none;
+            }
+
+            .menu992 {
+                display: none;
+            }
+
+            .menu768 {
+                display: none;
+            }
+
+            .menu576 {
+                display: block;
             }
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="desktop">
         <img src="./menu.png" alt="데스크탑 시안">
+    </div>
+    <div class="menu992">
         <img src="./menu_992.png" alt="992 시안">
+    </div>
+    <div class="menu768">
         <img src="./menu_768.png" alt="768 시안">
+    </div>
+    <div class="menu576">
         <img src="./menu_576.png" alt="모바일 시안">
     </div>
 </body>
