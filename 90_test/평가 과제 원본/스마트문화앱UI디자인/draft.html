@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뚜레쥬르</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        .tablet {
+            display: none;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .desktop {
+                display: none;
+            }
+            .tablet {
+                display: block;
+            }
+            .mobile {
+                display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .desktop {
+                display: none;
+            }
+            .tablet {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <img src="desktop.png" alt="임시이미지">
+    </div>
+    <div class="tablet">
+        <img src="tablet.png" alt="임시이미지">
+    </div>
+    <div class="mobile">
+        <img src="mobile.png" alt="임시이미지">
+    </div>
+</body>
+</html>
