@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rot3D {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            perspective: 800;
+        }
+
+        #rot3D>div {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            transition: 1s;
+            box-shadow: 0 0 5px 2px #c9c9c9;
+        }
+
+        #rot3D:hover>div {
+            transform: rotateY(180deg);
+        }
+
+        #rot3D .front {
+            background: #ff9393;
+        }
+
+        #rot3D .front div {
+            transform: rotateY(180deg); /* 자식 요소를 돌려두면 돌렸을때 글자가 좌우반전되어 보이지 않음 */
+        }
+
+        #rot3D .back {
+            background: #878fff;
+            backface-visibility: hidden; /* 뒷면 숨기기 */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>팜한농 벤치 - 3D y회전</h1>
+    <div id="rot3D">
+        <div class="front"><div>뒷면</div></div>
+        <div class="back"><div>앞면</div></div>
+    </div>
+</body>
+</html>

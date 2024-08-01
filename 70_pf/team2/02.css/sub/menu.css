@@ -126,7 +126,7 @@ input[type="radio"] {
     width: 320px;
     height: 370px;
     background: #e5d9b7;
-    padding-top: 20px;
+    padding: 0 30px;
     text-align: center;
     line-height: 4;
 
@@ -137,6 +137,8 @@ input[type="radio"] {
 }
 
 .menuHover p:nth-of-type(2) {
+    width: 260px;
+    height: 100px;
     line-height: 1.5;
 }
 
@@ -227,27 +229,27 @@ input[type="radio"] {
 }
 
 #menu_list10>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item10.png);
 }
 
 #menu_list11>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item11.png);
 }
 
 #menu_list12>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item12.png);
 }
 
 #menu_list13>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item13.png);
 }
 
 #menu_list14>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item14.png);
 }
 
 #menu_list15>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item15.png);
 }
 
 #menu_list16>div {

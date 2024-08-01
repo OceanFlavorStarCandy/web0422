@@ -14,13 +14,22 @@
 
             2D(x, y)
             rotate >> transform: rotate(숫자deg);
-            scale
-            translate
-            skew
+            scale >> scale(width, height)
+                scaleX(w)
+                scaleY(h)
+            translate >> (x, y)
+                translateX(x)
+                translateY(y)
+            skew >> (x각도, y각도)
+                skewX(각도)
+                skewY(각도)
 
-            3D
-            rotate
-            translate
+            3D(x, y, z)
+                rotateX(회전)
+                rotateY(회전)
+                scaleZ(크기 조절)
+                translateZ(위치)
+
         */
 
         /* 
@@ -40,6 +49,9 @@
 
         section {
             display: flex;
+            height: 300px;
+            width: 800px;
+            border: 1px solid #d64d6f;
         }
 
         div {
