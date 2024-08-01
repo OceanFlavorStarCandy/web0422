@@ -90,16 +90,16 @@
     background: #fff;
 }
 
-#s2 div {
+#s2>div>div {
     width: 950px;
     height: 920px;
 }
 
-#s2 div:nth-of-type(1) {
+#s2>div>div:nth-of-type(1) {
     background: url(../assets/section2.png);
 }
 
-#s2 div:nth-of-type(2) {
+#s2>div>div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -283,7 +283,7 @@
 }
 
 /* section4 */
-#s4 {
+#s4>div {
     width: 100%;
     height: 1280px;
     display: flex;
@@ -298,7 +298,7 @@
     background: rgba(0, 0, 0, 0.25);
 }
 
-#s4>div>ul {
+#s4 ul {
     width: 1903px;
     display: flex;
     justify-content: space-evenly;
@@ -337,7 +337,7 @@
 }
 
 /* section5 */
-#s5 {
+#s5>div{
     position: relative;
     width: 1903px;
     height: 920px;
@@ -347,7 +347,7 @@
     padding: 60px 120px 0 0;
 }
 
-form {
+#s5 form {
     width: 1000px;
     display: flex;
     flex-direction: column;
@@ -356,23 +356,23 @@ form {
     position: relative;
 }
 
-form>div>div>input {
+#s5 form>div>div>input {
     width: 270px;
 }
 
-form textarea {
+#s5 form textarea {
     width: 270px;
 }
 
-form>div{
+#s5 form>div{
     display: flex;
 }
 
-.inputBox1 span {
+#s5 .inputBox1 span {
     width: 80px;
 }
 
-.inputBox1 div {
+#s5 .inputBox1 div {
     width: 400px;
     height: 70px;
     border-radius: 6px;
@@ -385,11 +385,11 @@ form>div{
     margin: 0 10px 10px 0;
 }
 
-.inputBox2 span {
+#s5 .inputBox2 span {
     width: 80px;
 }
 
-.inputBox2 {
+#s5 .inputBox2 {
     display: flex;
     justify-content: baseline;
     width: 400px;
@@ -400,7 +400,7 @@ form>div{
     background: rgba(255, 255, 255, 0.25);
 }
 
-#send {
+#s5 #send {
     width: 400px;
     height: 70px;
     border-radius: 6px;
@@ -416,7 +416,7 @@ form>div{
     cursor: pointer;
 }
 
-#s5>div {
+#s5>div>div {
     width: 1903px;
     height: 1116px;
     position: fixed;

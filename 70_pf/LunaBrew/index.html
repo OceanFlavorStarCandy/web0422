@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- jQuery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fullpage.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script src="script/script.js"></script>
 </head>
 
 <!-- 풀페이지 안 될때 >> 내부 컨텐츠를 div로 한번 묶어주면 적용된다! -->
@@ -65,28 +70,29 @@
             </div>
         </nav>
     </header>
-    <div class="section">
-        <section id="s1">
-            <div class="carousel">
-                <div>
-                    <div class="slideText">
-                        <h1>루나브루에는 다 있다!</h1>
-                        <h2>진짜 효모가 살아있는 진짜 수제맥주</h2>
-                        <p>루나브루는 대한민국의 모든 브루어리의<br>진짜 맥주를 고객에게 전해드리는<br>국내 유일의 수제맥주 전문 기업입니다.</p>
-                    </div>
-                    <span><!-- 밑줄 --></span>
-                    <div><!-- 마우스 아이콘 --></div>
+
+
+    <section id="s1" class="section">
+        <div class="carousel">
+            <div>
+                <div class="slideText">
+                    <h1>루나브루에는 다 있다!</h1>
+                    <h2>진짜 효모가 살아있는 진짜 수제맥주</h2>
+                    <p>루나브루는 대한민국의 모든 브루어리의<br>진짜 맥주를 고객에게 전해드리는<br>국내 유일의 수제맥주 전문 기업입니다.</p>
                 </div>
-                <ul class="slide">
-                    <li><iframe width="1120" height="630" src="https://www.youtube.com/embed/9M6vX0NyvmU?si=OQRGQjNSDpUFgv-H&amp;controls=0&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
-                    <li><img src="./assets/carousal02.jpg" alt="슬라이드2"></li>
-                    <li><img src="./assets/carousal03.jpg" alt="슬라이드3"></li>
-                </ul>
+                <span><!-- 밑줄 --></span>
+                <div><!-- 마우스 아이콘 --></div>
             </div>
-        </section>
-    </div>
-    <div class="section">
-        <section id="s2">
+            <ul class="slide">
+                <li><iframe width="1120" height="630" src="https://www.youtube.com/embed/9M6vX0NyvmU?si=OQRGQjNSDpUFgv-H&amp;controls=0&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                <li><img src="./assets/carousal02.jpg" alt="슬라이드2"></li>
+                <li><img src="./assets/carousal03.jpg" alt="슬라이드3"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="s2" class="section">
+        <div>
             <div><!-- image --></div>
             <div>
                 <h3>LUNA BREW COMPANY</h3>
@@ -95,8 +101,9 @@
                 <p>전국의 수제 맥주를 쉽게 만날 수 있도록 <br>루나브루가 준비했습니다.</p>
                 <a href="#">상품 보러가기</a>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
     <section id="s3" class="section">
         <div class="tab">
             <div class="buttons">
@@ -158,67 +165,71 @@
         </div>
     </section>
     <section id="s4" class="section">
-        <h2>Gallery</h2>
-        <p>루나브루가 걸어온 길</p>
         <div>
-            <ul>
-                <li>
-                    <div><!-- deco --></div>
-                    <p>서울랜드 맥주 출시</p>
-                    <a href="#">
-                        <img src="./assets/gallery1.png" alt="갤러리1">
-                    </a>
-                    <p>2024-07-16</p>
-                </li>
-                <span><!-- line --></span>
-                <li>
-                    <div><!-- deco --></div>
-                    <p>수제 맥주 브랜드 브루밍 설립</p>
-                    <a href="#">
-                        <img src="./assets/gallery2.png" alt="갤러리2">
-                    </a>
-                    <p>2024-07-16</p>
-                </li>
-                <span><!-- line --></span>
-                <li>
-                    <div><!-- deco --></div>
-                    <p>HappyBox 출시</p>
-                    <a href="#">
-                        <img src="./assets/gallery3.png" alt="갤러리3">
-                    </a>
-                    <p>2024-07-16</p>
-                </li>
-            </ul>
+            <h2>Gallery</h2>
+            <p>루나브루가 걸어온 길</p>
+            <div>
+                <ul>
+                    <li>
+                        <div><!-- deco --></div>
+                        <p>서울랜드 맥주 출시</p>
+                        <a href="#">
+                            <img src="./assets/gallery1.png" alt="갤러리1">
+                        </a>
+                        <p>2024-07-16</p>
+                    </li>
+                    <span><!-- line --></span>
+                    <li>
+                        <div><!-- deco --></div>
+                        <p>수제 맥주 브랜드 브루밍 설립</p>
+                        <a href="#">
+                            <img src="./assets/gallery2.png" alt="갤러리2">
+                        </a>
+                        <p>2024-07-16</p>
+                    </li>
+                    <span><!-- line --></span>
+                    <li>
+                        <div><!-- deco --></div>
+                        <p>HappyBox 출시</p>
+                        <a href="#">
+                            <img src="./assets/gallery3.png" alt="갤러리3">
+                        </a>
+                        <p>2024-07-16</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section id="s5" class="section">
-        <h3>QUESTION</h3>
-        <h2>문의사항을 남겨주시면 답변해드리겠습니다.</h2>
-        <form action="contact.php">
-            <div>
-                <div class="inputBox1">
-                    <div>
-                        <span>성함</span>
-                        <input type="text" placeholder="성함을 입력해주세요" required>
+        <div>
+            <h3>QUESTION</h3>
+            <h2>문의사항을 남겨주시면 답변해드리겠습니다.</h2>
+            <form action="contact.php">
+                <div>
+                    <div class="inputBox1">
+                        <div>
+                            <span>성함</span>
+                            <input type="text" placeholder="성함을 입력해주세요" required>
+                        </div>
+                        <div>
+                            <span>전화번호</span>
+                            <input type="tel" placeholder="전화번호를 입력해주세요" required>
+                        </div>
+                        <div>
+                            <span>이메일</span>
+                            <input type="text" placeholder="메일 주소를 입력해주세요" required>
+                        </div>
+                        <label><input id="personal" type="checkbox"><span>개인정보처리방침에 동의합니다.</span></label>
                     </div>
-                    <div>
-                        <span>전화번호</span>
-                        <input type="tel" placeholder="전화번호를 입력해주세요" required>
+                    <div class="inputBox2">
+                        <span>내용</span>
+                        <textarea name="content" id="content" placeholder="내용을 입력해주세요" required></textarea>
                     </div>
-                    <div>
-                        <span>이메일</span>
-                        <input type="text" placeholder="메일 주소를 입력해주세요" required>
-                    </div>
-                    <label><input id="personal" type="checkbox"><span>개인정보처리방침에 동의합니다.</span></label>
                 </div>
-                <div class="inputBox2">
-                    <span>내용</span>
-                    <textarea name="content" id="content" placeholder="내용을 입력해주세요" required></textarea>
-                </div>
-            </div>
-            <input id="send" type="submit" value="SEND">
-        </form>
-        <div><!-- BG image / section5 --></div>
+                <input id="send" type="submit" value="SEND">
+            </form>
+            <div><!-- BG image / section5 --></div>
+        </div>
     </section>
     <footer>
         <a href="#">
@@ -256,6 +267,5 @@
             </ul>
         </div>
     </footer>
-    <script src="script/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            transform(변형)
+                rotate 회전
+                scale 크기
+                translate 위치
+                skew 기울임
+
+            2D(x, y)
+            rotate >> transform: rotate(숫자deg);
+            scale
+            translate
+            skew
+
+            3D
+            rotate
+            translate
+        */
+
+        /* 
+            transition-property: 속성;
+            transition-duration: 전환시간; << 필수로 적어야함 (나머지는 생략 가능)
+            transition-timing-function: 가속도;
+            transition-delay: 지연시간;
+            transition: 속성 전환시간 가속도 지연시간;
+        */
+
+        /* 
+            perspective: 숫자;
+            transform을 적용한 요소의 부모 요소에 지정
+            숫자가 낮을수록 왜곡이 커짐
+            3D 효과를 줄 때 사용
+        */
+
+        section {
+            display: flex;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #4d88d6;
+            margin: 20px;
+        }
+
+        span {
+            width: 100px;
+            height: 100px;
+            display: block;
+            background: #4dd696;
+            transition: 1s;
+        }
+
+        div:nth-of-type(1):hover>span {
+            transform: rotate(360deg);
+        }
+        div:nth-of-type(2):hover>span {
+            transform: rotateX(360deg);
+        }
+        div:nth-of-type(3):hover>span {
+            transform: rotateY(360deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>변형</h1>
+    <section>
+        <div><span>2D회전</span></div>
+        <div><span>3D X회전</span></div>
+        <div><span>3D Y회전</span></div>
+    </section>
+</body>
+</html>
