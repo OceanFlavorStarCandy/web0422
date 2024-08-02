@@ -1,7 +1,10 @@
 @charset "utf-8";
 @import url(./reset.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 :root {
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 10px;
     --white: #fff;
     --black: #2e2e2e;
@@ -13,6 +16,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#section2, #section3 {
+    height: auto;
+}
+
 /* typo */
 h1 {
     font-size: 2rem;
@@ -20,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 600;
 }
 
@@ -122,32 +129,27 @@ footer {
     flex: 0 0 25%;
 }
 
-#section1 .slide li:nth-of-type(1) {
-    background-image: url(./../assets/slideIMG01.png);
-    background-position: 50% 40%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
 
-#section1 .slide li:nth-of-type(2) {
-    background-image: url(./../assets/slideIMG02.jpg);
+#section1 .slide li {
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
+#section1 .slide li:nth-of-type(1) {
+    background-image: url(./../assets/slideIMG01.png);
+}
+
+#section1 .slide li:nth-of-type(2) {
+    background-image: url(./../assets/slideIMG02.jpg);
+}
+
 #section1 .slide li:nth-of-type(3) {
     background-image: url(./../assets/slideIMG03.png);
-    background-position: 50% 25%;
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 #section1 .slide li:nth-of-type(4) {
     background-image: url(./../assets/slideIMG01.png);
-    background-position: 50% 40%;
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 @keyframes carousel {
@@ -221,10 +223,19 @@ footer {
     background: rgba(0, 0, 0, 0.5);
 }
 
+#section2 img {
+    width: 100%;
+}
+
 /* section3 */
 #section3 {
     display: flex;
     flex-direction: column;
+    height: auto;
+}
+
+#section3>div {
+    padding-bottom: 35px;
 }
 
 #section3>div>div:nth-of-type(1) {
@@ -252,6 +263,7 @@ footer {
 
 #section3 .news li {
     width: 400px;
+    height: 550px;
     margin: 10px;
 }
 
@@ -274,13 +286,16 @@ footer {
     display: block;
     height: 60px;
     background: var(--button);
-    /* border-radius: 10px; */
     text-align: center;
     line-height: 60px;
     margin-top: 20px;
 }
 
 /* section4 */
+#section4 {
+    height: 840px;
+}
+
 #section4>div {
     margin-top: 90px;
     padding: 0 80px;
@@ -293,7 +308,6 @@ footer {
 #section4>div>div {
     display: flex;
     justify-content: space-between;
-
 }
 
 #section4 form {
@@ -323,4 +337,14 @@ footer {
 #section4 .map iframe {
     width: 100%;
     height: 100%;
+}
+
+/* media-query */
+@media (max-width: 768px) {
+    #section4>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
 }
