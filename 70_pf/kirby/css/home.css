@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import url(./reset.css);
 
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+}
+
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 :root {
@@ -21,6 +27,18 @@ html {
 }
 
 /* typo */
+h1, h2, h3, p, a, span {
+    color: var(--black);
+}
+
+h1, h2, header a, #section4 span {
+    font-family: 'BMJUA', "Noto Sans KR", sans-serif;
+}
+
+#section4 ::placeholder, #section4 button {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
 h1 {
     font-size: 2rem;
     font-weight: 400;
@@ -28,7 +46,7 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p, a {
@@ -51,6 +69,10 @@ p, a {
 #section3 li a:last-of-type, #section4 form button {
     font-size: 1.6rem;
     color: var(--white);
+}
+
+#section4 span {
+    font-size: 1.6rem;
 }
 
 /* header */
@@ -81,12 +103,16 @@ header li {
 footer {
     width: 100%;
     height: 60px;
-    background: var(--shadow);
+    background: #a587eb;
     line-height: 60px;
     text-align: center;
 }
 
 /* section1 */
+#section1 {
+    background: var(--white);
+}
+
 #section1 div {
     width: 100%;
     height: 820px;
@@ -159,11 +185,16 @@ footer {
     53% {left: -100%}
     66% {left: -200%}
     86% {left: -200%}
+    99% {left: -300%}
     99.99% {left: -300%}
     100% {left: 0%}
 }
 
 /* section2 */
+#section2 {
+    background: var(--white);
+}
+
 #section2>div {
     display: flex;
     flex-direction: column;
@@ -212,6 +243,10 @@ footer {
     background: #293355;
 }
 
+#section2 li p.wiiU {
+    background: #1874aa;
+}
+
 #section2 li p:nth-of-type(2) {
     position: absolute;
     left: 0;
@@ -232,6 +267,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: auto;
+    background: var(--white);
 }
 
 #section3>div {
@@ -296,7 +332,16 @@ footer {
     height: 840px;
 }
 
-#section4>div {
+#section4>div:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    background: url(./../assets/history-bg-pattern-pink-2x.jpg);
+}
+
+#section4>div:nth-of-type(1) {
     margin-top: 90px;
     padding: 0 80px;
 }
@@ -316,17 +361,24 @@ footer {
     flex-direction: column;
 }
 
+#section4 form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: var(--white);
+    margin-bottom: 20px;
+}
+
 #section4 form input {
     font-size: 1.6rem;
-    background: #d8d8d8;
     height: 50px;
-    margin: 10px 0;
+    width: 85%;
 }
 
 #section4 form button {
     background: var(--button);
     height: 60px;
-    margin: 10px 0;
 }
 
 #section4 .map {
@@ -340,11 +392,41 @@ footer {
 }
 
 /* media-query */
-@media (max-width: 768px) {
-    #section4>div {
-        width: 100%;
+@media (min-width: 1340px) and (max-width: 1760px) {
+    #section3 ul li:last-of-type {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    #section1 .slide li {
+        background-position: 50% 50%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+
+    #section4 {
+        height: 1040px;
+    }
+
+    #section4>div>div {
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
+    }
+
+    #section4 form {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section4 .map {
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 928px) {
+    #section2 li:nth-last-of-type(1), #section2 li:nth-last-of-type(2), #section2 li:nth-last-of-type(3), #section2 li:nth-last-of-type(4) {
+        display: none;
     }
 }
