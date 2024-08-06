@@ -168,8 +168,16 @@ label:hover>div>div:nth-of-type(2) {
 }
 
 /* section4 */
+.section4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .credit {
-    width: 1380px;
+    width: 80%;
     height: 100px;
     background: #00C787;
     border-radius: 10px;
@@ -177,7 +185,7 @@ label:hover>div>div:nth-of-type(2) {
 
 .news {
     margin: 60px 0;
-    width: 1380px;
+    width: 80%;
     padding: 0 80px;
     display: flex;
     justify-content: space-between;
@@ -202,16 +210,17 @@ label:hover>div>div:nth-of-type(2) {
 /* section5 */
 .section5 {
     width: 100%;
-    height: 700px;
     background: #F0F0F0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .section5 ul {
-    width: 1380px;
+    margin: 30px 0;
+    width: 80%;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .section5 li {
@@ -219,11 +228,7 @@ label:hover>div>div:nth-of-type(2) {
     height: 446px;
     background: #fff;
     position: relative;
-    margin-right: 34px;
-}
-
-.section5 li:nth-of-type(4) {
-    margin-right: 0;
+    margin: 15px;
 }
 
 .section5 a {
@@ -235,26 +240,52 @@ label:hover>div>div:nth-of-type(2) {
     position: absolute;
 }
 
-#card01 {
+.section5 li div {
     width: 320px;
     height: 320px;
+}
+
+#card01 {
     background: url(../images/main/cake-delivery.jpg);
 }
 
 #card02 {
-    width: 320px;
-    height: 320px;
     background: url(../images/main/cellery.jpg);
 }
 
 #card03 {
-    width: 320px;
-    height: 320px;
     background: url(../images/main/baking.jpg);
 }
 
 #card04 {
-    width: 320px;
-    height: 320px;
     background: url(../images/main/find-shop.jpg);
+}
+
+/* media query */
+@media (min-width: 1310px) and (max-width: 1767px){
+    .section5 ul {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 992px) {
+    .news {
+        flex-direction: column;
+    }
+
+    .news h2 {
+        margin: 40px 0 0;
+    }
+
+    .news ul {
+        margin: 0;
+    }
+
+    .news>div:nth-of-type(1) div {
+        display: none;
+    }
+
+    .news>div:nth-of-type(2) ul, .news>div:nth-of-type(2) li {
+        width: 100%;
+    }
 }
