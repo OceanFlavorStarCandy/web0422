@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+body, p {
     margin: 0;
 }
 
@@ -67,7 +67,7 @@ input[type="radio"], input[type="checkbox"] {
     border: none;
 }
 
-#faqCategory input:checked+span{
+#faqCategory input:checked+span>a{
     color: #ec2931;
 }
 
@@ -146,7 +146,7 @@ input[type="checkbox"]:checked+label>div.answer {
 }
 
 input[type="checkbox"]:checked+label img {
-    transform: rotateZ('180'); /* 수정바람 */
+    transform: rotateY('180deg'); /* 수정바람 */
 }
 
 /* 미디어쿼리 */
