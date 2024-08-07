@@ -18,34 +18,12 @@
             display: block;
         }
 
-        .menu992 {
-            display: none;
-        }
-
         .menu768 {
             display: none;
         }
 
-        .menu576 {
+        .menu360 {
             display: none;
-        }
-
-        @media (max-width: 992px) {
-            .desktop {
-                display: none;
-            }
-
-            .menu992 {
-                display: block;
-            }
-
-            .menu768 {
-                display: none;
-            }
-
-            .menu576 {
-                display: none;
-            }
         }
 
         @media (max-width: 768px) {
@@ -53,25 +31,17 @@
                 display: none;
             }
 
-            .menu992 {
-                display: none;
-            }
-
             .menu768 {
                 display: block;
             }
 
-            .menu576 {
+            .menu360 {
                 display: none;
             }
         }
 
-        @media (max-width: 576px) {
+        @media (max-width: 360px) {
             .desktop {
-                display: none;
-            }
-
-            .menu992 {
                 display: none;
             }
 
@@ -79,7 +49,7 @@
                 display: none;
             }
 
-            .menu576 {
+            .menu360 {
                 display: block;
             }
         }
@@ -89,14 +59,11 @@
     <div class="desktop">
         <img src="./menu.png" alt="데스크탑 시안">
     </div>
-    <div class="menu992">
-        <img src="./menu_992.png" alt="992 시안">
-    </div>
     <div class="menu768">
-        <img src="./menu_768.png" alt="768 시안">
+        <img src="./menu_768.png" alt="태블릿 시안">
     </div>
-    <div class="menu576">
-        <img src="./menu_576.png" alt="모바일 시안">
+    <div class="menu360">
+        <img src="./menu_360.png" alt="모바일 시안">
     </div>
 </body>
 </html>
