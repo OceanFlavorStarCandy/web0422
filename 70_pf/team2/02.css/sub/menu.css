@@ -47,7 +47,7 @@ input[type="radio"] {
     z-index: 2;
     background: #fff;
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
-    width: 1340px;
+    width: 80%;
     height: 80px;
     text-align: center;
     line-height: 80px;
@@ -155,39 +155,19 @@ input[type="radio"] {
     }
 
     .menuList {
-        width: 670px;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    #menuCategory {
-        width: 100%;
-    }
-
     #menuCategory label {
-        padding: 0 30px;
-    }
-
-    #Menu_top {
-        width: 768px;
-    }
-
-    .menuList {
-        width: 670px;
+        padding: 0 20px;
     }
 }
 
 @media (max-width: 576px) {
-    #menuCategory {
-        width: 100%;
-    }
-
     #menuCategory label {
-        padding: 0 20px;
-    }
-
-    .menuList {
-        width: 385px;
+        padding: 0 10px;
     }
 }
 

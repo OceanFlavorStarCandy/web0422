@@ -148,6 +148,19 @@
             z-index: 9999;
             left: 50%;
             top: 45%;
+            opacity: 0;
+        }
+
+        #slideWrap p.active {
+            top: 38%;
+            opacity: 1;
+            transition: .5s;
+        }
+
+        @media(max-width: 992px) {
+            .bx-wrapper .bx-controls-direction a {
+                display: none;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
