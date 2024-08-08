@@ -44,4 +44,22 @@ window.addEventListener("DOMContentLoaded", function(){
         menupage2.style.display = "none";
         menupage3.style.display = "block";
     };
+
+    
+    /* const menuC1 = document.querySelector("#Menu_C1");
+    const menuC2 = document.querySelector("#Menu_C2");
+    const menuC3 = document.querySelector("#Menu_C3");
+
+    const ice = document.getElementsByClassName("ice");
+    const iceCream = document.getElementsByClassName("iceCream");
+
+    menuC1.onclick = function(){
+        ice.style.display = "block";
+        iceCream.style.display = "block";
+    }
+
+    menuC2.onclick = function(){
+        ice.style.display = "block";
+        iceCream.style.display = "none";
+    } */
 });
