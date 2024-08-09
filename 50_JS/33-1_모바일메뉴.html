@@ -24,6 +24,7 @@
 
         /* 헤더 */
         header {
+            position: fixed;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -71,6 +72,10 @@
             width: 65%;
             height: 100vh;
             transition: .3s ease-in-out;
+        }
+
+        nav.change {
+            right: 0;
         }
 
         /* 768이상: 테블릿 */
@@ -129,6 +134,7 @@
                 <li><a href="#sec4">고객센터</a></li>
             </ul>
         </nav>
+        <!-- 모바일버튼 -->
         <div class="collapsedMenuIcon">
             <div class="bar1"></div>
             <div class="bar2"></div>

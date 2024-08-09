@@ -121,6 +121,21 @@ nav {
     display: none;
 }
 
+/* nav {
+    z-index: -1;
+    background: transparent;
+    position: static;
+    top: 0;
+    right: -65%;
+    width: 65%;
+    height: 100vh;
+    transition: .3s ease-in-out;
+}
+
+nav.change {
+    right: 0;
+} */
+
 /*////////////////////////////////////*/
 
 
