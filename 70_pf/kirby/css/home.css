@@ -199,7 +199,7 @@ footer {
     align-items: center;
 }
 
-#section2>div>div {
+#section2>div>div:nth-of-type(1) {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -208,7 +208,7 @@ footer {
     padding: 0 80px;
 }
 
-#section2 ul {
+#section2 #list {
     width: 100%;
     padding: 40px;
     display: flex;
@@ -217,7 +217,7 @@ footer {
     align-items: center;
 }
 
-#section2 li {
+#section2 #list li {
     width: 400px;
     height: 300px;
     overflow: hidden;
@@ -225,26 +225,26 @@ footer {
     position: relative;
 }
 
-#section2 li p:nth-of-type(1) {
+#section2 #list li p:nth-of-type(1) {
     position: absolute;
     left: 0;
     top: 0;
     padding: 10px;
 }
 
-#section2 li p.NSW {
+#section2 #list li p.NSW {
     background: #eb3333;
 }
 
-#section2 li p.DS3 {
+#section2 #list li p.DS3 {
     background: #293355;
 }
 
-#section2 li p.wiiU {
+#section2 #list li p.wiiU {
     background: #1874aa;
 }
 
-#section2 li p:nth-of-type(2) {
+#section2 #list li p:nth-of-type(2) {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -257,6 +257,80 @@ footer {
 
 #section2 img {
     width: 100%;
+}
+
+/* popup */
+#model {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#model>div {
+    width: 45%;
+    padding: 20px 40px;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+#model>div>div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#model .close {
+    width: 40px;
+    height: 40px;
+    background: var(--button);
+}
+
+#model .close:hover {
+    cursor: pointer;
+}
+
+#model .popup li>div:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#model .popup li>div:nth-of-type(1)>div:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+#model .popup li>div:nth-of-type(2) {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 10px 0;
+}
+
+#model .popup li>div:nth-of-type(2) p {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+#model .popup li>div:nth-of-type(2) iframe {
+    width: 100%;
+    height: 40vh;
+    /* 560 315 */
+}
+
+/* popup image */
+#titleIMG01 {
+    background: url(./../assets/history/history-img-37.jpg) 0 0/100% no-repeat;
 }
 
 /* section3 */

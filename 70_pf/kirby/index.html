@@ -6,6 +6,26 @@
     <title>☆별의 커비☆</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png"><!-- 파비콘(웹페이지 맨 위에 창 탭에 표시되는 아이콘) -->
     <link rel="stylesheet" href="./css/home.css">
+    <script>
+        window.addEventListener("DOMContentLoaded", function(){
+            const list01 = document.querySelectorAll("#list li")[0];
+            
+            const model = document.querySelector("#model");
+            const close = document.querySelector(".close");
+            
+            const popup01 = document.querySelectorAll("#model .popup li")[0];
+
+            list01.onclick = function(){
+                model.style.display = "block";
+                popup01.style.display = "block";
+            };
+
+            close.onclick = function(){
+                model.style.display = "none";
+                popup01.style.display = "none";
+            };
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -37,7 +57,7 @@
                 <h2>작품 목록</h2>
                 <a href="#">view more <b>></b></a>
             </div>
-            <ul>
+            <ul id="list">
                 <li>
                     <p class="NSW">Nintendo Switch</p>
                     <a href="#">
@@ -125,6 +145,32 @@
             </ul>
         </div>
     </section>
+    <div id="model">
+        <div>
+            <div>
+                <h2>작품 소개</h2>
+                <div class="close"><!-- 닫기버튼 --></div>
+            </div>
+            <ul class="popup">
+                <li>
+                    <div>
+                        <div id="titleIMG01"><!-- 작품 이미지 --></div>
+                        <div>
+                            <h3>별의 커비 wii 디럭스</h3>
+                            <p>횡스크롤 액션 게임</p>
+                            <p>플레이 인원 수: 1~4명</p>
+                            <p>2023년 2월 24일 발매</p>
+                            <p>전체이용가</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>소개 영상</p>
+                        <iframe src="https://www.youtube.com/embed/4IJGXbwWIgI?si=oUR8f4t5fNVLDNT9"></iframe>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <section id="section3">
         <div>
             <div>
