@@ -61,6 +61,7 @@ button {
 section {
     width: 100%;
     height: 900px;
+    border: 1px solid transparent; /* 이게 있어야 미디어쿼리 적용했을때 오른쪽에 빈공간 안 생김 */
 }
 
 iframe {
@@ -225,19 +226,19 @@ footer {
 }
 
 #section1 .slide li:nth-of-type(1) {
-    background-image: url(./../assets/slideIMG01.png);
+    background-image: url(./../images/slideIMG01.png);
 }
 
 #section1 .slide li:nth-of-type(2) {
-    background-image: url(./../assets/slideIMG02.jpg);
+    background-image: url(./../images/slideIMG02.jpg);
 }
 
 #section1 .slide li:nth-of-type(3) {
-    background-image: url(./../assets/slideIMG03.png);
+    background-image: url(./../images/slideIMG03.png);
 }
 
 #section1 .slide li:nth-of-type(4) {
-    background-image: url(./../assets/slideIMG01.png);
+    background-image: url(./../images/slideIMG01.png);
 }
 
 @keyframes carousel {
@@ -363,7 +364,7 @@ footer {
 #model .close {
     width: 40px;
     height: 40px;
-    background: url(./../assets/closeBtn.png);
+    background: url(./../images/closeBtn.png);
 }
 
 #model .close:hover {
@@ -395,51 +396,51 @@ footer {
 
 /* popup image */
 .titleIMG01 {
-    background: url(./../assets/history/history-img-37.jpg) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-37.jpg) 0 0/100% no-repeat;
 }
 
 .titleIMG02 {
-    background: url(./../assets/history/history-img-36.jpg) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-36.jpg) 0 0/100% no-repeat;
 }
 
 .titleIMG03 {
-    background: url(./../assets/history/history-img-35.jpg) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-35.jpg) 0 0/100% no-repeat;
 }
 
 .titleIMG04 {
-    background: url(./../assets/history/history-img-34.jpg) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-34.jpg) 0 0/100% no-repeat;
 }
 
 .titleIMG05 {
-    background: url(./../assets/history/history-img-33.jpg) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-33.jpg) 0 0/100% no-repeat;
 }
 
 .titleIMG06 {
-    background: url(./../assets/history/history-img-32.jpg) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-32.jpg) 0 0/100% no-repeat;
 }
 
 .titleIMG07 {
-    background: url(./../assets/history/history-img-31.png) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-31.png) 0 0/100% no-repeat;
 }
 
 .titleIMG08 {
-    background: url(./../assets/history/history-img-30.png) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-30.png) 0 0/100% no-repeat;
 }
 
 .titleIMG09 {
-    background: url(./../assets/history/history-img-29.png) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-29.png) 0 0/100% no-repeat;
 }
 
 .titleIMG10 {
-    background: url(./../assets/history/history-img-28.png) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-28.png) 0 0/100% no-repeat;
 }
 
 .titleIMG11 {
-    background: url(./../assets/history/history-img-27.png) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-27.png) 0 0/100% no-repeat;
 }
 
 .titleIMG12 {
-    background: url(./../assets/history/history-img-26.png) 0 0/100% no-repeat;
+    background: url(./../images/history/history-img-26.png) 0 0/100% no-repeat;
 }
 
 /* section3 */
@@ -518,7 +519,7 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: -1;
-    background: url(./../assets/history-bg-pattern-pink-2x.jpg);
+    background: url(./../images/history-bg-pattern-pink-2x.jpg);
 }
 
 #section4>div:nth-of-type(1) {
