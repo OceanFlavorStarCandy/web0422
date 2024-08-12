@@ -534,11 +534,9 @@ footer {
 
 @media (max-width: 992px) {
     #section1 .slide li {
-        background-position: 50% 50%;
         background-size: auto 100%;
-        background-repeat: no-repeat;
     }
-
+    
     #section4 {
         height: 1040px;
     }

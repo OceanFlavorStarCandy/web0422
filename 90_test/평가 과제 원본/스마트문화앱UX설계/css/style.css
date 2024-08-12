@@ -61,7 +61,6 @@ button {
 section {
     width: 100%;
     height: 900px;
-    border: 1px solid transparent;
 }
 
 iframe {
@@ -392,7 +391,6 @@ footer {
 #model .popup li>div:nth-of-type(2) iframe {
     width: 100%;
     height: 40vh;
-    /* 560 315 */
 }
 
 /* popup image */
@@ -582,9 +580,7 @@ footer {
 
 @media (max-width: 992px) {
     #section1 .slide li {
-        background-position: 50% 50%;
         background-size: auto 100%;
-        background-repeat: no-repeat;
     }
 
     #section4 {
@@ -608,7 +604,10 @@ footer {
 }
 
 @media (max-width: 928px) {
-    #section2 li:nth-last-of-type(1), #section2 li:nth-last-of-type(2), #section2 li:nth-last-of-type(3), #section2 li:nth-last-of-type(4) {
+    #section2 li:nth-last-of-type(1), 
+    #section2 li:nth-last-of-type(2), 
+    #section2 li:nth-last-of-type(3), 
+    #section2 li:nth-last-of-type(4) {
         display: none;
     }
 }

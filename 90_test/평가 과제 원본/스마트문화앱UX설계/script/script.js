@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function(){
     const list10 = document.querySelectorAll("#list li")[9];
     const list11 = document.querySelectorAll("#list li")[10];
     const list12 = document.querySelectorAll("#list li")[11];
-    
+
     // 팝업창
     const model = document.querySelector("#model");
     const close = document.querySelector(".close");
