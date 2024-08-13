@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(https://12alsrud12.github.io/web0422/70_pf/team2/02.css/typo.css);
 
 /* reset */
 * {
@@ -17,10 +18,50 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--text1);
 }
 
 input[type="radio"] {
     display: none;
+}
+
+/* typo */
+section p, section label {
+    font-size: 1.6rem;
+}
+
+#Menu_top h2 {
+    font-weight: 400;
+    font-size: 8rem;
+}
+
+#menuCategory span {
+    font-size: 1.8rem;
+    color: var(--text1);
+}
+
+.menu_pageButton span {
+    font-family: '프리텐다드';
+}
+
+.menuList>li>p {
+    font-size: 1.8rem;
+}
+
+.menuHover p:nth-of-type(1) {
+    font-size: 2rem;
+}
+
+.menuHover p:nth-of-type(2) {
+    font-family: '온글잎 은별';
+    font-weight: 500;
+    width: 260px;
+    height: 100px;
+    line-height: 1.5;
+}
+
+.menuHover p:nth-of-type(3) {
+    font-size: 1.8rem;
 }
 
 /* section */
@@ -30,7 +71,7 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #faf9f5;
+    background: var(--bg);
     position: relative;
 }
 
@@ -39,13 +80,13 @@ input[type="radio"] {
     width: 100%;
     height: 438px;
     text-align: center;
-    line-height: 400px;
-    color: #fff;
+    line-height: 340px;
+    color: var(--white);
 }
 
 #menuCategory {
     z-index: 2;
-    background: #fff;
+    background: var(--white);
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
     width: 80%;
     height: 80px;
@@ -56,7 +97,7 @@ input[type="radio"] {
 }
 
 #menuCategory label {
-    color: #2D2D2D;
+    color: var(--text1);
     padding: 0 40px;
     border-right: 1px solid rgba(0, 0, 0, .25);
 }
@@ -66,7 +107,8 @@ input[type="radio"] {
 }
 
 #menuCategory input:checked+span{
-    color: #ec2931;
+    color: var(--point);
+    font-weight: 600;
 }
 
 /* pageButton */
@@ -76,15 +118,15 @@ input[type="radio"] {
     width: 36px;
     height: 36px;
     margin: 20px;
-    background: #e5d9b7;
+    background: var(--main2);
     line-height: 36px;
     text-align: center;
-    color: #2D2D2D;
+    color: var(--text1);
 }
 
 .menu_pageButton input:checked+label span {
-    background: #796150;
-    color: #fff;
+    background: var(--sub1);
+    color: var(--white);
 }
 
 #menu_page2, #menu_page3 {
@@ -104,7 +146,7 @@ input[type="radio"] {
     position: relative;
     width: 320px;
     height: 370px;
-    background: #ffffff;
+    background: var(--white);
     margin: 5px;
     padding: 20px;
     display: flex;
@@ -116,7 +158,6 @@ input[type="radio"] {
 .menuList>li>div {
     width: 240px;
     height: 240px;
-    /* border: 1px solid #000; */
 }
 
 .menuHover {
@@ -125,21 +166,17 @@ input[type="radio"] {
     left: 0;
     width: 320px;
     height: 370px;
-    background: #e5d9b7;
+    background: var(--main2);
     padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    line-height: 4;
 
     /* 안보이게 처리 */
     visibility: hidden;
     opacity: 0;
     transition: .3s;
-}
-
-.menuHover p:nth-of-type(2) {
-    width: 260px;
-    height: 100px;
-    line-height: 1.5;
 }
 
 /* 마우스 올리면 보이게 */
@@ -154,15 +191,29 @@ input[type="radio"] {
 
 /* 팝업창 */
 .menu_popup {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, .25);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.menu_popup>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     width: 50%;
-    height: 50vh;
-    background: #fff;
-    border: 1px solid #2D2D2D;
-    box-shadow: 0 0 4px #2D2D2D;
+    height: auto;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 /* 미디어쿼리 */
@@ -250,21 +301,101 @@ input[type="radio"] {
 }
 
 #menu_list16>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item16.png);
 }
 
 #menu_list17>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item17.png);
 }
 
 #menu_list18>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item18.png);
 }
 
 #menu_list19>div {
-    background: url(./../../03.assets/sub/menu/menu_item01.png);
+    background: url(./../../03.assets/sub/menu/menu_item19.png);
 }
 
 #menu_list20>div {
+    background: url(./../../03.assets/sub/menu/menu_item20.png);
+}
+
+#menu_list21>div {
     background: url(./../../03.assets/sub/menu/menu_item01.png);
+}
+
+#menu_list22>div {
+    background: url(./../../03.assets/sub/menu/menu_item02.png);
+}
+
+#menu_list23>div {
+    background: url(./../../03.assets/sub/menu/menu_item03.png);
+}
+
+#menu_list24>div {
+    background: url(./../../03.assets/sub/menu/menu_item04.png);
+}
+
+#menu_list25>div {
+    background: url(./../../03.assets/sub/menu/menu_item05.png);
+}
+
+#menu_list26>div {
+    background: url(./../../03.assets/sub/menu/menu_item06.png);
+}
+
+#menu_list27>div {
+    background: url(./../../03.assets/sub/menu/menu_item07.png);
+}
+
+#menu_list28>div {
+    background: url(./../../03.assets/sub/menu/menu_item08.png);
+}
+
+#menu_list29>div {
+    background: url(./../../03.assets/sub/menu/menu_item09.png);
+}
+
+#menu_list30>div {
+    background: url(./../../03.assets/sub/menu/menu_item10.png);
+}
+
+#menu_list31>div {
+    background: url(./../../03.assets/sub/menu/menu_item11.png);
+}
+
+#menu_list32>div {
+    background: url(./../../03.assets/sub/menu/menu_item12.png);
+}
+
+#menu_list33>div {
+    background: url(./../../03.assets/sub/menu/menu_item13.png);
+}
+
+#menu_list34>div {
+    background: url(./../../03.assets/sub/menu/menu_item14.png);
+}
+
+#menu_list35>div {
+    background: url(./../../03.assets/sub/menu/menu_item15.png);
+}
+
+#menu_list36>div {
+    background: url(./../../03.assets/sub/menu/menu_item16.png);
+}
+
+#menu_list37>div {
+    background: url(./../../03.assets/sub/menu/menu_item17.png);
+}
+
+#menu_list38>div {
+    background: url(./../../03.assets/sub/menu/menu_item18.png);
+}
+
+#menu_list39>div {
+    background: url(./../../03.assets/sub/menu/menu_item19.png);
+}
+
+#menu_list40>div {
+    background: url(./../../03.assets/sub/menu/menu_item20.png);
 }

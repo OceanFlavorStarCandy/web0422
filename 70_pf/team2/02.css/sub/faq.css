@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(https://12alsrud12.github.io/web0422/70_pf/team2/02.css/typo.css);
 
 /* reset */
 * {
@@ -17,12 +18,37 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--text1);
 }
 
 input[type="radio"], input[type="checkbox"] {
     display: none;
     margin: 0;
     padding: 0;
+}
+
+/* typo */
+section p, section label {
+    font-size: 1.6rem;
+}
+
+#FAQ_top h2 {
+    font-weight: 400;
+}
+
+#faqCategory a {
+    font-size: 1.8rem;
+    color: var(--text1);
+}
+
+.FAQlist span {
+    font-family: '온글잎 은별';
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.faq_pageButton span {
+    font-family: '프리텐다드';
 }
 
 /* section */
@@ -32,7 +58,7 @@ input[type="radio"], input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #faf9f5;
+    background: var(--bg);
     position: relative;
 }
 
@@ -41,13 +67,13 @@ input[type="radio"], input[type="checkbox"] {
     width: 100%;
     height: 438px;
     text-align: center;
-    line-height: 400px;
-    color: #fff;
+    line-height: 340px;
+    color: var(--white);
 }
 
 #faqCategory {
     z-index: 2;
-    background: #fff;
+    background: var(--white);
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.5);
     width: 1340px;
     height: 80px;
@@ -58,7 +84,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 #faqCategory label {
-    color: #2D2D2D;
+    color: var(--text1);
     padding: 0 40px;
     border-right: 1px solid rgba(0, 0, 0, .25);
 }
@@ -68,7 +94,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 #faqCategory input:checked+span>a{
-    color: #ec2931;
+    color: var(--point);
 }
 
 /* pageButton */
@@ -78,15 +104,15 @@ input[type="radio"], input[type="checkbox"] {
     width: 36px;
     height: 36px;
     margin: 20px;
-    background: #e5d9b7;
+    background: var(--main2);
     line-height: 36px;
     text-align: center;
-    color: #2D2D2D;
+    color: var(--text1);
 }
 
 .faq_pageButton input:checked+label span {
-    background: #796150;
-    color: #fff;
+    background: var(--sub1);
+    color: var(--white);
 }
 
 /* FAQlist box */
@@ -102,7 +128,7 @@ input[type="radio"], input[type="checkbox"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background: var(--white);
     border: 1px solid rgba(0, 0, 0, .25);
 }
 
@@ -116,11 +142,11 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .FAQlist label div div span {
-    color: #796150;
+    color: var(--sub1);
 }
 
 .answer span {
-    color: #79b52b;
+    color: var(--season3);
 }
 
 .answer {
@@ -130,13 +156,13 @@ input[type="radio"], input[type="checkbox"] {
     opacity: 0;
     display: flex;
     align-items: center;
-    background: #fff;
+    background: var(--white);
     border: 1px solid rgba(0, 0, 0, .25);
     transition: .3s;
 }
 
 input[type="checkbox"]:checked+label>div:nth-of-type(1) {
-    background: #e5d9b7;
+    background: var(--main2);
 }
 
 input[type="checkbox"]:checked+label>div.answer {
@@ -177,5 +203,11 @@ input[type="checkbox"]:checked+label img {
 
     #faqCategory label {
         padding: 0 20px;
+    }
+
+    .FAQlist label>div:nth-of-type(1) {
+        width: 100%;
+        height: auto;
+        padding: 20px 30px;
     }
 }
