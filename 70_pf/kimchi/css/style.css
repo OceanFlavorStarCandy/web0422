@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+/* style */
+#top {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* header */
+header {
+    width: 200px;
+    height: 100%;
+    border: 1px solid #333;
+    border-bottom: none;
+}
+
+header>div:nth-of-type(1) {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px dotted #333;
+}
+
+header .main {
+    display: flex;
+    flex-direction: column;
+}
+
+header>div:nth-last-of-type(1) {
+    text-align: center;
+}
+
+header>div:nth-last-of-type(1)>a:nth-of-type(1) {
+    border-right: 1px solid #333;
+    padding-right: 10px;
+    margin-right: 8px;
+}
+
+/* header nav */
+nav {
+    border: 1px solid #333;
+    margin: 20px 4px;
+}
+
+nav .main>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+}
+
+nav .main>li:hover>a {
+    background: #ccc;
+}
+
+nav .sub {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+nav .main>li:hover>.sub {
+    height: 120px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .sub>li {
+    height: 30px;
+}
+
+nav .sub>li:hover {
+    background: #ccc;
+}
+
+/* contents */
+.contents {
+    width: 400px;
+}
+
+.banner {
+    background: #ccc;
+    width: 100%;
+    height: 100px;
+}
+
+#news, #gallery {
+    padding: 10px;
+    border-bottom: 1px dotted #333;
+}
+
+#news h2, #gallery h2 {
+    display: inline-block;
+    width: 120px;
+    border: 1px solid #333;
+    outline: 1px solid #fff;
+    border-bottom: none;
+}
+
+#gallery>div {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+}
+
+#gallery>div>div>div {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #333;
+}
+
+.contents>div:last-of-type ul {
+    display: flex;
+}
+
+/* slide */
+#slide ul {
+    display: flex;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #333;
+    background: #fff;
+}
+
+footer>div:nth-of-type(1) {
+    width: 200px;
+    text-align: center;
+    line-height: 120px;
+    border-right: 1px dotted #333;
+}
+
+footer .Fmenu {
+    display: flex;
+    height: 60px;
+    border-bottom: 1px dotted #333;
+}
