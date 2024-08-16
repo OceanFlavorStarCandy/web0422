@@ -1,4 +1,8 @@
 @charset "utf-8";
+@import url(./reset.css);
+@import url(./common.css);
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css");
 
 /* index typo */
 #s1 h1, #s1 h2, #s1 p, #s5 h2, #s5 h3, #s5 span, #s5 input, #s5 textarea {
@@ -57,15 +61,16 @@
 }
 
 .slideText {
+    z-index: 3;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    z-index: 2;
     text-align: center;
 }
 
 .carousel>div span {
+    z-index: 2;
     position: absolute;
     top: 355px;
     left: 50%;
@@ -90,23 +95,29 @@
     background: #fff;
 }
 
-#s2>div>div {
+#s2 .s2Contents {
+    width: 1903px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#s2 .s2Contents>div {
     width: 950px;
     height: 920px;
 }
 
-#s2>div>div:nth-of-type(1) {
-    background: url(../assets/section2.png);
+#s2 .s2Contents>div:nth-of-type(1) {
+    background: url(../assets/section2.png) no-repeat;
 }
 
-#s2>div>div:nth-of-type(2) {
+#s2 .s2Text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 300px;
 }
 
-#s2 span {
+#s2 .s2Contents span {
     display: inline-block;
     width: 70px;
     height: 1px;
@@ -114,7 +125,7 @@
     margin: 40px 0;
 }
 
-#s2 a {
+#s2 .s2Contents a {
     display: inline-block;
     border: 1px solid #363636;
     margin-top: 40px;
@@ -125,7 +136,7 @@
     transition: .3s;
 }
 
-#s2 a:hover {
+#s2 .s2Contents a:hover {
     background: #363636;
     color: #fff;
 }
@@ -283,7 +294,7 @@
 }
 
 /* section4 */
-#s4>div {
+#s4 .s4Contents {
     width: 100%;
     height: 1280px;
     display: flex;
@@ -292,35 +303,35 @@
     background: #F5F2E1;
 }
 
-#s4 span {
+#s4 .s4Contents span {
     width: 1px;
     height: 1000px;
     background: rgba(0, 0, 0, 0.25);
 }
 
-#s4 ul {
+#s4 .s4Contents ul {
     width: 1903px;
     display: flex;
     justify-content: space-evenly;
 }
 
-#s4 li div {
+#s4 .s4Contents li div {
     width: 32px;
     height: 32px;
     background: url(../assets/deco.png);
 }
 
-#s4 li {
+#s4 .s4Contents li {
     width: 510px;
     height: 920px;
     position: relative;
 }
 
-#s4 li:nth-of-type(2) {
+#s4 .s4Contents li:nth-of-type(2) {
     top: 120px;
 }
 
-#s4 li:nth-of-type(3) {
+#s4 .s4Contents li:nth-of-type(3) {
     top: 60px;
 }
 
@@ -328,7 +339,7 @@
     text-align: left;
 }
 
-#s4 li p:nth-of-type(2) {
+#s4 .s4Contents li p:nth-of-type(2) {
     text-align: right;
     rotate: 90deg;
     position: absolute;
@@ -337,7 +348,7 @@
 }
 
 /* section5 */
-#s5>div{
+#s5 .s5Contents {
     position: relative;
     width: 1903px;
     height: 920px;
@@ -345,9 +356,10 @@
     flex-direction: column;
     align-items: flex-end;
     padding: 60px 120px 0 0;
+    background: url(../assets/bottomBG.png) no-repeat;
 }
 
-#s5 form {
+#s5 .s5Contents form {
     width: 1000px;
     display: flex;
     flex-direction: column;
@@ -356,23 +368,23 @@
     position: relative;
 }
 
-#s5 form>div>div>input {
+#s5 .s5Contents form>div>div>input {
     width: 270px;
 }
 
-#s5 form textarea {
+#s5 .s5Contents form textarea {
     width: 270px;
 }
 
-#s5 form>div{
+#s5 .s5Contents form>div{
     display: flex;
 }
 
-#s5 .inputBox1 span {
+#s5 .s5Contents .inputBox1 span {
     width: 80px;
 }
 
-#s5 .inputBox1 div {
+#s5 .s5Contents .inputBox1 div {
     width: 400px;
     height: 70px;
     border-radius: 6px;
@@ -385,11 +397,11 @@
     margin: 0 10px 10px 0;
 }
 
-#s5 .inputBox2 span {
+#s5 .s5Contents .inputBox2 span {
     width: 80px;
 }
 
-#s5 .inputBox2 {
+#s5 .s5Contents .inputBox2 {
     display: flex;
     justify-content: baseline;
     width: 400px;
@@ -400,7 +412,7 @@
     background: rgba(255, 255, 255, 0.25);
 }
 
-#s5 #send {
+#s5 .s5Contents #send {
     width: 400px;
     height: 70px;
     border-radius: 6px;
@@ -412,16 +424,13 @@
     right: 0;
 }
 
-#send:hover {
+#s5 .s5Contents #send:hover {
     cursor: pointer;
 }
 
-#s5>div>div {
-    width: 1903px;
-    height: 1116px;
-    position: fixed;
-    top: 0;
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
     left: 0;
-    z-index: -1;
-    background: url(../assets/bottomBG.png);
 }

@@ -25,12 +25,10 @@ window.addEventListener("DOMContentLoaded",function(){
     }
 });
 
+/* fullpage */
 $(function(){
     $('#wrap').fullpage({
-        //menu: '#hana_nav',
-        //anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
         navigation: true,
         navigationTooltips: ['Main', 'Company', 'Services', 'Gallery', 'Question'],
-        //showActiveTooltip: true
     });
 });
