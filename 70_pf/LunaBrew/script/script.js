@@ -23,6 +23,19 @@ window.addEventListener("DOMContentLoaded",function(){
         tab2.classList.remove('on');
         tab3.classList.add('on');
     }
+
+    // scroll event
+    const t = document.querySelector("#s2Text");
+    const s2scroll = this.document.querySelector("#s2");
+
+    window.addEventListener("scroll", function(){
+        t.innerHTML = Math.floor(pageYOffset);
+        if(t.innerHTML >= 920) {
+            s2scroll.classList.add('active');
+        } else {
+            s2scroll.classList.remove('active');
+        }
+    });
 });
 
 /* fullpage */

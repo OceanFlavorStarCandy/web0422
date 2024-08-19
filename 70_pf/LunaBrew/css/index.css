@@ -110,11 +110,17 @@
     background: url(../assets/section2.png) no-repeat;
 }
 
-#s2 .s2Text {
+#s2 #s2Text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 300px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#s2 #s2Text .active {
+    opacity: 1;
 }
 
 #s2 .s2Contents span {

@@ -5,6 +5,9 @@ window.addEventListener("DOMContentLoaded", function(){
     const menupage1 = document.querySelector("#faq_page1");
     const menupage2 = document.querySelector("#faq_page2");
 
+    menupage1.style.display = "block";
+    menupage2.style.display = "none";
+
     faqPageB01.onclick = function(){
         console.log("page1");
         menupage1.style.display = "block";
