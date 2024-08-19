@@ -50,3 +50,12 @@ tab6.onclick = function(){
     tabReset();
     item6.classList.add("on");
 };
+
+$('.bxslider').bxSlider({
+    mode: 'fade', // 전환 효과
+    auto: true,
+    autoControls: false, // 일시정지, 재생 버튼 숨김
+    stopAutoOnClick: true,
+    pager: false, // 페이지 표시하는 원 아이콘 숨김
+    sideWidth: 1920
+});
