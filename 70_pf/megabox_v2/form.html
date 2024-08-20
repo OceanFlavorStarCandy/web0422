@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/temp.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <!-- 로고 -->
+        <h1 class="logo">
+            <a href="#"><b>MB</b>MegaBox</a>
+        </h1>
+        <!-- 내비게이션 -->
+        <nav>
+            <ul>
+                <li><a href="#sec2">영화</a></li>
+                <li><a href="#sec3">이벤트</a></li>
+                <li><a href="#sec4">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="top">
+        <span>MEGA NEWS</span>
+        <h2>MEGA NOTICES</h2>
+        <p>홈 〉메가소식 〉공지사항</p>
+    </div>
     <section>
         <h2>메가박스 공지사항</h2>
         <p>메가박스 소식을 알려드립니다</p>
         <form action="notice.jsp">
-            <select name="" id="">
-                <option value="">a</option>
-                <option value="">b</option>
-                <option value="">c</option>
-            </select>
-            <input type="search" placeholder="검색어를 입력하세요">
+            <div>
+                <select name="" id="">
+                    <option value="">a</option>
+                    <option value="">b</option>
+                    <option value="">c</option>
+                </select>
+                <input type="search" placeholder="검색어를 입력하세요">
+            </div>
             <input type="submit" value="검색">
         </form>
         
@@ -71,5 +92,10 @@
             <a href="#">마지막</a>
         </div>
     </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>Copyright Hanatour. All rights reserved.</p>
+    </footer>
 </body>
 </html>
