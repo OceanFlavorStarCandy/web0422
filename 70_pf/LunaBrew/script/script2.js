@@ -25,18 +25,23 @@ window.addEventListener("DOMContentLoaded",function(){
     }
 
     // scroll event
-    const t = document.querySelector(".scrollEvent");
-    const s2scroll = this.document.querySelector("#s2Text div");
-    const header = document.querySelector("header");
+    const t = document.querySelector("#s2Text");
+    const s2scroll = this.document.querySelector("#s2");
 
     window.addEventListener("scroll", function(){
         t.innerHTML = Math.floor(pageYOffset);
-        if(t.innerHTML >= 880) {
+        if(t.innerHTML >= 920) {
             s2scroll.classList.add('active');
-            header.classList.add('active');
         } else {
             s2scroll.classList.remove('active');
-            header.classList.remove('active');
         }
+    });
+});
+
+/* fullpage */
+$(function(){
+    $('#wrap').fullpage({
+        navigation: true,
+        navigationTooltips: ['Main', 'Company', 'Services', 'Gallery', 'Question'],
     });
 });

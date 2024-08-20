@@ -8,14 +8,15 @@
     <!-- jQuery.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- fullpage.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script> -->
     <script src="script/script.js"></script>
 </head>
 
 <!-- 풀페이지 안 될때 >> 내부 컨텐츠를 div로 한번 묶어주면 적용된다! 또는 클래스나 아이디 넣고 css 수정 -->
 <!-- 풀페이지 css에도 import 해야하는거 있음에 주의할 것 -->
-<!-- 이 페이지는 적응형? 페이지로 진행하고 전에 하던 뚜레쥬르를 반응형 페이지(기기 상관없이 해상도 적용)로 진행하자 -->
+
 <body>
+    <div class="scrollEvent"><!-- 스크롤모션 전용 --></div>
     <header>
         <nav>
             <div class="Logo">
@@ -93,11 +94,13 @@
             <div class="s2Contents">
                 <div><!-- image --></div>
                 <div id="s2Text">
-                    <h3>LUNA BREW COMPANY</h3>
-                    <h2>국내 유일의 '수제 맥주' <br>유통·판매 전문 기업</h2>
-                    <span><!-- line --></span>
-                    <p>전국의 수제 맥주를 쉽게 만날 수 있도록 <br>루나브루가 준비했습니다.</p>
-                    <a href="#">상품 보러가기</a>
+                    <div>
+                        <h3>LUNA BREW COMPANY</h3>
+                        <h2>국내 유일의 '수제 맥주' <br>유통·판매 전문 기업</h2>
+                        <span><!-- line --></span>
+                        <p>전국의 수제 맥주를 쉽게 만날 수 있도록 <br>루나브루가 준비했습니다.</p>
+                        <a href="#">상품 보러가기</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -230,44 +233,43 @@
                 </form>
                 <div id="s5BG"><!-- BG image / section5 --></div>
             </div>
-            <footer>
-                <a href="#">
-                    <img src="./assets/Logo.png" alt="푸터로고">
-                </a>
-                <div class="footerText">
-                    <div>
-                        <p><span>주소</span>경기도 성남시 중원구 도촌동 519, 1층</p>
-                        <p><span>대표</span>김양규</p>
-                    </div>
-                    <div>
-                        <p><span>TEL</span>1533-2907</p>
-                        <p><span>사업자등록번호</span>854-81-02137</p>
-                        <p><span>E-mail</span>happybox@happy.co.kr</p>
-                    </div>
-                    <p>COPYRIGHT 2024 LUNA BREW COMPANY. ALL RIGHTS RESERVED.</p>
-                </div>
-                <div class="footerRight">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/kakao.png" alt="카카오톡">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/facebook.png" alt="페이스북">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/instagram.png" alt="인스타그램">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
         </section>
-
     </div>
+    <footer>
+        <a href="#">
+            <img src="./assets/Logo.png" alt="푸터로고">
+        </a>
+        <div class="footerText">
+            <div>
+                <p><span>주소</span>경기도 성남시 중원구 도촌동 519, 1층</p>
+                <p><span>대표</span>김양규</p>
+            </div>
+            <div>
+                <p><span>TEL</span>1533-2907</p>
+                <p><span>사업자등록번호</span>854-81-02137</p>
+                <p><span>E-mail</span>happybox@happy.co.kr</p>
+            </div>
+            <p>COPYRIGHT 2024 LUNA BREW COMPANY. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="footerRight">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./assets/kakao.png" alt="카카오톡">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/facebook.png" alt="페이스북">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/instagram.png" alt="인스타그램">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
