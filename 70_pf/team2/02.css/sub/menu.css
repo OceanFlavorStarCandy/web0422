@@ -302,43 +302,43 @@ section p, section label {
 }
 
 /* item images */
-#menu_list01>div, #menu_popup01>.menuPic {
+#menu_list01>div {
     background: url(./../../03.assets/sub/menu/menu_item01.png);
 }
 
-#menu_list02>div, #menu_popup02>.menuPic {
+#menu_list02>div {
     background: url(./../../03.assets/sub/menu/menu_item02.png);
 }
 
-#menu_list03>div, #menu_popup03>.menuPic {
+#menu_list03>div {
     background: url(./../../03.assets/sub/menu/menu_item03.png);
 }
 
-#menu_list04>div, #menu_popup04>.menuPic {
+#menu_list04>div {
     background: url(./../../03.assets/sub/menu/menu_item04.png);
 }
 
-#menu_list05>div, #menu_popup05>.menuPic {
+#menu_list05>div {
     background: url(./../../03.assets/sub/menu/menu_item05.png);
 }
 
-#menu_list06>div, #menu_popup06>.menuPic {
+#menu_list06>div {
     background: url(./../../03.assets/sub/menu/menu_item06.png);
 }
 
-#menu_list07>div, #menu_popup07>.menuPic {
+#menu_list07>div {
     background: url(./../../03.assets/sub/menu/menu_item07.png);
 }
 
-#menu_list08>div, #menu_popup08>.menuPic {
+#menu_list08>div {
     background: url(./../../03.assets/sub/menu/menu_item08.png);
 }
 
-#menu_list09>div, #menu_popup09>.menuPic {
+#menu_list09>div {
     background: url(./../../03.assets/sub/menu/menu_item09.png);
 }
 
-#menu_list10>div, #menu_popup10>.menuPic {
+#menu_list10>div {
     background: url(./../../03.assets/sub/menu/menu_item10.png);
 }
 
