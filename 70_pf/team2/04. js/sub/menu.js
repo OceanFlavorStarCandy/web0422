@@ -1,7 +1,7 @@
 // 팝업 컨텐츠
 const popupContent = {
     img: [
-        "./../../03.assets/sub/menu/menu_item01.png", 
+        "./../../03.assets/sub/menu/menu_item01.png",
         "./../../03.assets/sub/menu/menu_item02.png",
         "./../../03.assets/sub/menu/menu_item03.png",
         "./../../03.assets/sub/menu/menu_item04.png",
@@ -98,7 +98,7 @@ const popupContent = {
     ]
 }
 
-window.addEventListener("DOMContentLoaded", function(){
+window.addEventListener("DOMContentLoaded", function () {
     // 제품 페이지
     const menuPageB01 = document.getElementById("menu_pageButton1");
     const menuPageB02 = document.querySelector("#menu_pageButton2");
@@ -108,21 +108,21 @@ window.addEventListener("DOMContentLoaded", function(){
     const menupage2 = document.querySelector("#menu_page2");
     const menupage3 = document.querySelector("#menu_page3");
 
-    menuPageB01.onclick = function(){
+    menuPageB01.onclick = function () {
         console.log("page1");
         menupage1.style.display = "block";
         menupage2.style.display = "none";
         menupage3.style.display = "none";
     };
 
-    menuPageB02.onclick = function(){
+    menuPageB02.onclick = function () {
         console.log("page2");
         menupage1.style.display = "none";
         menupage2.style.display = "block";
         menupage3.style.display = "none";
     };
 
-    menuPageB03.onclick = function(){
+    menuPageB03.onclick = function () {
         console.log("page3");
         menupage1.style.display = "none";
         menupage2.style.display = "none";
@@ -134,9 +134,8 @@ window.addEventListener("DOMContentLoaded", function(){
     const menuClose = document.querySelector(".menuModalClose");
 
     /* 제품 목록 */
-    const menulist01 = document.querySelector("#menu_list01 .menuHover div");
-    const menulist02 = document.querySelector("#menu_list02 .menuHover div");
-    const menulist03 = document.querySelector("#menu_list03 .menuHover div");
+    const menulist = document.querySelectorAll(".menuList .menuHover div");
+    // 클릭한게 몇번째 div인지 알 수있는 방법?
 
     const menuIMG = document.querySelector(".menuPic img");
     const menuTitle = document.querySelector("#menu_popupContent h2");
@@ -152,33 +151,63 @@ window.addEventListener("DOMContentLoaded", function(){
         let data = popupContent[content];
 
         // 제품 이미지
-        tit.forEach((ele,idx) =>
+        menuIMG.forEach((ele, idx) =>
             ele.innerText = data["img"][idx] // 이거 어떻게 해야할지 모르겠음!!
         );
 
         // 메뉴 이름
-        tit.forEach((ele,idx) =>
+        menuTitle.forEach((ele, idx) =>
             ele.innerText = data["tit"][idx]
         );
 
         // 칼로리
-        kcal.forEach((ele,idx) =>
+        kcal.forEach((ele, idx) =>
             ele.innerText = data["kcal"][idx]
+        );
+
+        // 칼로리
+        kcal.forEach((ele, idx) =>
+            ele.innerText = data["kcal"][idx]
+        );
+
+        // 당
+        sweet.forEach((ele, idx) =>
+            ele.innerText = data["sweet"][idx]
+        );
+
+        // 단백질
+        protain.forEach((ele, idx) =>
+            ele.innerText = data["protain"][idx]
+        );
+
+        // 지방
+        fat.forEach((ele, idx) =>
+            ele.innerText = data["fat"][idx]
+        );
+
+        // 나트륨
+        Nacl.forEach((ele, idx) =>
+            ele.innerText = data["Nacl"][idx]
+        );
+
+        // 알레르기
+        allergy.forEach((ele, idx) =>
+            ele.innerText = data["allergy"][idx]
         );
     };
 
-    // /* 팝업 내용 */
-    // this.window.onload = function(){
-    //     menuModel.style.display = "none";
-    // }
+    /* 팝업 내용 */
+    this.window.onload = function(){
+        menuModel.style.display = "none";
+    }
 
     // menulist01.onclick = function(){
     //     menuModel.style.display = "block";
     //     menupopup01.style.display = "block";
     // };
 
-    // // 팝업 닫기
-    // menuClose.onclick = function(){
-    //     menuModel.style.display = "none";
-    // };
+    // 팝업 닫기
+    menuClose.onclick = function(){
+        menuModel.style.display = "none";
+    };
 });
