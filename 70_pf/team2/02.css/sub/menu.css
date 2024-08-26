@@ -241,6 +241,7 @@ section p, section label {
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: none;
 }
 
 .menuPic {
