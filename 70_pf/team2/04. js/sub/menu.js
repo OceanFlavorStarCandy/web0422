@@ -201,10 +201,10 @@ window.addEventListener("DOMContentLoaded", function () {
         menuModel.style.display = "none";
     }
 
-    // menulist01.onclick = function(){
-    //     menuModel.style.display = "block";
-    //     menupopup01.style.display = "block";
-    // };
+    menulist01.onclick = function(){
+        menuModel.style.display = "block";
+        menupopup01.style.display = "block";
+    };
 
     // 팝업 닫기
     menuClose.onclick = function(){
