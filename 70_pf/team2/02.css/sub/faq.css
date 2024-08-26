@@ -172,7 +172,7 @@ input[type="checkbox"]:checked+label>div.answer {
 }
 
 input[type="checkbox"]:checked+label img {
-    transform: rotateY(180deg); /* 수정바람 */
+    transform: rotateX('180deg'); /* 수정바람 */
 }
 
 /* 미디어쿼리 */
