@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded",function(){
 
     window.addEventListener("scroll", function(){
         t.innerHTML = Math.floor(pageYOffset);
-        if(t.innerHTML >= 880) {
+        if(t.innerHTML >= 840) {
             s2scroll.classList.add('active');
             header.classList.add('active');
         } else {
