@@ -1,4 +1,104 @@
-window.addEventListener("DOMContentLoaded", function(){
+// 팝업 컨텐츠
+const popupContent = {
+    img: [
+        "./../../03.assets/sub/menu/menu_item01.png",
+        "./../../03.assets/sub/menu/menu_item02.png",
+        "./../../03.assets/sub/menu/menu_item03.png",
+        "./../../03.assets/sub/menu/menu_item04.png",
+        "./../../03.assets/sub/menu/menu_item05.png",
+        "./../../03.assets/sub/menu/menu_item06.png",
+        "./../../03.assets/sub/menu/menu_item07.png",
+        "./../../03.assets/sub/menu/menu_item08.png",
+        "./../../03.assets/sub/menu/menu_item09.png",
+        "./../../03.assets/sub/menu/menu_item10.png"
+    ],
+    tit: [
+        "애플망고치즈설빙",
+        "3단 아이스크림 파르페",
+        "딸기 아이스크림 파르페",
+        "스트로베리 파르페",
+        "인절미 팥빙수",
+        "바닐라초코 파르페",
+        "말차 빙수",
+        "킹망고설빙",
+        "용과 빙수",
+        "아이스티"
+    ],
+    kacl: [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        0
+    ],
+    sweet: [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        0
+    ],
+    protain: [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        0
+    ],
+    fat: [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        0
+    ],
+    Nacl: [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        0
+    ],
+    allergy: [
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀",
+        "우유, 대두, 계란, 밀"
+    ]
+}
+
+window.addEventListener("DOMContentLoaded", function () {
     // 제품 페이지
     const menuPageB01 = document.getElementById("menu_pageButton1");
     const menuPageB02 = document.querySelector("#menu_pageButton2");
@@ -33,257 +133,143 @@ window.addEventListener("DOMContentLoaded", function(){
     const menuModel = document.querySelector(".menu_popup");
     const menuClose = document.querySelector(".menuModalClose");
 
-    // 메뉴 목록
-    const menulist01 = document.querySelector("#menu_list01 .menuHover div");
-    const menulist02 = document.querySelector("#menu_list02 .menuHover div");
-    const menulist03 = document.querySelector("#menu_list03 .menuHover div");
-    const menulist04 = document.querySelector("#menu_list04 .menuHover div");
-    const menulist05 = document.querySelector("#menu_list05 .menuHover div");
-    const menulist06 = document.querySelector("#menu_list06 .menuHover div");
-    const menulist07 = document.querySelector("#menu_list07 .menuHover div");
-    const menulist08 = document.querySelector("#menu_list08 .menuHover div");
-    const menulist09 = document.querySelector("#menu_list09 .menuHover div");
-    const menulist10 = document.querySelector("#menu_list10 .menuHover div");
-    const menulist11 = document.querySelector("#menu_list11 .menuHover div");
-    const menulist12 = document.querySelector("#menu_list12 .menuHover div");
-    const menulist13 = document.querySelector("#menu_list13 .menuHover div");
-    const menulist14 = document.querySelector("#menu_list14 .menuHover div");
-    const menulist15 = document.querySelector("#menu_list15 .menuHover div");
-    const menulist16 = document.querySelector("#menu_list16 .menuHover div");
-    const menulist17 = document.querySelector("#menu_list17 .menuHover div");
-    const menulist18 = document.querySelector("#menu_list18 .menuHover div");
-    const menulist19 = document.querySelector("#menu_list19 .menuHover div");
-    const menulist20 = document.querySelector("#menu_list20 .menuHover div");
-    const menulist21 = document.querySelector("#menu_list21 .menuHover div");
-    const menulist22 = document.querySelector("#menu_list22 .menuHover div");
-    const menulist23 = document.querySelector("#menu_list23 .menuHover div");
-    const menulist24 = document.querySelector("#menu_list24 .menuHover div");
-    const menulist25 = document.querySelector("#menu_list25 .menuHover div");
-    const menulist26 = document.querySelector("#menu_list26 .menuHover div");
-    const menulist27 = document.querySelector("#menu_list27 .menuHover div");
-    const menulist28 = document.querySelector("#menu_list28 .menuHover div");
-    const menulist29 = document.querySelector("#menu_list29 .menuHover div");
-    const menulist30 = document.querySelector("#menu_list30 .menuHover div");
+    /* 제품 목록 */
+    // const menulist = document.querySelectorAll(".menuList .menuHover div");
+    // 클릭한게 몇번째 div인지 알 수있는 방법?
 
-    // 팝업 내용
-    const menupopup01 = document.querySelector("#menu_popup01");
-    const menupopup02 = document.querySelector("#menu_popup02");
-    const menupopup03 = document.querySelector("#menu_popup03");
-    const menupopup04 = document.querySelector("#menu_popup04");
-    const menupopup05 = document.querySelector("#menu_popup05");
-    const menupopup06 = document.querySelector("#menu_popup06");
-    const menupopup07 = document.querySelector("#menu_popup07");
-    const menupopup08 = document.querySelector("#menu_popup08");
-    const menupopup09 = document.querySelector("#menu_popup09");
-    const menupopup10 = document.querySelector("#menu_popup10");
-    const menupopup11 = document.querySelector("#menu_popup11");
-    const menupopup12 = document.querySelector("#menu_popup12");
-    const menupopup13 = document.querySelector("#menu_popup13");
-    const menupopup14 = document.querySelector("#menu_popup14");
-    const menupopup15 = document.querySelector("#menu_popup15");
-    const menupopup16 = document.querySelector("#menu_popup16");
-    const menupopup17 = document.querySelector("#menu_popup17");
-    const menupopup18 = document.querySelector("#menu_popup18");
-    const menupopup19 = document.querySelector("#menu_popup19");
-    const menupopup20 = document.querySelector("#menu_popup20");
-    const menupopup21 = document.querySelector("#menu_popup21");
-    const menupopup22 = document.querySelector("#menu_popup22");
-    const menupopup23 = document.querySelector("#menu_popup23");
-    const menupopup24 = document.querySelector("#menu_popup24");
-    const menupopup25 = document.querySelector("#menu_popup25");
-    const menupopup26 = document.querySelector("#menu_popup26");
-    const menupopup27 = document.querySelector("#menu_popup27");
-    const menupopup28 = document.querySelector("#menu_popup28");
-    const menupopup29 = document.querySelector("#menu_popup29");
-    const menupopup30 = document.querySelector("#menu_popup30");
+    const menuIMG = document.querySelector(".menuPic img");
+    const menuTitle = document.querySelector("#menu_popupContent h2");
+    const kcal = document.querySelector(".kcal");
+    const sweet = document.querySelector(".sweet");
+    const protain = document.querySelector(".protain");
+    const fat = document.querySelector(".fat");
+    const Nacl = document.querySelector(".Nacl");
+    const allergy = document.querySelector(".allergy span");
 
-    /* 팝업 내용 */
     this.window.onload = function(){
-        menuModel.style.display = "none";
+        const selectMenu = [
+            document.querySelector("#menu_list01 .menuHover div"),
+            document.querySelector("#menu_list02 .menuHover div"),
+            document.querySelector("#menu_list03 .menuHover div"),
+            document.querySelector("#menu_list04 .menuHover div"),
+            document.querySelector("#menu_list05 .menuHover div"),
+            document.querySelector("#menu_list06 .menuHover div"),
+            document.querySelector("#menu_list07 .menuHover div"),
+            document.querySelector("#menu_list08 .menuHover div"),
+            document.querySelector("#menu_list09 .menuHover div"),
+            document.querySelector("#menu_list10 .menuHover div")
+        ]
+
+        selectMenu.forEach((ele, idx)).onclick = (e) => {
+            menuModel.style.display = "block";
+
+            let content = e.currentTarget.value;
+            let data = popupContent[content];
+
+            // 제품 이미지
+            menuIMG.forEach((ele, idx) =>
+                ele.innerText = data["img"][idx] // 이거 어떻게 해야할지 모르겠음!!
+            );
+
+            // 메뉴 이름
+            menuTitle.forEach((ele, idx) =>
+                ele.innerText = data["tit"][idx]
+            );
+
+            // 칼로리
+            kcal.forEach((ele, idx) =>
+                ele.innerText = data["kcal"][idx]
+            );
+
+            // 칼로리
+            kcal.forEach((ele, idx) =>
+                ele.innerText = data["kcal"][idx]
+            );
+
+            // 당
+            sweet.forEach((ele, idx) =>
+                ele.innerText = data["sweet"][idx]
+            );
+
+            // 단백질
+            protain.forEach((ele, idx) =>
+                ele.innerText = data["protain"][idx]
+            );
+
+            // 지방
+            fat.forEach((ele, idx) =>
+                ele.innerText = data["fat"][idx]
+            );
+
+            // 나트륨
+            Nacl.forEach((ele, idx) =>
+                ele.innerText = data["Nacl"][idx]
+            );
+
+            // 알레르기
+            allergy.forEach((ele, idx) =>
+                ele.innerText = data["allergy"][idx]
+            );
+        }
     }
 
-    menulist01.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup01.style.display = "block";
-    };
+    /* document.querySelector(".menuHover div img").onclick = (e) => {
+        let content = e.currentTarget.value;
+        let data = popupContent[content];
 
-    menulist02.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup02.style.display = "block";
-    };
+        // 제품 이미지
+        menuIMG.forEach((ele, idx) =>
+            ele.innerText = data["img"][idx] // 이거 어떻게 해야할지 모르겠음!!
+        );
 
-    menulist03.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup03.style.display = "block";
-    };
+        // 메뉴 이름
+        menuTitle.forEach((ele, idx) =>
+            ele.innerText = data["tit"][idx]
+        );
 
-    menulist04.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup04.style.display = "block";
-    };
+        // 칼로리
+        kcal.forEach((ele, idx) =>
+            ele.innerText = data["kcal"][idx]
+        );
 
-    menulist05.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup05.style.display = "block";
-    };
+        // 칼로리
+        kcal.forEach((ele, idx) =>
+            ele.innerText = data["kcal"][idx]
+        );
 
-    menulist06.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup06.style.display = "block";
-    };
+        // 당
+        sweet.forEach((ele, idx) =>
+            ele.innerText = data["sweet"][idx]
+        );
 
-    menulist07.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup07.style.display = "block";
-    };
+        // 단백질
+        protain.forEach((ele, idx) =>
+            ele.innerText = data["protain"][idx]
+        );
 
-    menulist08.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup08.style.display = "block";
-    };
+        // 지방
+        fat.forEach((ele, idx) =>
+            ele.innerText = data["fat"][idx]
+        );
 
-    menulist09.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup09.style.display = "block";
-    };
+        // 나트륨
+        Nacl.forEach((ele, idx) =>
+            ele.innerText = data["Nacl"][idx]
+        );
 
-    menulist10.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup10.style.display = "block";
-    };
+        // 알레르기
+        allergy.forEach((ele, idx) =>
+            ele.innerText = data["allergy"][idx]
+        );
+    }; */
 
-    menulist11.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup11.style.display = "block";
-    };
-
-    menulist12.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup12.style.display = "block";
-    };
-
-    menulist13.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup13.style.display = "block";
-    };
-
-    menulist14.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup14.style.display = "block";
-    };
-
-    menulist15.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup15.style.display = "block";
-    };
-
-    menulist16.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup16.style.display = "block";
-    };
-
-    menulist17.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup17.style.display = "block";
-    };
-
-    menulist18.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup18.style.display = "block";
-    };
-    
-    menulist19.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup19.style.display = "block";
-    };
-
-    menulist20.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup20.style.display = "block";
-    };
-
-    menulist21.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup21.style.display = "block";
-    };
-
-    menulist22.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup22.style.display = "block";
-    };
-
-    menulist23.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup23.style.display = "block";
-    };
-
-    menulist24.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup24.style.display = "block";
-    };
-
-    menulist25.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup25.style.display = "block";
-    };
-
-    menulist26.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup26.style.display = "block";
-    };
-    
-    menulist27.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup27.style.display = "block";
-    };
-
-    menulist28.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup28.style.display = "block";
-    };
-
-    menulist29.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup29.style.display = "block";
-    };
-
-    menulist30.onclick = function(){
-        menuModel.style.display = "block";
-        menupopup30.style.display = "block";
-    };
+    // menulist01.onclick = function(){
+    //     menuModel.style.display = "block";
+    //     menupopup01.style.display = "block";
+    // };
 
     // 팝업 닫기
     menuClose.onclick = function(){
         menuModel.style.display = "none";
-        menupopup01.style.display = "none";
-        menupopup02.style.display = "none";
-        menupopup03.style.display = "none";
-        menupopup04.style.display = "none";
-        menupopup05.style.display = "none";
-        menupopup06.style.display = "none";
-        menupopup07.style.display = "none";
-        menupopup08.style.display = "none";
-        menupopup09.style.display = "none";
-        menupopup10.style.display = "none";
-        menupopup11.style.display = "none";
-        menupopup12.style.display = "none";
-        menupopup13.style.display = "none";
-        menupopup14.style.display = "none";
-        menupopup15.style.display = "none";
-        menupopup16.style.display = "none";
-        menupopup17.style.display = "none";
-        menupopup18.style.display = "none";
-        menupopup19.style.display = "none";
-        menupopup20.style.display = "none";
-        menupopup21.style.display = "none";
-        menupopup22.style.display = "none";
-        menupopup23.style.display = "none";
-        menupopup24.style.display = "none";
-        menupopup25.style.display = "none";
-        menupopup26.style.display = "none";
-        menupopup27.style.display = "none";
-        menupopup28.style.display = "none";
-        menupopup29.style.display = "none";
-        menupopup30.style.display = "none";
     };
 });
