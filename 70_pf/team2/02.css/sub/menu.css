@@ -235,13 +235,16 @@ section p, section label {
 }
 
 .menu_popup>div>div:nth-of-type(2)>div {
-    width: 80%;
+    width: 100%;
+    display: none;
+}
+
+.menu_popup>div>div:nth-of-type(2)>div>div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    display: none;
 }
 
 .menuPic {
@@ -249,8 +252,14 @@ section p, section label {
     height: 240px;
 }
 
-.menu_popup .table {
+.menuPic img {
     width: 100%;
+    vertical-align: top;
+    background-repeat: no-repeat;
+}
+
+.menu_popup .table {
+    width: 80%;
     font-size: 1.4rem;
 }
 

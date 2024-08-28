@@ -146,7 +146,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const Nacl = document.querySelector(".Nacl");
     const allergy = document.querySelector(".allergy span");
 
-    this.window.onload = function(){
+    /* this.window.onload = function(){
         const selectMenu = [
             document.querySelector("#menu_list01 .menuHover div"),
             document.querySelector("#menu_list02 .menuHover div"),
@@ -211,9 +211,9 @@ window.addEventListener("DOMContentLoaded", function () {
                 ele.innerText = data["allergy"][idx]
             );
         }
-    }
+    } */
 
-    /* document.querySelector(".menuHover div img").onclick = (e) => {
+    document.querySelector(".menuHover div img").onclick = (e) => {
         let content = e.currentTarget.value;
         let data = popupContent[content];
 
@@ -261,7 +261,7 @@ window.addEventListener("DOMContentLoaded", function () {
         allergy.forEach((ele, idx) =>
             ele.innerText = data["allergy"][idx]
         );
-    }; */
+    };
 
     // menulist01.onclick = function(){
     //     menuModel.style.display = "block";
