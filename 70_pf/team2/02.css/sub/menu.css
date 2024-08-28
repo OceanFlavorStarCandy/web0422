@@ -309,6 +309,11 @@ section p, section label {
     #menuCategory label {
         padding: 0 10px;
     }
+
+    #Menu_top {
+        background-size: cover;
+        background-position: 60% 50%;
+    }
 }
 
 /* item images */

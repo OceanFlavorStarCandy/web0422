@@ -171,8 +171,10 @@ input[type="checkbox"]:checked+label>div.answer {
     height: auto;
 }
 
-input[type="checkbox"]:checked+label img {
-    transform: rotateX('180deg'); /* 수정바람 */
+input[type="checkbox"]:checked+label div.box_open {
+    width: 34px;
+    height: 34px;
+    transform: rotateY('180deg'); /* 수정바람 */
 }
 
 /* 미디어쿼리 */
