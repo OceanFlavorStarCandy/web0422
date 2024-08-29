@@ -179,13 +179,27 @@ section p, section label {
     transition: .3s;
 }
 
+.menuHover li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* 마우스 올리면 보이게 */
 .menuList>li:hover>.menuHover {
     visibility: visible;
     opacity: 1;
 }
 
-.menuHover>li>div:hover {
+.menuPlus {
+    margin-top: 20px;
+    width: 54px;
+    height: 54px;
+}
+
+.menuPlus:hover {
     cursor: pointer;
 }
 
@@ -258,9 +272,14 @@ section p, section label {
     background-repeat: no-repeat;
 }
 
+.menu_popup h2 {
+    margin: 10px 0;
+}
+
 .menu_popup .table {
     width: 80%;
     font-size: 1.4rem;
+    margin: 20px 0;
 }
 
 .menu_popup .table ul {
