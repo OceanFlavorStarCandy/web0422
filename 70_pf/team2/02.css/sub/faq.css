@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body, p {
+body, p, span {
     margin: 0;
 }
 
@@ -97,6 +97,47 @@ section p, section label {
     color: var(--point);
 }
 
+/* searchLine */
+#sectionFAQ>div:nth-of-type(3) {
+    margin-top: 40px;
+    width: 1340px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sectionFAQ>div:nth-of-type(3) p {
+    color: var(--text2);
+}
+
+#sectionFAQ>div:nth-of-type(3) span {
+    color: var(--point);
+}
+
+#sectionFAQ .faq_search {
+    width: 30%;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    border: 1px solid var(--main2);
+}
+
+#sectionFAQ .faq_search a {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+
+#sectionFAQ .faq_search input {
+    font-size: 2;
+    outline: none;
+    width: 80%;
+}
+
 /* pageButton */
 .faq_pageButton label span {
     display: inline-block;
@@ -118,7 +159,6 @@ section p, section label {
 /* FAQlist box */
 .FAQlist {
     width: 80%;
-    margin-top: 120px;
 }
 
 .FAQlist label>div:nth-of-type(1) {
@@ -182,6 +222,10 @@ input[type="checkbox"]:checked+label div.box_open {
     .FAQlist label>div {
         width: 100%;
     }
+
+    #sectionFAQ>div:nth-of-type(3) {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -211,5 +255,23 @@ input[type="checkbox"]:checked+label div.box_open {
         width: 100%;
         height: auto;
         padding: 20px 30px;
+    }
+
+    #sectionFAQ>div:nth-of-type(3) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 60px 0 20px;
+    }
+
+    #sectionFAQ>div:nth-of-type(3) p {
+        font-size: 1.4rem;
+    }
+
+    #sectionFAQ .faq_search {
+        width: 100%;
+    }
+
+    #sectionFAQ .faq_search input {
+        width: 85%;
     }
 }

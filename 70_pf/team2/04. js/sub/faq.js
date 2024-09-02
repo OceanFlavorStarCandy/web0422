@@ -3,29 +3,24 @@ window.addEventListener("DOMContentLoaded", function(){
     const faqPageB01 = document.querySelector("#faq_pageButton1");
     const faqPageB02 = document.querySelector("#faq_pageButton2");
 
-    const menupage1 = document.querySelector("#faq_page1");
-    const menupage2 = document.querySelector("#faq_page2");
+    const FAQpage1 = document.querySelector("#faq_page1");
+    const FAQpage2 = document.querySelector("#faq_page2");
 
-    menupage1.style.display = "block";
-    menupage2.style.display = "none";
+    const pageNum = document.querySelector(".faqWpage");
+
+    FAQpage1.style.display = "block";
+    FAQpage2.style.display = "none";
+    pageNum.innerHTML = "1";
 
     faqPageB01.onclick = function(){
-        menupage1.style.display = "block";
-        menupage2.style.display = "none";
+        FAQpage1.style.display = "block";
+        FAQpage2.style.display = "none";
+        pageNum.innerHTML = "1";
     };
 
     faqPageB02.onclick = function(){
-        menupage1.style.display = "none";
-        menupage2.style.display = "block";
+        FAQpage1.style.display = "none";
+        FAQpage2.style.display = "block";
+        pageNum.innerHTML = "2";
     };
-
-    // 박스 열기
-    /* for(i=0; i<=16; i++) {
-        let checkbox = document.querySelector('.FAQlist input[type="checkbox"]')[i];
-        let lock = document.querySelector('.FAQlist label img')[i];
-
-        checkbox.onclick = function(){
-            lock.style.transform = "rotateX('180deg')";
-        };
-    }; */
 });
