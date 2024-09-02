@@ -3,9 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 /* reset */
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
-body, ul, li, a, p, span {
+body,
+ul,
+li,
+h1,
+a,
+p,
+span {
     margin: 0;
     padding: 0;
 }
@@ -18,10 +26,13 @@ a {
     text-decoration: none;
 }
 
-p, a, span {
+h1,
+p,
+a,
+span {
     font: 15px 400 "Noto Sans KR", sans-serif;
     color: #000;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 img {
@@ -32,12 +43,23 @@ img {
 }
 
 /* font */
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    width: 1040px;
+}
+
 .game_title {
     display: inline-block;
     width: 178px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+.game_date {
+    line-height: 1.5;
 }
 
 span {
@@ -60,10 +82,11 @@ span {
 }
 
 /* style */
-#root {
+body {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #fff;
@@ -114,10 +137,15 @@ span {
     position: relative;
 }
 
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
 .game_age {
     width: 42px;
     height: 49px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 6px;
 }

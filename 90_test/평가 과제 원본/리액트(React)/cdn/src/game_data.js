@@ -45,5 +45,3 @@ const games = [
         gaget: "전체 이용가"
     }
 ];
-
-// export default Games;

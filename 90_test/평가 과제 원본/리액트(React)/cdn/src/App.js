@@ -4,13 +4,13 @@ function App() {
             {games.map((item, idx) => (
                 <Game
                     key={idx}
-                    gimg={item.gimg}
-                    gtit={item.gtit}
-                    gdate={item.gdate}
-                    gpri={item.gpri}
-                    gtag={item.gtag}
-                    gage={item.gage}
-                    gaget={item.gaget}
+                    cimg={item.gimg}
+                    ctit={item.gtit}
+                    cdate={item.gdate}
+                    cpri={item.gpri}
+                    ctag={item.gtag}
+                    cage={item.gage}
+                    caget={item.gaget}
                 />
             ))}
         </ul>
