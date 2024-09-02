@@ -1,9 +1,9 @@
 function App() {
     return (
         <ul className="container">
-            {Game.map((item, i) => (
+            {games.map((item, idx) => (
                 <Game
-                    key={i}
+                    key={idx}
                     gimg={item.gimg}
                     gtit={item.gtit}
                     gdate={item.gdate}
