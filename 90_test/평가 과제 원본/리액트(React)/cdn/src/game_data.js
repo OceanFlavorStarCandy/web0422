@@ -1,4 +1,4 @@
-const Game = [
+const Games = [
     {
         gimg: "https://oceanflavorstarcandy.github.io/web0422/assets/test0902/package01.jpg",
         gtit: "젤다의 전설 티어스 오브 더 킹덤",
@@ -45,3 +45,5 @@ const Game = [
         gaget: "전체 이용가"
     }
 ];
+
+export default Games;
