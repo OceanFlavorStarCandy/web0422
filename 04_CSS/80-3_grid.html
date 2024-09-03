@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애반 개인 사이트 콘텐츠 레이아웃</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        .inner {
+            padding: 24px;
+        }
+
+        .home-card {
+            display: grid;
+            grid-template-columns: 100px auto;
+            column-gap: 24px;
+        }
+
+        .home-icon {
+            grid-row: 1/span 3;
+        }
+
+        @media (min-width:992px) {
+            .home-card {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-card">
+        <div class="home-icon">
+            <a href="https://oceanflavorstarcandy.github.io/web0422/70_pf/LunaBrew/index.html">
+                <img src="../70_pf/LunaBrew/thumb.svg" alt="루나브루">
+            </a>
+        </div>
+        <div class="home-description">
+            <h3>루나브루 <span>(Lunabrew)</span></h3>
+            <p>(수정중)Full page, one page site, 2depth Topdown Navigation, Carousel, Parallax Scrolling, Tab, Familiy
+                Site를 반영한 AWD(적응형 웹 디자인) 페이지입니다.</p>
+            <p><a href="https://oceanflavorstarcandy.github.io/web0422/70_pf/LunaBrew/index.html">Read more...</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
