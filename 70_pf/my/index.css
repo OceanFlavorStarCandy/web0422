@@ -55,25 +55,74 @@ p {
     margin-top: 60px;
 }
 
+iframe {
+    width: 100%;
+    border: none;
+    /* 테두리, 배경이미지, 배경색 적용된다! */
+    border-radius: 5px;
+}
+
+/* background-image: Parallax Scrolling */
 .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: no-repeat 50% 50%/cover fixed;
 }
 
 #s1 .container-fluid {
     height: 100vh;
-    background-image: url(../assets/parallax1.jpg);
+    background-image: url(./assets/KakaoTalk_20240903_162506603.jpg);
 }
 
 #s3 .container-fluid {
     height: 400px;
-    background-image: url(../assets/parallax2.jpg);
+    background-image: url(./assets/KakaoTalk_20240903_162506603_12.jpg);
 }
 
 #s4 .container-fluid {
     height: 400px;
-    background-image: url(../assets/parallax3.jpg);
+    background-image: url(./assets/KakaoTalk_20240903_162506603_11.jpg);
 }
 
+/* background-image Title */
+.container-fluid>span {
+    font-size: 3.6rem;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+/* clock */
+#s1 {
+    position: relative;
+    overflow: hidden;
+}
+#s1 #clock {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#s1 #clock .dtime span {
+    display: inline-block;
+    width: 140px;
+}
+
+.ddate {
+    font-size: 3rem;
+}
+
+.dtime {
+    font-size: 7.7rem;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 2px #999;
+    font-family: "HSGaeulSenggak20", sans-serif;
+}
+
+.dtime span:not(:last-child)::after {
+    content: " :";
+}
 
 /* progress */
 .progress {
@@ -123,6 +172,34 @@ p {
 #s3 img {
     width: 200px;
     height: 200px;
+}
+
+@media (min-width: 992px) {
+    /* section4: contact */
+    #s4 li {
+        line-height: 2;
+    }
+    #s4 .row p {
+        margin: 24px 0 8px;
+    }
+
+    #s4 input {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 4px 0;
+    }
+    #s4 button.btn {
+        margin-top: 16px;
+    }
+    #s4 [name="user_name"] {
+        margin-right: 1%;
+    }
+    #s4 [name*="user"] {
+        width: 49.2222222%;
+    }
+    #s4 [name="message"] {
+        width: 100%;
+    }
 }
 
 /* footer */

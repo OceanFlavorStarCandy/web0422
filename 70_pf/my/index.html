@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H.G.D</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
 </head>
 
 <body>
     <div id="s1">
-        <div>디지털 시계</div>
+        <div class="container-fluid">
+            <div id="clock">
+                <div class="ddate">
+                    <span>년</span>
+                    <span>월</span>
+                    <span>일</span>
+                    <span>요일</span>
+                </div>
+                <div class="dtime">
+                    <span>시</span>
+                    <span>분</span>
+                    <span>초</span>
+                </div>
+            </div> <!-- #clock end -->
+        </div>
     </div>
+
     <div id="s2">
         <div class="container">
             <h2>ABOUT ME</h2>
@@ -86,19 +102,19 @@
         <!-- counter -->
         <div class="container-fluid counter"> <!-- fluid를 뒤에 붙여야 넓이가 100%?가 된다는 소리인듯 --> <!-- 클래스명 여러개 넣을때는 띄어쓰기로 -->
             <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <span class="d-block">2+</span> <!-- display: block; / 줄바꿈하려고 적음 -->
                     <span>Team Projects</span>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <span class="d-block">3+</span>
                     <span>Personal Projects</span>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <span class="d-block">5+</span>
                     <span>Total Projects</span>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <span class="d-block">2+</span>
                     <span>National technical certification</span>
                 </div>
@@ -115,38 +131,38 @@
             <h2>MY WORK</h2>
             <p class="mb-5">다음은 내 최신 작업 중 일부입니다.<br>이미지를 더 크게 보려면 클릭해보세요.</p>
             <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <a href="https://oceanflavorstarcandy.github.io/web0422/70_pf/team/index.html">
                         <img src="./../team/thumb.svg" alt="작품1">
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <a href="https://oceanflavorstarcandy.github.io/web0422/70_pf/LunaBrew/index.html">
                         <img src="./../LunaBrew/thumb.svg" alt="작품1">
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <a href="https://oceanflavorstarcandy.github.io/web0422/70_pf/kirby/index.html">
                         <img src="./../kirby/assets/history/history-img-01.png" alt="작품1">
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <a href="https://oceanflavorstarcandy.github.io/web0422/90_test/평가 과제 원본/스마트문화앱UI디자인/draft.html">
                         <img src="./../TOUSlesJOURS/images/main/2depthIMG.jpg" alt="작품1">
                     </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <img src="./assets/KakaoTalk_20240903_162506603_07.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="./assets/KakaoTalk_20240903_162506603_08.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="./assets/KakaoTalk_20240903_162506603_09.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="./assets/KakaoTalk_20240903_162506603_10.jpg" alt="작품1">
                 </div>
             </div><!-- .row -->
@@ -165,13 +181,13 @@
             <p class="mb-5">여러분의 피드백을 환영합니다!</p>
 
             <div class="row">
-                <div class="col">
+                <div class="col-sm col-md-4">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.672085941141!2d127.1074390763351!3d37.350271236498884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351691378!5m2!1sko!2skr"
                         width="280" height="160" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col">
+                <div class="col-sm col-md-8">
                     <div class="row">
                         <div class="col">
                             <ul>
@@ -184,7 +200,7 @@
                     <p>들러서 커피 한잔 하시거나 메모를 남겨주세요.</p>
                     <div class="row">
                         <div class="col">
-                            <form action="memo.jsp">
+                            <form action="memo.jsp" class="text-right">
                                 <input type="text" placeholder="이름">
                                 <input type="email" placeholder="이메일">
                                 <input type="text" placeholder="메시지">
