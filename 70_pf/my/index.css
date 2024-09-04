@@ -2,19 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
+* {box-sizing: border-box;}
+
 /* common */
 html {
     scroll-behavior: smooth;
-    font-size:10px;
+    font-size: 10px;
 }
+
 body {
-    font:300 1.5rem/1.6 "Noto Sans KR", sans-serif;
+    font: 300 1.5rem/1.6 "Noto Sans KR", sans-serif;
 }
+
 h2 {
     text-align: center;
     font-weight: 300;
     margin: 90px 0 30px;
 }
+
 h3 {
     font-size: 1.5rem;
     text-align: center;
@@ -22,12 +27,15 @@ h3 {
     letter-spacing: 10px;
     margin: 16px 0;
 }
-img, video {
+
+img,
+video {
     width: 100%;
     max-width: 100%;
     object-fit: cover;
     height: auto;
 }
+
 p {
     margin-bottom: 48px;
 }
@@ -40,29 +48,32 @@ p {
     text-align: center;
     margin-bottom: 16px;
 }
+
 .btn {
     font-size: 1.5rem;
     padding: 8px 24px;
     margin-top: 60px;
 }
+
 .container-fluid {
     background: no-repeat 50% 50%/cover fixed;
 }
 
 #s1 .container-fluid {
     height: 100vh;
-    background-image: url(./assets/KakaoTalk_20240903_162506603.jpg);
-}
-
-#s2 .container-fluid {
-    height: 400px;
-    background-image: url(./assets/KakaoTalk_20240903_162506603_11.jpg);
+    background-image: url(../assets/parallax1.jpg);
 }
 
 #s3 .container-fluid {
     height: 400px;
-    background-image: url(./assets/KakaoTalk_20240903_162506603_12.jpg);
+    background-image: url(../assets/parallax2.jpg);
 }
+
+#s4 .container-fluid {
+    height: 400px;
+    background-image: url(../assets/parallax3.jpg);
+}
+
 
 /* progress */
 .progress {
@@ -70,10 +81,22 @@ p {
     font-size: 1.5rem;
     padding: 0;
 }
-.progress:nth-of-type(1) .progress-bar {width: 90%;}
-.progress:nth-of-type(2) .progress-bar {width: 95%;}
-.progress:nth-of-type(3) .progress-bar {width: 97%;}
-.progress:nth-of-type(4) .progress-bar {width: 75%;}
+
+.progress:nth-of-type(1) .progress-bar {
+    width: 90%;
+}
+
+.progress:nth-of-type(2) .progress-bar {
+    width: 95%;
+}
+
+.progress:nth-of-type(3) .progress-bar {
+    width: 97%;
+}
+
+.progress:nth-of-type(4) .progress-bar {
+    width: 75%;
+}
 
 /* counter */
 .counter {
@@ -82,6 +105,7 @@ p {
     text-align: center;
     padding: 32px;
 }
+
 .counter span {
     display: block;
     font-size: 2.4rem;
@@ -91,8 +115,14 @@ p {
 #s3 {
     text-align: center;
 }
+
 #s3 .col {
-    padding:8px;
+    padding: 8px;
+}
+
+#s3 img {
+    width: 200px;
+    height: 200px;
 }
 
 /* footer */
@@ -102,9 +132,11 @@ footer {
     text-align: center;
     color: #fff;
 }
+
 footer a {
     color: #fff;
 }
+
 footer .sns {
     margin: 16px 0;
     font-size: 2.4rem;
