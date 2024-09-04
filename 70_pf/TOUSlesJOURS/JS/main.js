@@ -1,3 +1,4 @@
+// tab menu
 const tab1 = document.querySelector(".section2 #tab1");
 const tab2 = document.querySelector(".section2 #tab2");
 const tab3 = document.querySelector(".section2 #tab3");
