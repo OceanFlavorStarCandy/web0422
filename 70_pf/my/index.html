@@ -12,6 +12,33 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-info navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#s1">KEJ</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s2">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s3">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s4">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <div id="s1">
         <div class="container-fluid">
             <div id="clock">
@@ -69,7 +96,7 @@
             </div> <!-- .row end -->
 
             <!-- skill -->
-            <p class="mt-5">Im really good at:</p>
+            <p>Im really good at:</p>
             <div class="row">
                 <h3>Photoshop</h3>
                 <div class="col-12 progress">
@@ -201,8 +228,10 @@
                     <div class="row">
                         <div class="col">
                             <form action="memo.jsp" class="text-right">
-                                <input type="text" placeholder="이름">
-                                <input type="email" placeholder="이메일">
+                                <div>
+                                    <input type="text" placeholder="이름">
+                                    <input type="email" placeholder="이메일">
+                                </div>
                                 <input type="text" placeholder="메시지">
                                 <button class="btn btn-dark">메시지 전송하기</button>
                             </form>

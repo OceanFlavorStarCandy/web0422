@@ -57,6 +57,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // 0~9는 00~09로 표기
         function ze(num) {
+            // 삼항 연산자
+            // 조건 ? 참 : 거짓
             return num < 10 ? (num = "0" + num) : (num = num);
         }
     } // clock_fn
