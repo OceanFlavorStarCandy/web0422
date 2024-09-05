@@ -33,32 +33,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(() => {
-
+            // 요소 찾기
             const bEle = $("b");
+
+            // 시작값
             const cnts = [0,0,0,0];
+            // 최종값
             const nums = [2,5,7,5];
 
-            // scroll은 window 이벤트
-            // $(window), $(document), $(this)
-            // HTML DOM 요소는 $("선택자") / document 안에 들어있는 것들은 전부 선택자로 지정해야함
-            $(window).scroll(() => {
-                console.log($(this).scrollTop());
-                if ($(this).scrollTop() >= 1500 ){
-                    nums.forEach((ele, idx)=>{
-                        counterFn(idx, ele);
-                    });
-                }
+            // 카운터 시작 값을 0으로 초기화
+            for(let i=0; i<cnts.length; i++) { // i를 cnts의 길이만큼 증가
+                cnts[i]=0;
+                bEle.each((idx, ele)=>{
+                    countFn(idx);
+                });
+            }
+
+            // 스크롤 이벤트
+            $(window).scroll(()=>{
+                // 함수 호출
+                countFn(i);
             });
-                      
-            function counterFn(i, maxNum) {
+
+            function countFn(i) {
                 cnts[i]++;
-                if (cnts[i] >= maxNum) {
-                    bEle.eq(i).text(cnts[i]);
-                } else {
-                    cnts[i] = 0;
-                    return;
-                }
-                setTimeout(()=>counterFn(i, maxNum), 300);
+                bEle.eq(i).text(cnts[i]);
             }
         }); // ready end
     </script>
