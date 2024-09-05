@@ -33,32 +33,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(() => {
+
+            // counter
             // 요소 찾기
             const bEle = $("b");
-
-            // 시작값
-            const cnts = [0,0,0,0];
-            // 최종값
-            const nums = [2,5,7,5];
+            // 카운터 시작 값
+            const cnts = [0, 0, 0, 0];
+            // 카운터 최종 값
+            const nums = [2, 5, 7, 5];
 
             // 카운터 시작 값을 0으로 초기화
-            for(let i=0; i<cnts.length; i++) { // i를 cnts의 길이만큼 증가
-                cnts[i]=0;
-                bEle.each((idx, ele)=>{
-                    countFn(idx);
-                });
-            }
+            // for (let i = 0; i < bEle.length; i++) {
+            //     cnts[i] = 0;
+            // }
 
-            // 스크롤 이벤트
-            $(window).scroll(()=>{
+            // 스크롤 이벤트가 발생하면
+            $(window).scroll(() => {
                 // 함수 호출
-                countFn(i);
+                // idx: 0,1,2,3
+                let st = $(this).scrollTop();
+                // console.log(st);
+
+                if (st >= 1500) {
+                    bEle.each((idx, ele) => countFn(idx) );
+                } else {
+                    for (let i = 0; i < bEle.length; i++) {
+                        cnts[i] = 0;
+                        bEle.eq(i).text(cnts[i]);
+                    }
+                }
             });
 
             function countFn(i) {
                 cnts[i]++;
+                if (cnts[i] <= nums[i]) {
+                    setTimeout(() => countFn(i), 300);
+                } else {
+                    return;
+                }
                 bEle.eq(i).text(cnts[i]);
             }
+
+
         }); // ready end
     </script>
 </head>

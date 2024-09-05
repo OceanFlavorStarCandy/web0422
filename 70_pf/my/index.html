@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H.G.D</title>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js "></script>
+    
     <link rel="stylesheet" href="./index.css">
     <script src="./index.js"></script>
 </head>
@@ -66,7 +72,7 @@
             <!-- 프로필1: 보편적 -->
             <div class="row">
                 <div class="col">
-                    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby
+                    <p class="profile1">We have created a fictional "personal" website/blog, and our fictional character is a hobby
                         photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -82,10 +88,10 @@
             <div class="row pb-5">
                 <div class="col-md">
                     <div class="text-center mb-5">Eunji Kim</div>
-                    <div><img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="내 사진"></div>
+                    <div class="photo"><img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="내 사진"></div>
                 </div>
                 <div class="col-md">
-                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+                    <p class="profile2">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -131,19 +137,19 @@
         <div class="container-fluid counter"> <!-- fluid를 뒤에 붙여야 넓이가 100%?가 된다는 소리인듯 --> <!-- 클래스명 여러개 넣을때는 띄어쓰기로 -->
             <div class="row">
                 <div class="col-sm">
-                    <span class="d-block">2+</span> <!-- display: block; / 줄바꿈하려고 적음 -->
+                    <span class="d-block"><b>2</b>+</span> <!-- display: block; / 줄바꿈하려고 적음 -->
                     <span>Team Projects</span>
                 </div>
                 <div class="col-sm">
-                    <span class="d-block">3+</span>
+                    <span class="d-block"><b>3</b>+</span>
                     <span>Personal Projects</span>
                 </div>
                 <div class="col-sm">
-                    <span class="d-block">5+</span>
+                    <span class="d-block"><b>5</b>+</span>
                     <span>Total Projects</span>
                 </div>
                 <div class="col-sm">
-                    <span class="d-block">2+</span>
+                    <span class="d-block"><b>2</b>+</span>
                     <span>National technical certification</span>
                 </div>
             </div>
@@ -165,8 +171,9 @@
                     </a>
                 </div>
                 <div class="col-sm">
-                    <a href="https://oceanflavorstarcandy.github.io/web0422/70_pf/LunaBrew/index.html">
-                        <img src="./../LunaBrew/thumb.svg" alt="작품1">
+                    <!-- <a href="큰 이미지" data-lightbox="roadtrip">작은 이미지 img 태그로 삽입</a> -->
+                    <a href="./assets/draft.png"  data-lightbox="roadtrip" data-title="https://oceanflavorstarcandy.github.io/web0422/70_pf/LunaBrew/index.html">
+                        <img src="./assets/Frame 3.png" alt="작품1">
                     </a>
                 </div>
                 <div class="col-sm">
@@ -182,16 +189,20 @@
             </div>
             <div class="row">
                 <div class="col-sm">
-                    <img src="./assets/KakaoTalk_20240903_162506603_07.jpg" alt="작품1">
+                    <a href="#">
+                        <img src="./assets/Frame 1.png" alt="작품1">
+                    </a>
                 </div>
                 <div class="col-sm">
-                    <img src="./assets/KakaoTalk_20240903_162506603_08.jpg" alt="작품1">
+                    <img src="./assets/Frame 2.png" alt="작품1">
                 </div>
                 <div class="col-sm">
-                    <img src="./assets/KakaoTalk_20240903_162506603_09.jpg" alt="작품1">
+                    <a href="./assets/draft.png"  data-lightbox="roadtrip" data-title="https://oceanflavorstarcandy.github.io/web0422/70_pf/LunaBrew/index.html">
+                        <img src="./assets/Frame 3.png" alt="작품1">
+                    </a>
                 </div>
                 <div class="col-sm">
-                    <img src="./assets/KakaoTalk_20240903_162506603_10.jpg" alt="작품1">
+                    <img src="./assets/Frame 4.png" alt="작품1">
                 </div>
             </div><!-- .row -->
 
