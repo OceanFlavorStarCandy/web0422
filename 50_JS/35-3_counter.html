@@ -52,8 +52,12 @@
                       
             function counterFn(i, maxNum) {
                 cnts[i]++;
-                bEle.eq(i).text(cnts[i]);
-                if (cnts[i] >= maxNum) return;
+                if (cnts[i] >= maxNum) {
+                    bEle.eq(i).text(cnts[i]);
+                } else {
+                    cnts[i] = 0;
+                    return;
+                }
                 setTimeout(()=>counterFn(i, maxNum), 300);
             }
         }); // ready end
