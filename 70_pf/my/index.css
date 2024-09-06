@@ -3,6 +3,29 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 @import url("./clock.css");
 
+/* 마우스 포인터 */
+.mp {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.mp1 {
+    width: 40px;
+    height: 40px;
+    background: url(./assets/pointer.png) 50% 50%/100% no-repeat;
+    /* ease-out을 사용! */
+    transition: .7s ease-out;
+}
+
+.mp2 {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    /* ease-out을 사용! */
+    transition: .1s ease-out;
+    opacity: 0;
+}
+
 /* common */
 html {
     scroll-behavior: smooth;
@@ -119,7 +142,8 @@ header {
 
 .profile1 {
     transform: translateY(300px);
-    transition: .3s .2s; /* 뒤쪽 숫자가 delay */
+    transition: .3s .2s;
+    /* 뒤쪽 숫자가 delay */
 }
 
 .profile2 {
