@@ -116,6 +116,7 @@ header {
 #s1 .container-fluid {
     height: 100vh;
     background-image: url(./assets/KakaoTalk_20240903_162506603.jpg);
+    filter: grayscale(10%);
 }
 
 #s3 .container-fluid {
@@ -248,6 +249,7 @@ footer {
     background: #000;
     text-align: center;
     color: #fff;
+    background: url(./../../assets/pattern\ \(1\).png);
 }
 
 footer a {
