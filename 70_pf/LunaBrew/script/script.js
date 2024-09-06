@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded",function(){
-    // section2 tab
+    // section2 tab menu
     const btn1 = document.querySelector("#btn1");
     const btn2 = document.querySelector("#btn2");
     const btn3 = document.querySelector("#btn3");
@@ -34,14 +34,16 @@ window.addEventListener("DOMContentLoaded",function(){
     window.addEventListener("scroll", function(){
         t.innerHTML = Math.floor(pageYOffset);
 
+        // 클래스명 추가/제거를 이용해 스크롤모션 구현
         if(t.innerHTML >= 840) {
-            s2scroll.classList.add('active');
-            header.classList.add('active');
+            s2scroll.classList.add('active'); // section2 스크롤 모션
+            header.classList.add('active'); // 헤더 색상 변경
         } else {
             s2scroll.classList.remove('active');
             header.classList.remove('active');
         }
 
+        // section3 스크롤 모션
         if(t.innerHTML >= 1720) {
             s3image01.classList.add('activate');
             s3image02.classList.add('activate');
