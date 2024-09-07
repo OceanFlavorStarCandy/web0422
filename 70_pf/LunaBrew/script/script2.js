@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded",function(){
+window.addEventListener("DOMContentLoaded", function () {
     // section2 tab
     const btn1 = document.querySelector("#btn1");
     const btn2 = document.querySelector("#btn2");
@@ -8,38 +8,35 @@ window.addEventListener("DOMContentLoaded",function(){
     const tab2 = document.querySelector("#T2");
     const tab3 = document.querySelector("#T3");
 
-    btn1.onclick = function(){
+    btn1.onclick = function () {
         tab1.classList.add('on');
         tab2.classList.remove('on');
         tab3.classList.remove('on');
     }
-    btn2.onclick = function(){
+    btn2.onclick = function () {
         tab1.classList.remove('on');
         tab2.classList.add('on');
         tab3.classList.remove('on');
     }
-    btn3.onclick = function(){
+    btn3.onclick = function () {
         tab1.classList.remove('on');
         tab2.classList.remove('on');
         tab3.classList.add('on');
     }
 
-    // scroll event
-    const t = document.querySelector("#s2Text");
-    const s2scroll = this.document.querySelector("#s2");
-
-    window.addEventListener("scroll", function(){
-        t.innerHTML = Math.floor(pageYOffset);
-        if(t.innerHTML >= 920) {
-            s2scroll.classList.add('active');
-        } else {
-            s2scroll.classList.remove('active');
-        }
+    $('.slider').bxSlider({
+        mode: 'fade', // 전환 효과
+        speed: 1000,
+        auto: true,
+        autoControls: false, // 일시정지, 재생 버튼 숨김
+        stopAutoOnClick: false,
+        pager: false, // 페이지 표시하는 원 아이콘 숨김
+        sideWidth: 1920
     });
 });
 
 /* fullpage */
-$(function(){
+$(function () {
     $('#wrap').fullpage({
         navigation: true,
         navigationTooltips: ['Main', 'Company', 'Services', 'Gallery', 'Question'],
