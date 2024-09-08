@@ -2,7 +2,7 @@
 @import url(./reset.css);
 @import url(./common.css);
 
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css");
 
 .section {
     width: 100%;
