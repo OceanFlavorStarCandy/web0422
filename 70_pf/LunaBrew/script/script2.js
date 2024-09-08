@@ -24,6 +24,7 @@ window.addEventListener("DOMContentLoaded", function () {
         tab3.classList.add('on');
     }
 
+    // bxslider
     $('.slider').bxSlider({
         mode: 'fade', // 전환 효과
         speed: 1000,

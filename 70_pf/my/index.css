@@ -115,18 +115,18 @@ header {
 
 #s1 .container-fluid {
     height: 100vh;
-    background-image: url(./assets/KakaoTalk_20240903_162506603.jpg);
-    filter: grayscale(10%);
+    background-image: url(./assets/top.jpg);
 }
 
 #s3 .container-fluid {
     height: 400px;
-    background-image: url(./assets/KakaoTalk_20240903_162506603_12.jpg);
+    background-image: url(./assets/portfolio.jpg);
 }
 
 #s4 .container-fluid {
     height: 400px;
-    background-image: url(./assets/KakaoTalk_20240903_162506603_11.jpg);
+    background-image: url(./assets/contact.jpg);
+    filter: grayscale(40%);
 }
 
 /* background-image Title */

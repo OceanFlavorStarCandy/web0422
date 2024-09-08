@@ -90,11 +90,11 @@ $(() => {
 
     // 카운터의 시작 값과 목표 값
     const counterStartNums = [0, 0, 0, 0];
-    const counterNums = [2, 5, 7, 5];
+    const counterNums = [2, 3, 5, 2];
 
     // 진행율바의 시작 값과 목표 값
     const progressBarStartNums = [0, 0, 0, 0];
-    const progressBarNums = [90, 95, 90, 80];
+    const progressBarNums = [90, 95, 90, 70];
 
     $(window).scroll(() => {
         let st = $(this).scrollTop();
@@ -186,7 +186,7 @@ $(() => {
     });
 
     // 마우스 포인터 모션 만들기
-    const mp = $(".mp");
+    // const mp = $(".mp");
 
     /* $("body").mousemove(() => {
         // 큰원
@@ -195,50 +195,50 @@ $(() => {
         mm(1);
     }); */
 
-    setInterval(firefly, 3000);
+    // setInterval(firefly, 3000);
 
-    function firefly() {
-        mm(0);
-        mm(1);
-    }
+    // function firefly() {
+    //     mm(0);
+    //     mm(1);
+    // }
 
-    function mm(i) {
+    // function mm(i) {
 
-        /* 
-            event.pageX -> 마우스 x좌표
-            event.pageY -> 마우스 y좌표
+    //     /* 
+    //         event.pageX -> 마우스 x좌표
+    //         event.pageY -> 마우스 y좌표
  
-            Vanilla JS의 속성
-                offsetWidth, offsetHeight -> 패딩과 테두리 포함
-                clientWidth, clientHeight -> 패딩만 포함
-            jQuery 메서드
-                outerWidth(), outerHeight() -> 패딩과 테두리 포함
-                innerWidth(), innerHeight() -> 패딩만 포함
-        */
+    //         Vanilla JS의 속성
+    //             offsetWidth, offsetHeight -> 패딩과 테두리 포함
+    //             clientWidth, clientHeight -> 패딩만 포함
+    //         jQuery 메서드
+    //             outerWidth(), outerHeight() -> 패딩과 테두리 포함
+    //             innerWidth(), innerHeight() -> 패딩만 포함
+    //     */
 
-        // Math.floor() -> 내림
-        // Math.ceil() -> 올림
-        // Math.round() -> 반올림
-        // x: 50 ~ 1870 -> 랜덤(불규칙) -> Math.random()
-        // y: 100 ~ 800
-        // 0 <= Math.random() < 1
-        // 0 * 10 <= Math.random() * 10 < 1 * 10
+    //     // Math.floor() -> 내림
+    //     // Math.ceil() -> 올림
+    //     // Math.round() -> 반올림
+    //     // x: 50 ~ 1870 -> 랜덤(불규칙) -> Math.random()
+    //     // y: 100 ~ 800
+    //     // 0 <= Math.random() < 1
+    //     // 0 * 10 <= Math.random() * 10 < 1 * 10
 
-        // 1 ~ 6 사이 정수 출력
-        // 0 + 1 <= Math.floor(Math.random() * 6) + 1 < 6 + 1
-        // 0 ~ 2 사이 정수 출력
-        // 0 <= Math.floor(Math.random() * 3) < 3
+    //     // 1 ~ 6 사이 정수 출력
+    //     // 0 + 1 <= Math.floor(Math.random() * 6) + 1 < 6 + 1
+    //     // 0 ~ 2 사이 정수 출력
+    //     // 0 <= Math.floor(Math.random() * 3) < 3
 
-        // 1 <= Math.floor(Math.random() * 10) + 1 < 11
-        // 50 <= Math.floor(Math.random() * 1800) + 50 < 1920
+    //     // 1 <= Math.floor(Math.random() * 10) + 1 < 11
+    //     // 50 <= Math.floor(Math.random() * 1800) + 50 < 1920
 
-        let x = Math.floor(Math.random() * 1800) + 50 - mp.eq(i).outerWidth() / 2;
-        let y = Math.floor(Math.random() * 800) + 50 - mp.eq(i).outerWidth() / 2;
-        // let x = event.pageX - mp.eq(i).outerWidth() / 2;
-        // let y = event.pageY - mp.eq(i).outerWidth() / 2;
+    //     let x = Math.floor(Math.random() * 1800) + 50 - mp.eq(i).outerWidth() / 2;
+    //     let y = Math.floor(Math.random() * 800) + 50 - mp.eq(i).outerWidth() / 2;
+    //     // let x = event.pageX - mp.eq(i).outerWidth() / 2;
+    //     // let y = event.pageY - mp.eq(i).outerWidth() / 2;
 
-        mp.eq(i).css({ left: x + "px", top: y + "px" });
-    }
+    //     mp.eq(i).css({ left: x + "px", top: y + "px" });
+    // }
 
     // 푸터 배경색 랜덤하게 바꾸기
     const footerEle = $("footer");
@@ -250,6 +250,4 @@ $(() => {
         let color = colors[Math.floor(Math.random() * 3)];
         footerEle.css({ backgroundColor: color });
     }
-
-
 }); // ready

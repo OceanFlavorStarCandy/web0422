@@ -34,7 +34,7 @@ nav li:nth-of-type(1)::after {
 /* header */
 header {
     line-height: 200px;
-    background: url(../assets/bg-light.png) no-repeat 50% 50%/cover fixed; /* 패럴렉스 기법 */
+    background: url(./../assets/bg-light.png) no-repeat 50% 50%/cover fixed; /* 패럴렉스 기법 */
 }
 
 main{
