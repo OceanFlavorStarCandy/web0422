@@ -485,12 +485,3 @@
 #s5 .s5Contents #send:hover {
     cursor: pointer;
 }
-
-/* footer */
-footer {
-    height: 160px;
-    z-index: 3;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}

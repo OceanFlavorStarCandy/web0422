@@ -146,12 +146,15 @@ header nav {
 footer {
     border-top: 1px solid rgba(255, 255, 255, .25);
     width: 1903px;
-    height: 196px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-left: 40px;
-    position: relative;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .footerText div {
