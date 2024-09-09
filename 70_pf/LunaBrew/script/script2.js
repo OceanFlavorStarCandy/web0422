@@ -8,26 +8,51 @@ window.addEventListener("DOMContentLoaded", function () {
     const tab2 = document.querySelector("#T2");
     const tab3 = document.querySelector("#T3");
 
+    const BGimg1 = document.querySelector("#tabImage1");
+    const BGimg2 = document.querySelector("#tabImage2");
+    const BGimg3 = document.querySelector("#tabImage3");
+    const BGimg4 = document.querySelector("#tabImage4");
+    const BGimg5 = document.querySelector("#tabImage5");
+
+    BGimg3.classList.remove('on');
+    BGimg4.classList.remove('on');
+    BGimg5.classList.remove('on');
+
     btn1.onclick = function () {
         tab1.classList.add('on');
         tab2.classList.remove('on');
         tab3.classList.remove('on');
+        BGimg1.classList.add('on');
+        BGimg2.classList.add('on');
+        BGimg3.classList.remove('on');
+        BGimg4.classList.remove('on');
+        BGimg5.classList.remove('on');
     }
     btn2.onclick = function () {
         tab1.classList.remove('on');
         tab2.classList.add('on');
         tab3.classList.remove('on');
+        BGimg1.classList.remove('on');
+        BGimg2.classList.remove('on');
+        BGimg3.classList.add('on');
+        BGimg4.classList.remove('on');
+        BGimg5.classList.remove('on');
     }
     btn3.onclick = function () {
         tab1.classList.remove('on');
         tab2.classList.remove('on');
         tab3.classList.add('on');
+        BGimg1.classList.remove('on');
+        BGimg2.classList.remove('on');
+        BGimg3.classList.remove('on');
+        BGimg4.classList.add('on');
+        BGimg5.classList.add('on');
     }
 
     // bxslider
     $('.slider').bxSlider({
         mode: 'fade', // 전환 효과
-        speed: 1000,
+        speed: 1500,
         auto: true,
         autoControls: false, // 일시정지, 재생 버튼 숨김
         stopAutoOnClick: false,

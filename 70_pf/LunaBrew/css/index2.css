@@ -252,23 +252,82 @@
     background: url(../assets/icon_happy.png);
 }
 
-#tabImage1 {
-    width: 786px;
-    height: 548px;
-    background: url(../assets/corn.png);
+.bgIMGs>div>div {
     position: absolute;
-    bottom: -80px;
-    left: -120px;
+    transition: 1s;
+}
+
+#tabImage1 {
+    width: 1920px;
+    height: 550px;
+    background: url(../assets/field.png) no-repeat;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+#tabImage1.on {
+    opacity: 25%;
 }
 
 #tabImage2 {
+    width: 786px;
+    height: 548px;
+    background: url(../assets/corn.png);
+    bottom: -80px;
+    left: -270px;
+    opacity: 0;
+}
+
+#tabImage2.on {
+    bottom: -80px;
+    left: -120px;
+    opacity: 1;
+}
+
+#tabImage3 {
+    width: 1000px;
+    height: 500px;
+    background: url(../assets/beers.png);
+    bottom: -270px;
+    left: 80px;
+    opacity: 0;
+}
+
+#tabImage3.on {
+    bottom: -120px;
+    left: 80px;
+    opacity: 1;
+}
+
+#tabImage4 {
     width: 542px;
     height: 700px;
     background: url(../assets/beer.png);
-    position: absolute;
     bottom: 0;
-    right: 0px;
+    right: -150px;
+    opacity: 0;
+}
 
+#tabImage4.on {
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+}
+
+#tabImage5 {
+    width: 800px;
+    height: 800px;
+    background: url(../assets/gift2.png);
+    bottom: -280px;
+    left: -330px;
+    opacity: 0;
+}
+
+#tabImage5.on {
+    bottom: -280px;
+    left: -180px;
+    opacity: 1;
 }
 
 /* section4 */
