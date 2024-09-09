@@ -14,9 +14,8 @@ window.addEventListener("DOMContentLoaded", function () {
     const BGimg4 = document.querySelector("#tabImage4");
     const BGimg5 = document.querySelector("#tabImage5");
 
-    BGimg3.classList.remove('on');
-    BGimg4.classList.remove('on');
-    BGimg5.classList.remove('on');
+    BGimg1.classList.add('on');
+    BGimg2.classList.add('on');
 
     btn1.onclick = function () {
         tab1.classList.add('on');
@@ -58,6 +57,15 @@ window.addEventListener("DOMContentLoaded", function () {
         stopAutoOnClick: false,
         pager: false, // 페이지 표시하는 원 아이콘 숨김
         sideWidth: 1920
+    });
+
+    // 페이지 맨 위로
+    $('header .Logo a').click(()=>{
+        $.fn.fullpage.moveTo(1, 1);
+    });
+
+    $('footer>a').click(()=>{
+        $.fn.fullpage.moveTo(1, 1);
     });
 });
 

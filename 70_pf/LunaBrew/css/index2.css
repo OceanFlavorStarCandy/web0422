@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url(./reset.css);
-@import url(./common.css);
+@import url(./common2.css);
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css");
 
@@ -35,6 +35,12 @@
     font-size: 20px;
     font-weight: 600;
     color: #363636;
+}
+
+/* scrollEvent */
+.scrollEvent {
+    position: fixed;
+    z-index: -1;
 }
 
 /* section01 */
@@ -334,10 +340,15 @@
 #s4 .s4Contents {
     width: 100%;
     height: 100vh;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #F5F2E1;
+}
+
+#s4 h2, #s4 p {
+    line-height: 0.5;
 }
 
 #s4 .s4Contents span {
@@ -360,7 +371,7 @@
 
 #s4 .s4Contents li {
     width: 510px;
-    height: 620px;
+    height: 580px;
     position: relative;
 }
 
@@ -373,13 +384,13 @@
     rotate: 90deg;
     position: absolute;
     right: -64px;
-    bottom: -60px;
+    bottom: -50px;
 }
 
 #s4 .s4Contents a {
     display: inline-block;
     width: 510px;
-    height: 620px;
+    height: 580px;
     overflow: hidden;
     position: relative;
 }
@@ -402,7 +413,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 60px 120px 0 0;
+    padding: 120px 120px 0 0;
     background: url(../assets/bottomBG.png) no-repeat;
 }
 
