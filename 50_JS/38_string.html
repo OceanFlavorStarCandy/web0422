@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* https://www.w3schools.com/js/js_strings.asp */
+        window.addEventListener("DOMContentLoaded", () => {
+            let carName1 = "Volvo XC60";  // Double quotes
+            let carName2 = 'Volvo XC60';  // Single quotes
+            let carName3 = '"Volvo XC60"';  // ""으로 묶인 상태로 문자열 되는거임
+
+            /* 
+                속성
+                length 문자열의 길이
+            */
+
+            // 백틱(`)
+            let text = `He's often called "Johnny"`;
+            let length = text.length;
+            // 템플릿 리터럴: ${표현식}
+            document.write(`length ${length}<br>`);
+
+            /* 
+                escape 문자열(\)
+                \' single quote
+                \" double quote
+                \\ back slash
+
+                \b backspace
+                \f form feed
+                \n 줄바꿈
+                \r carriage return
+                \t horizontal tabulator
+                \v vertical tabulator
+            */
+            let text2 = "We are the so-called \"Vikings\" from the north.";
+            document.write(text2 + "<br>");
+
+            let text3 = `The quick\nbrown fox\njumps over\nthe lazy dog`;
+            document.write(text3 + "<br>");
+
+            // 둘의 결과값은 같지만 저장된 곳이 다름!
+            // 그래서 비교연산자 사용 시 ==은 true, ===은 false로 나옴
+            let x = "John";
+            let y = new String("John");
+            document.write(x == y);
+
+
+            /* 
+                문자열 메서드 10가지
+
+                문자열 추출
+                    slice(start, end)
+                    substring(start, end)
+                    substr(start, length)
+                
+                대소문자 변환
+                    toUpperCase() -> 대문자
+                    toLowerCase() -> 소문자
+                
+                문자열 연결
+                    concat()
+                공백 제거
+                    trim()
+
+                문자열 변환
+                    replace()
+                    split()
+                
+                문자열 검색
+                    indexOf()
+            */
+            let text4 = "Apple, Banana, Kiwi";
+            let part = text4.slice(7, 13); // slice(start, end) 첫 번째 숫자부터 두 번째 숫자 -1까지 추출
+            document.write(part + "<br>");
+
+            let part2 = text4.substring(7, 13); // substring(start, end) 첫 번째 숫자부터 두 번째 숫자 -1까지 추출
+            let part3 = text4.substr(7, 6); // substr(start, length) 첫 번째 숫자부터 두 번째 숫자 만큼의 개수만큼 출력
+            let txt = text4.toUpperCase(); // 전부 대문자로 변환
+            let txt2 = text4.toLowerCase(); // 전부 소문자로 변환
+            let txt3 = txt.concat(" ", txt2); // 두 문장을 연결
+
+            let t1 = "      Hello World!      ";
+            let t2 = t1.trim(); // 문자열의 공백을 제거
+
+            let t3 = "Please visit Microsoft!";
+            let newText = t3.replace("Microsoft", "W3Schools"); // replace("A", "B") A에서 B로 문자열을 교체
+
+            let t4 = "H,e,l,l,o";
+            let arr = t4.split(","); // split(",") >> ,로 구분하여 문자열을 배열에 저장
+            console.log(arr);
+
+            let t5 = "Please locate where 'locate' occurs!";
+            let index = text.indexOf("locate"); // 문자열이 있는지 없는지 검색 >> 있을경우 해당 글자의 첫 글자 위치를 숫자로 표시 / 없으면 -1 출력
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
