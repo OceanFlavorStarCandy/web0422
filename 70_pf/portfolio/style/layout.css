@@ -1,27 +1,36 @@
 @charset "utf-8";
-@import url(reset.css);
-@import url(typo.css);
+/* @import url(reset.css); */
+/* @import url(typo.css); */
 
 /* html = :root 입니다 >> html이라고 적어도 됨 */
 :root {
     scroll-behavior: smooth; /* to the top을 부드럽게 동작하게 만들어줌 */
 }
 
+body {
+    background: #ffffff;
+}
+
+h3 {color:rgb(41, 123, 179);}
+
 /* navigation */
 nav {
     /* height: 100px; */
     line-height: 100px;
 }
-nav section {
+
+/* nav section {
     display: flex;
     justify-content: flex-end;
-    /* align-items: center;
-    height: 100px; */ /* << 위에 적은 line-height로 대체합니다 */
-}
-nav ul {
+    align-items: center;
+    height: 100px;   << 위에 적은 line-height로 대체합니다
+} */
+
+/* nav ul {
     display: flex;
-}
-nav li:nth-of-type(1)::after {
+} */
+
+/* nav li:nth-of-type(1)::after {
     content:"";
     display: inline-block;
     width: 6px;
@@ -29,12 +38,12 @@ nav li:nth-of-type(1)::after {
     border-radius: 50%;
     margin: 0 8px;
     background: #999999;
-}
+} */
 
 /* header */
 header {
     line-height: 200px;
-    background: url(./../assets/bg-light.png) no-repeat 50% 50%/cover fixed; /* 패럴렉스 기법 */
+    background: url(./../../my/assets/top.jpg) no-repeat 50% 10%/cover fixed; /* 패럴렉스 기법 */
 }
 
 main{
@@ -53,12 +62,15 @@ h2 {
 .home-card {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
-.home-icon {
+
+/* .home-icon {
     width: 100px;
     height: 100px;
     overflow: hidden;
-}
+} */
+
 .home-description {
     width: 790px;
 }
@@ -72,6 +84,6 @@ h3 span {
 }
 
 /* footer */
-footer p {
+footer, footer p {
     text-align: center;
 }
