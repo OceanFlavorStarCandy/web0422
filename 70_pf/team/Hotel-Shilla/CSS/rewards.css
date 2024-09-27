@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
 
 /* reset */
-section a, p, h1, h2, h3, li {
+section a, p, h1, h2, h3, section li {
     margin: 0;
     text-decoration: none;
     color: #101010;
