@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 /* reset */
-section p, h1, h2, h3 {
+section p, section h1, section h2, section h3 {
     margin: 0;
     text-decoration: none;
     color: #101010;
@@ -166,4 +166,13 @@ section>div:nth-of-type(3) {
 
 .infoIMG05 {
     background: url(https://oceanflavorstarcandy.github.io/web0422/70_pf/team/Hotel-Shilla/assets/images/info/img05.jpg);
+}
+
+/* footer 문제 수정 */
+footer .Ltext p {
+    line-height: 1;
+}
+
+footer .Ltext p:nth-last-child(1) {
+    line-height: 2;
 }
